@@ -1,0 +1,94 @@
+
+
+{% if section.settings['show-announcement'] %}
+  {% if template.name == 'index' or section.settings.show-on-homepage == false %}
+    <section>
+      <div class="custom-announcement-bar">
+        <div class="announcement-bar-middle-section">
+          <a href="{{ section.settings.link }}" class="custom-announcement-bar-link">
+            <p class="custom-announcement-bar_message">     
+              {{ section.settings.announcement_bar_text }}
+            </p>          
+          </a>
+        </div>
+      </div>     
+    </section>
+  {% endif %}
+{% endif %}
+
+<style>
+  .custom-announcement-bar{
+    background:{{section.settings.background-color}};
+  }
+
+  .custom-announcement-bar .custom-announcement-bar_message{
+    color:{{section.settings.text-color}};
+    font-size:{{section.settings.font-size}}px;
+    padding: 5px 0 ;
+       
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type":"checkbox",
+        "id": "show-announcement",
+        "label":"Show Announcement-Bar",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id":"show-on-homepage",
+        "label":"Only show on homepage"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Pick a image."
+      },
+      {
+        "type":"url",
+        "id":"link",
+        "label":"Put your link here."
+      },
+      {
+        "type":"text",
+        "id":"announcement_bar_text",
+        "label":"Announcement Text",
+        "default": "Latest Launches – Don’t Miss Out!"
+      },
+      {
+        "type":"color",
+        "id": "text-color",
+        "label": "Text Color",
+        "default":"#EEEEEE"
+      },
+      {
+        "type":"color_background",
+        "id":"background-color",
+        "label":"Background Color",
+        "default":"#7AB2B2"
+        
+      },
+      {
+        "type": "range",
+        "id":"font-size",
+        "min":12,
+        "max":20,
+        "step":1,
+        "default":14,
+        "label":"Font-Size",
+        "unit":"px"
+      }     
+    ],
+    "presets": [
+      {
+        "name":"announcement-bar",
+        "category":"announcement-bar"
+      }
+    ]
+ }
+{%endschema%}
