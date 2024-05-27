@@ -1,0 +1,64 @@
+<div class="accessories-collection">
+  <div class ="collection-accessories">
+    <div class="collection-title">
+      {% if section.settings.collection_title !=blank %}
+        <h1>{{ section.settings.collection_title }}</h1>
+      {% else %}
+        <h1>{{collection.title }}</h1>
+      {% endif %}
+    </div>
+    <div class="collection-description">
+      {% if section.settings.collection_description != blank %}
+        <p> {{ section.settings.collection_description }}</p>
+      {% else %}
+        <p>{{ collection.description }}</p>
+      {% endif %}
+    </div>
+    <div class="products-grid">
+      {% assign collection_handle = section.settings.collection %}
+      {% assign collection = collections[collection_handle] %}
+      {% if collection != blank %}
+        {% for product in collection.products %}
+          <div class="product-item">
+            <a href="{{ product.url }}">
+              <img 
+                src="{{ product.featured_image |img_url:'1024x1024' }}"
+                alt="{{product.title}}">
+              <h2>{{ product.title }}</h2>
+              <h3>{{ product.price | money}}</h3>
+            </a>       
+          </div>
+        {% endfor %}
+    {% else %}
+      <p>No products found in the selected collection.</p>
+    {% endif %}
+    </div>  
+  </div>  
+</div>
+{% schema %}
+  {
+    "name": "Pet Accessories",
+    "settings": [
+      {
+      "type":"text",
+      "id":"collection_title",
+      "label": "Collection Name",
+      "default": "Happy Paws"
+    },
+    {
+      "type":"textarea",
+      "id":"collection_description",
+      "label":"Collection Description",
+      "default": "Everything your pet needs!!!"
+    },
+      {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }  
+    ],
+    "presets":[{
+      "name": "pet accessories"
+    }]
+  }
+{% endschema %}
