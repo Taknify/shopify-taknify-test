@@ -2,22 +2,20 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
+    "announcement_bar_tMqQfX": {
       "type": "announcement-bar",
-      "disabled": true,
       "settings": {
         "show-announcement": true,
         "show-on-homepage": true,
-        "link": "shopify:\/\/collections\/sale-able-product",
-        "announcement_bar_text": "Latest Launches – Don’t Miss Out!",
-        "text-color": "#eeeeee",
-        "background-color": "#7AB2B2",
-        "font-size": 14
+        "link": "",
+        "announcement_bar_text": "vel turpis nunc eget lorem dolor sed viverra",
+        "text-color": "#EEEEEE",
+        "background-color": "#151515",
+        "font-size": 10
       }
     },
     "header": {
       "type": "header",
-      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -36,7 +34,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "announcement_bar_tMqQfX",
     "header"
   ]
 }
