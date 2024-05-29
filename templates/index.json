@@ -106,30 +106,35 @@
         "image_wVVqAJ": {
           "type": "image",
           "settings": {
+            "Image": "shopify:\/\/shop_images\/pexels-henrique-palmeira-1013623-1998880.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_YDhYtW": {
           "type": "image",
           "settings": {
+            "Image": "shopify:\/\/shop_images\/man-4821291_1280_1.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_aKRGKh": {
           "type": "image",
           "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-8277925_1280.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_g7eGgD": {
           "type": "image",
           "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-3153999_1280.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_CRjwU3": {
           "type": "image",
           "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-2593366_1280.jpg",
             "ImageText": "auctor urna"
           }
         }
