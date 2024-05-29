@@ -1,0 +1,62 @@
+<div class="collections">
+  <div class ="collection-tshirt">
+    <div class="collection-title">
+      {% if section.settings.collection_title !=blank %}
+        <h1>{{ section.settings.collection_title }}</h1>
+      {% else %}
+        <h1>{{collection.title }}</h1>
+      {% endif %}
+    </div>
+    <div class="collection-description">
+      {% if section.settings.collection_description != blank %}
+        <p> {{ section.settings.collection_description }}</p>
+      {% else %}
+        <p>{{ collection.description }}</p>
+      {% endif %}
+    </div>
+    <div class="products-grid">
+      {% assign collection_handle = section.settings.collection %}
+      {% assign collection = collections[collection_handle] %}
+      {% if collection != blank %}
+        {% for product in collection.products %}
+          <div class="product-item">
+            <a href="{{ product.url }}">
+              <img 
+                src="{{ product.featured_image |img_url:'1024x1024' }}"
+                alt="{{product.title}}">
+              <h2>{{ product.title }}</h2>
+              <h3>{{ product.price | money}}</h3>
+            </a>       
+          </div>
+        {% endfor %}
+    {% else %}
+      <p>No products found in the selected collection.</p>
+    {% endif %}
+    </div>  
+  </div>  
+</div>
+
+{% schema %}
+  {
+    "name": "T-shirt Collection",
+    "settings": [
+    {
+      "type":"text",
+      "id":"collection_title",
+      "label": "T-shirt Name",
+      "default": "Our T-shirt Collection"
+    },
+    {
+      "type":"textarea",
+      "id":"collection_description",
+      "label":"Collection Description",
+      "default": "Check out our amazing range of T-shirts!!"
+    },
+      {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+    ]
+  }
+{% endschema %}

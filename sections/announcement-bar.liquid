@@ -4,6 +4,20 @@
   {% if template.name == 'index' or section.settings.show-on-homepage == false %}
     <section>
       <div class="custom-announcement-bar">
+        <div class="announcement-bar-left-section">
+          {% if section.settings.image != blank %}
+            <img
+              width="60"
+              height="60"
+              src="{{section.settings.image|image_url}}"/>
+          {% else %}
+            <img
+              width="60"
+              height="60"
+              src="p.jpg|asset_url">
+          {% endif %}
+          
+        </div>   
         <div class="announcement-bar-middle-section">
           <a href="{{ section.settings.link }}" class="custom-announcement-bar-link">
             <p class="custom-announcement-bar_message">     
@@ -70,7 +84,7 @@
         "type":"color_background",
         "id":"background-color",
         "label":"Background Color",
-        "default":"#7AB2B2"
+        "default":"#A91D3A"
         
       },
       {
