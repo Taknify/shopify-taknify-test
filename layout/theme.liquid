@@ -250,6 +250,7 @@
         }
       }
     {% endstyle %}
+    {{ 'theme.css' | asset_url |stylesheet_tag }}
     {{ 'p_theme.css' | asset_url |stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
 

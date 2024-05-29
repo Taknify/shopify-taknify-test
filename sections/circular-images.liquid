@@ -1,0 +1,41 @@
+<section class="image-container">
+    {% for block in section.blocks %}
+    <div class="image-wrapper">
+      <img src="{{ block.settings.Image | img_url:'240X240'}}" alt="image">
+      <h4>{{block.settings.ImageText  }}</h4> 
+    </div>
+  {% endfor %}  
+  
+</section>
+
+{% schema %}
+  {
+    "name": "Circular Image Columns",
+    "settings": [],
+    "presets":[
+      {
+        "name": "circular-image-columns",
+        "category": "Circular images"        
+      }
+    ],
+    "blocks":[
+      {
+        "type":"image",
+        "name":"Image",
+        "settings":[
+          {
+            "id":"Image",
+            "type":"image_picker",
+            "label":"Pick a image"
+          },
+          {
+            "id":"ImageText",
+            "type":"text",
+            "label":"label",
+            "default": "auctor urna"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

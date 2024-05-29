@@ -1,0 +1,89 @@
+<section class= "front-banner">
+  <div class = "banner-image">  
+    <img  src="{{ section.settings.BannerImage | img_url:'1200x800' }}" alt="Banner Image">
+  </div>
+  <div class = "banner-right-section">
+    <div class = "banner-text">
+      <h2>{{ section.settings.TextHeading }}</h2>
+      <p class="text-info">{{ section.settings.TextInfo }}</p>
+      <p class="extra-info">{{ section.settings.ExtraInfo }}</p>
+    </div>  
+    <div class="banner-button">
+      {% for block in section.blocks %}
+        <a  href="{{ block.settings.button }}">{{block.settings.ButtonText}}</a>
+      {% endfor %}    
+    </div>   
+  </div>
+</section>
+
+<style>
+  .front-banner .banner-text h2{
+    color:{{section.settings.HeadingColor}};
+  }
+</style>
+{% schema %}
+  {
+    "name": "Image With Text",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"BannerImage",
+        "label": "Pick an image."             
+      },
+      {
+        "type":"text",
+        "id":"TextHeading",
+        "label":"Topic",
+        "default":"elei donec pretium vulputate sapien nec"  
+      },
+      {
+        "type":"textarea",
+        "id":"TextInfo",
+        "label":"Text Info",
+        "default":"Lorem ipsum dolor sit amet, sed do. Odio ut enim blandit maecenas volutpat bland."
+      },
+       {
+        "type":"textarea",
+        "id":"ExtraInfo",
+        "label":"Extra Info",
+        "default":"Lorem ipsum dolor sit amet, consectetur ut adipiscing elit, sed do eiusmod tempor do incididunt ut labore et dolore magna aliqua. Odiout enim blandit volutpat maecenas volutpat blandit."
+      },
+      {
+        "type":"color",
+        "id":"HeadingColor",
+        "label":"Heading color",
+        "default":"#E80F88"
+      },
+      {
+        "type":"text",
+        "id":"Button1",
+        "label":"Topic",
+        "default":"aliquam etiam erat"  
+      }  
+    ],
+    "presets": [
+      {
+        "name":"First Image With Text",
+        "category":"Image and Text"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"button",
+        "name":"Buttons",
+        "settings":[
+          {             
+          "id": "ButtonText",
+          "type": "text",
+          "label": "Button Text"
+          },
+          {
+            "id":"Button",
+            "type":"url",
+            "label":"Links"
+          }
+        ]
+      }     
+    ]  
+  }
+{% endschema %}

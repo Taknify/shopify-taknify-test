@@ -1,0 +1,50 @@
+<section class="three-columns-text">
+    <h2>{{ section.settings.Heading }}</h2>   
+      {% for block in section.blocks %}
+        <div class="columns-text">
+          <i class="fa-regular fa-circle-check"></i>
+          <h2>{{ block.settings.text }}</h2>
+          <p>{{ block.settings.textarea }}</p>
+        </div>
+      {% endfor %} 
+</section>
+
+{% schema %}
+  {
+    "name": "Three Columns Text",
+    "settings": [
+      {
+        "type":"text",
+        "id":"Heading",
+        "label":"Topic",
+        "default":"amet consectetur adipiscing"       
+      }
+    ],
+    "presets":[
+      {
+        "name":"Three Columns Text",
+        "category": "Three columns"     
+      }
+    ],
+    "blocks": [
+      {
+        "type":"text",
+        "name":"Columns",
+        "settings":[
+          {             
+          "id": "text",
+          "type": "text",
+          "label": "Heading Text",
+           "default":"integer eget aliquet"
+          },
+          {
+            "id":"textarea",
+            "type":"textarea",
+            "label":"Text here",
+            "default":"fermentum odio eu feugiat pretium nibh ipsum consequat nisl"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
