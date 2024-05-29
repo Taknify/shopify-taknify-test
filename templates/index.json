@@ -71,6 +71,26 @@
     },
     "first_image_with_text_89FFG9": {
       "type": "first-image-with-text",
+      "blocks": {
+        "button_pYeXdW": {
+          "type": "button",
+          "settings": {
+            "ButtonText": "ullamcorper a lacus",
+            "Button": ""
+          }
+        },
+        "button_JChHci": {
+          "type": "button",
+          "settings": {
+            "ButtonText": "",
+            "Button": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_pYeXdW",
+        "button_JChHci"
+      ],
       "settings": {
         "BannerImage": "shopify:\/\/shop_images\/pexels-anastasiya-gepp-654466-1462637.jpg",
         "TextHeading": "elei donec pretium vulputate sapien nec",
