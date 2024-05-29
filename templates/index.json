@@ -99,11 +99,91 @@
         "HeadingColor": "#E80F88",
         "Button1": "aliquam etiam erat"
       }
+    },
+    "circular_images_YQpbUq": {
+      "type": "circular-images",
+      "blocks": {
+        "image_wVVqAJ": {
+          "type": "image",
+          "settings": {
+            "ImageText": "auctor urna"
+          }
+        },
+        "image_YDhYtW": {
+          "type": "image",
+          "settings": {
+            "ImageText": "auctor urna"
+          }
+        },
+        "image_aKRGKh": {
+          "type": "image",
+          "settings": {
+            "ImageText": "auctor urna"
+          }
+        },
+        "image_g7eGgD": {
+          "type": "image",
+          "settings": {
+            "ImageText": "auctor urna"
+          }
+        },
+        "image_CRjwU3": {
+          "type": "image",
+          "settings": {
+            "ImageText": "auctor urna"
+          }
+        }
+      },
+      "block_order": [
+        "image_wVVqAJ",
+        "image_YDhYtW",
+        "image_aKRGKh",
+        "image_g7eGgD",
+        "image_CRjwU3"
+      ],
+      "settings": {
+      }
+    },
+    "three_columns_text_xhGQML": {
+      "type": "three-columns-text",
+      "blocks": {
+        "text_ibhaKh": {
+          "type": "text",
+          "settings": {
+            "text": "integer eget aliquet",
+            "textarea": "fermentum odio eu feugiat pretium nibh ipsum consequat nisl"
+          }
+        },
+        "text_xxfTpd": {
+          "type": "text",
+          "settings": {
+            "text": "integer eget aliquet",
+            "textarea": "fermentum odio eu feugiat pretium nibh ipsum consequat nisl"
+          }
+        },
+        "text_wgA9jt": {
+          "type": "text",
+          "settings": {
+            "text": "integer eget aliquet",
+            "textarea": "fermentum odio eu feugiat pretium nibh ipsum consequat nisl"
+          }
+        }
+      },
+      "block_order": [
+        "text_ibhaKh",
+        "text_xxfTpd",
+        "text_wgA9jt"
+      ],
+      "settings": {
+        "Heading": "amet consectetur adipiscing"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "first_image_with_text_89FFG9"
+    "first_image_with_text_89FFG9",
+    "circular_images_YQpbUq",
+    "three_columns_text_xhGQML"
   ]
 }
