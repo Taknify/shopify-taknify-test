@@ -1,34 +1,5 @@
 {
   "sections": {
-    "pfront_image_banner_mAdmYc": {
-      "type": "pfront-image-banner",
-      "blocks": {
-        "text_YnEkHj": {
-          "type": "text",
-          "settings": {
-            "image_text": "Paws and Whiskers",
-            "image_text_p": "Get all your pet essentials here!",
-            "text_color": "#cde8e5",
-            "ptext_color": "#eeeeee"
-          }
-        }
-      },
-      "block_order": [
-        "text_YnEkHj"
-      ],
-      "disabled": true,
-      "settings": {
-        "show_image": "shopify:\/\/shop_images\/openart-image_UMZ5eXyf_1716790145000_raw_a9d3323a-1168-4051-ba7f-613d72edda6f.jpg"
-      }
-    },
-    "p_image_with_text_QQMr9r": {
-      "type": "p_image-with-text",
-      "disabled": true,
-      "settings": {
-        "text_header": "All For The Furbabies",
-        "text_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -98,21 +69,21 @@
         "padding_bottom": 36
       }
     },
-    "collection_Accessories": {
-      "type": "collection-petaccessories",
-      "disabled": true,
+    "first_image_with_text_89FFG9": {
+      "type": "first-image-with-text",
       "settings": {
-        "collection_title": "Happy Paws",
-        "collection_description": "Everything your pet needs!",
-        "collection": "happy-paws"
+        "BannerImage": "shopify:\/\/shop_images\/pexels-anastasiya-gepp-654466-1462637.jpg",
+        "TextHeading": "elei donec pretium vulputate sapien nec",
+        "TextInfo": "Lorem ipsum dolor sit amet, sed do. Odio ut enim blandit maecenas volutpat bland.",
+        "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur ut adipiscing elit, sed do eiusmod tempor do incididunt ut labore et dolore magna aliqua. Odiout enim blandit volutpat maecenas volutpat blandit.",
+        "HeadingColor": "#E80F88",
+        "Button1": "aliquam etiam erat"
       }
     }
   },
   "order": [
-    "pfront_image_banner_mAdmYc",
-    "p_image_with_text_QQMr9r",
     "image_banner",
     "featured_collection",
-    "collection_Accessories"
+    "first_image_with_text_89FFG9"
   ]
 }
