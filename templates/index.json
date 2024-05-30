@@ -233,18 +233,6 @@
           "settings": {
             "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
           }
-        },
-        "text_EqBnnk": {
-          "type": "text",
-          "settings": {
-            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
-          }
-        },
-        "text_HznGhF": {
-          "type": "text",
-          "settings": {
-            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
-          }
         }
       },
       "block_order": [
@@ -255,9 +243,7 @@
         "text_hxQhD9",
         "text_YfcDhC",
         "text_tGnf9R",
-        "text_jDpkm9",
-        "text_EqBnnk",
-        "text_HznGhF"
+        "text_jDpkm9"
       ],
       "settings": {
         "Heading": "consectetur adipiscing elit duis tristique"
