@@ -96,7 +96,7 @@
         "TextHeading": "elei donec pretium vulputate sapien nec",
         "TextInfo": "Lorem ipsum dolor sit amet, sed do. Odio ut enim blandit maecenas volutpat bland.",
         "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur ut adipiscing elit, sed do eiusmod tempor do incididunt ut labore et dolore magna aliqua. Odiout enim blandit volutpat maecenas volutpat blandit.",
-        "HeadingColor": "#E80F88",
+        "HeadingColor": "#e80f88",
         "Button1": "aliquam etiam erat"
       }
     },
@@ -182,6 +182,72 @@
       "settings": {
         "Heading": "amet consectetur adipiscing"
       }
+    },
+    "table_ykfafh": {
+      "type": "table",
+      "blocks": {
+        "text_Dpbmdx": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        },
+        "text_mHn8di": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        },
+        "text_p6CMqA": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        },
+        "text_LerbUw": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        },
+        "text_hxQhD9": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        },
+        "text_YfcDhC": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        },
+        "text_tGnf9R": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        },
+        "text_jDpkm9": {
+          "type": "text",
+          "settings": {
+            "TableText": "Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        }
+      },
+      "block_order": [
+        "text_Dpbmdx",
+        "text_mHn8di",
+        "text_p6CMqA",
+        "text_LerbUw",
+        "text_hxQhD9",
+        "text_YfcDhC",
+        "text_tGnf9R",
+        "text_jDpkm9"
+      ],
+      "settings": {
+        "Heading": "consectetur adipiscing elit duis tristique"
+      }
     }
   },
   "order": [
@@ -189,6 +255,7 @@
     "featured_collection",
     "first_image_with_text_89FFG9",
     "circular_images_YQpbUq",
-    "three_columns_text_xhGQML"
+    "three_columns_text_xhGQML",
+    "table_ykfafh"
   ]
 }
