@@ -1,0 +1,61 @@
+<section class="two-columns-table"t>
+  <h2>{{section.settings.Heading}}</h2>
+  <table>
+    <thead>
+      <tr>       
+          <th>nulla phare</th>
+          <th>tortor quat</th>
+      </tr>
+    </thead>
+    <tr>
+      {% assign blocks = section.blocks %}
+      {% assign num_of_blocks = blocks.size%}
+      {% assign num_blocks = num_of_blocks %}
+      {% for i in (0..num_of_blocks) %}
+        {% assign modulo_result = i | modulo: 2 %}
+        {% if modulo_result == 0 %}
+          <tr>
+        {% endif %}
+        <td>{{blocks[i].settings.TableText}}</td>
+        {% if modulo_result == 1  %}
+          </tr>
+        {% endif %}
+      {% endfor %}      
+    </tbody>
+  </table>
+</section>
+
+{% schema %}
+  {
+    "name":"Table",
+    "settings":[
+      {
+        "type":"text",
+        "id":"Heading",
+        "label":"Heading",
+        "default":"consectetur adipiscing elit duis tristique"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Two columns Table",
+        "category":"Table"
+      }
+    ],
+    "blocks":[
+      {
+        "name":"Table Text",
+        "type":"text",
+        "settings":[         
+          {
+            "type":"textarea",
+            "id":"TableText",
+            "label":"Table Text",
+            "default":"Lorem ipsum dolor sit amet, sed do eiusmod tempor ut magna aliqua."
+          }
+        ]
+      }
+    ]
+  }
+
+{% endschema %}  
