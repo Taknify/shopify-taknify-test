@@ -23,6 +23,9 @@
       {% endfor %}      
     </tbody>
   </table>
+  <div class="table-button">
+    <a href="{{section.settings.Button}}">{{section.settings.ButtonText}}</a>
+  </div>
 </section>
 
 {% schema %}
@@ -34,6 +37,17 @@
         "id":"Heading",
         "label":"Heading",
         "default":"consectetur adipiscing elit duis tristique"
+      },
+      {
+        "type":"url",
+        "id":"Button",
+        "label":"Link here"
+      },
+      {
+        "type":"text",
+        "id":"ButtonText",
+        "label":"Texr",
+        "default":"duis tristique"
       }
     ],
     "presets":[
