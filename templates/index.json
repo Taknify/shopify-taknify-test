@@ -246,7 +246,75 @@
         "text_jDpkm9"
       ],
       "settings": {
-        "Heading": "consectetur adipiscing elit duis tristique"
+        "Heading": "consectetur adipiscing elit duis tristique",
+        "Button": "",
+        "ButtonText": "duis tristique"
+      }
+    },
+    "three_pictures_columns_8KbeFQ": {
+      "type": "three-pictures-columns",
+      "blocks": {
+        "images_jLrDhm": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/girl-3033718_1280.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
+        },
+        "images_BEJVDJ": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-8378634_1280.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
+        },
+        "images_GVUEEx": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/man-1866572_1280.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
+        },
+        "images_dGrNmp": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-2178816_1280.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
+        },
+        "images_zWEbQG": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-8277925_1280.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
+        },
+        "images_6keweb": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/pexels-alipazani-2584269.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
+        }
+      },
+      "block_order": [
+        "images_jLrDhm",
+        "images_BEJVDJ",
+        "images_GVUEEx",
+        "images_dGrNmp",
+        "images_zWEbQG",
+        "images_6keweb"
+      ],
+      "settings": {
+        "Heading": "convals puere morbi",
+        "Button": "",
+        "ButtonText": "sagittis nisl"
       }
     }
   },
@@ -256,6 +324,7 @@
     "first_image_with_text_89FFG9",
     "circular_images_YQpbUq",
     "three_columns_text_xhGQML",
-    "table_ykfafh"
+    "table_ykfafh",
+    "three_pictures_columns_8KbeFQ"
   ]
 }
