@@ -577,3 +577,77 @@ table tbody tr:last-child {
     margin: 20px 220px 10px 220px;
   }
 }
+
+/* reviews */
+
+.review-container {
+  background-color: #f1f1f1;
+}
+.review-container h2 {
+  background-color: #f1f1f1;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+.review-container .swiper-container {
+  width: 100%;
+  padding: 20px 0;
+}
+.review-container .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.review-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.review-container .card {
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px 40px;
+  padding-top: 40px;
+  display: flex;
+  position: relative;
+  flex-direction: columns;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+}
+
+.review-container .card .card-image {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 140px;
+  width: 140px;
+}
+
+.review-container .card .card-image .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  border: 5px solid #ffffff;
+}
+.review-container .card .card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.review-container .card .card-content .description {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.review-container .card .card-content .reviewer {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px 0 20px 0;
+  color: #e80f88;
+}

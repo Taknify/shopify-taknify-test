@@ -1,0 +1,89 @@
+<section class="review-container ">
+  <h2>{{section.settings.Heading}}</h2>
+  <div class="swiper-container slide-content ">
+    <div class="swiper-wrapper card-wrapper ">             
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="card">
+              <div class="image-content">
+                <div class="card-image">
+                  <img src="{{block.settings.ReviewImage | img_url:'500X500'}}" alt="Image" class="card-img">          
+                </div>
+              </div>
+              <div class="card-content">              
+                <p class="description">{{block.settings.textarea}}</p>
+                <h4 class="reviewer">-{{block.settings.text}}</h4>
+              </div>
+            </div>
+          </div> 
+        {% endfor %} 
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  });
+</script>
+
+
+{% schema %}
+{
+  "name": "Reviews",
+  "settings": [
+    {
+      "type":"text",
+      "id":"Heading",
+      "label":"Heading",
+      "default": "Sitmag Amet Facilisis En Magna Etiam"
+    }    
+    ],
+    "presets":[
+      {
+        "name":"Reviews",
+        "category":"Review"
+      }
+    ],
+    "blocks": [
+      {
+        "type":"text",
+        "name":"Reviews",
+        "settings":[
+          {             
+          "id": "ReviewImage",
+          "type": "image_picker",
+          "label": "Pick a image"         
+          },
+          {
+            "id":"text",
+            "type":"text",
+            "label":"Reviewer Name",
+            "default":" Feugiat Pretium"
+          },
+          {
+            "id":"textarea",
+            "type":"textarea",
+            "label":"Reviewer Says",
+            "default":"Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
+          }
+        ]
+      }
+    ]
+}
+{% endschema %}
