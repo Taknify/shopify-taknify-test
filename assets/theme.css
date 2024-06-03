@@ -595,23 +595,28 @@ table tbody tr:last-child {
 .review-container .swiper-container {
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
-.review-container .swiper-container svg {
+.review-container .swiper-button-prev,
+.review-container .swiper-button-next {
   cursor: pointer;
   fill: #e80f88;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+  pointer-events: auto;
 }
 
-.review-container .swiper-container svg:first-of-type {
+.swiper-pagination-bullet {
+  background-color: #e80f88;
+}
+
+.review-container .swiper-button-prev {
   left: 10px;
 }
 
-.review-container .swiper-container svg:last-of-type {
+.review-container .swiper-button-next {
   right: 10px;
 }
 
@@ -621,10 +626,6 @@ table tbody tr:last-child {
 
 .review-container .swiper-wrapper {
   display: flex;
-  scroll-behavior: smooth;
-  width: 100%;
-  transition: all 1s ease;
-  scroll-snap-type: x mandatory;
 }
 .review-container .swiper-slide {
   display: flex;
@@ -684,43 +685,45 @@ table tbody tr:last-child {
   color: #e80f88;
 }
 @media (min-width: 600px) {
-  .review-container .swiper-container svg:first-of-type {
+  .review-container .swiper-button-prev {
     left: 35px;
   }
 
-  .review-container .swiper-container svg:last-of-type {
+  .review-container .swiper-button-next {
     right: 35px;
   }
 }
+
 @media (min-width: 700px) {
-  .review-container .swiper-container svg:first-of-type {
+  .review-container .swiper-button-prev {
     left: 90px;
   }
 
-  .review-container .swiper-container svg:last-of-type {
+  .review-container .swiper-button-next {
     right: 90px;
   }
 }
 
 @media (min-width: 800px) {
-  .review-container .swiper-container svg:first-of-type {
+  .review-container .swiper-button-prev {
     left: 130px;
   }
 
-  .review-container .swiper-container svg:last-of-type {
+  .review-container .swiper-button-next {
     right: 130px;
   }
 }
+
 @media (min-width: 998px) {
   .review-container .swiper-slide {
     flex: 0 0 33.333%;
-    min-width: 33.33%;
   }
-  .review-container .swiper-container svg:first-of-type {
+
+  .review-container .swiper-button-prev {
     left: 16px;
   }
 
-  .review-container .swiper-container svg:last-of-type {
+  .review-container .swiper-button-next {
     right: 16px;
   }
 }

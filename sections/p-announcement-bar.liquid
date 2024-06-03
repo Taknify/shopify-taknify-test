@@ -1,0 +1,84 @@
+{% if section.settings['ShowAnnouncement']%}
+  {% if template.name == 'index' or section.settings.ShowOnHomePage == false  %}
+    <section class="announcement-bar">
+      <div class="announcement-middle-section">
+        <a href="{{section.settings.AnnouncementUrl}}">
+          <p>
+              {{section.settings.AnnouncementText}}
+          </p>
+        </a>
+      </div>
+    </section>
+  {% endif %}
+{%endif%}
+<style>
+  .announcement-bar{
+    background:{{section.settings.background-color}};
+  }
+
+  .announcement-bar p{
+    color:{{section.settings.text-color}};
+    font-size:{{section.settings.font-size}}px;
+
+  }
+</style>
+
+{% schema %}
+{
+  "name": "p_Announcement Bar",
+  "settings": [
+    {
+      "type":"checkbox",
+      "id":"ShowAnnouncement",
+      "label":"Show Announcement",
+      "default":false
+    },
+    {
+      "type":"checkbox",
+      "id":"ShowOnHomePage",
+      "label":"Show on home page only",
+      "default":false
+    },
+    {
+      "type":"url",
+      "id": "AnnouncementUrl",
+      "label":"Link"
+    },
+    {
+      "type":"text",
+      "id":"AnnouncementText",
+      "label":"Announcement Text",
+      "default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit aliqua."
+    },
+    {
+      "type":"color",
+      "id": "text-color",
+      "label": "Text Color",
+      "default":"#EEEEEE"
+    },
+    {
+      "type":"color_background",
+      "id":"background-color",
+      "label":"Background Color",
+      "default":"#151515"
+        
+    },
+    {
+      "type": "range",
+      "id":"font-size",
+      "min":8,
+      "max":20,
+      "step":1,
+      "default":10,
+      "label":"Font-Size",
+      "unit":"px"
+    }    
+  ],
+  "presets": [
+      {
+        "name":"pannouncement-bar",
+        "category":"announcement-bar"
+      }
+    ]
+}
+{% endschema %}
