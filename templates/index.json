@@ -335,11 +335,47 @@
             "text": "Feugiat Pretium",
             "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
           }
+        },
+        "text_pV6ihU": {
+          "type": "text",
+          "settings": {
+            "ReviewImage": "shopify:\/\/shop_images\/woman-1274056_1280.jpg",
+            "text": "Feugiat Pretium",
+            "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
+          }
+        },
+        "text_c4jGJi": {
+          "type": "text",
+          "settings": {
+            "ReviewImage": "shopify:\/\/shop_images\/pexels-alipazani-2584269.jpg",
+            "text": "Feugiat Pretium",
+            "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
+          }
+        },
+        "text_tikDXk": {
+          "type": "text",
+          "settings": {
+            "ReviewImage": "shopify:\/\/shop_images\/woman-8277925_1280.jpg",
+            "text": "Feugiat Pretium",
+            "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
+          }
+        },
+        "text_Fen6P4": {
+          "type": "text",
+          "settings": {
+            "ReviewImage": "shopify:\/\/shop_images\/pexels-marcelodias-2435474.jpg",
+            "text": "Feugiat Pretium",
+            "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
+          }
         }
       },
       "block_order": [
         "text_ndqDAh",
-        "text_LCQzGP"
+        "text_LCQzGP",
+        "text_pV6ihU",
+        "text_c4jGJi",
+        "text_tikDXk",
+        "text_Fen6P4"
       ],
       "settings": {
         "Heading": "Sitmag Amet Facilisis En Magna Etiam"
