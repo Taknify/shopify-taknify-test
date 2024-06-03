@@ -316,6 +316,34 @@
         "Button": "",
         "ButtonText": "sagittis nisl"
       }
+    },
+    "reviews_VDFyDi": {
+      "type": "reviews",
+      "blocks": {
+        "text_ndqDAh": {
+          "type": "text",
+          "settings": {
+            "ReviewImage": "shopify:\/\/shop_images\/girl-3033718_1280.jpg",
+            "text": "Feugiat Pretium",
+            "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
+          }
+        },
+        "text_LCQzGP": {
+          "type": "text",
+          "settings": {
+            "ReviewImage": "shopify:\/\/shop_images\/woman-8378634_1280.jpg",
+            "text": "Feugiat Pretium",
+            "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
+          }
+        }
+      },
+      "block_order": [
+        "text_ndqDAh",
+        "text_LCQzGP"
+      ],
+      "settings": {
+        "Heading": "Sitmag Amet Facilisis En Magna Etiam"
+      }
     }
   },
   "order": [
@@ -325,6 +353,7 @@
     "circular_images_YQpbUq",
     "three_columns_text_xhGQML",
     "table_ykfafh",
-    "three_pictures_columns_8KbeFQ"
+    "three_pictures_columns_8KbeFQ",
+    "reviews_VDFyDi"
   ]
 }
