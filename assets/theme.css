@@ -630,11 +630,9 @@ table tbody tr:last-child {
 .review-container .swiper-slide {
   display: flex;
   justify-content: center;
-  min-width: 100%;
   position: relative;
   overflow: visible;
   margin-top: 100px;
-  flex: 0 0 100%;
   scroll-snap-align: start;
 }
 .review-container .card {
