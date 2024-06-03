@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".swiper-wrapper");
   const slides = document.querySelectorAll(".swiper-slide");
 
-  let slidesToShow = window.innerWidth >= 768 ? 3 : 1;
+  let slidesToShow = window.innerWidth >= 998 ? 3 : 1;
   let slideNumber = 0;
   let maxSlideNumber;
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   window.addEventListener("resize", () => {
-    slidesToShow = window.innerWidth >= 768 ? 3 : 1;
+    slidesToShow = window.innerWidth >= 998 ? 3 : 1;
     updateSlideCount();
   });
 

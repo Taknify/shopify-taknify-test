@@ -683,10 +683,44 @@ table tbody tr:last-child {
   margin: 8px 0 20px 0;
   color: #e80f88;
 }
+@media (min-width: 600px) {
+  .review-container .swiper-container svg:first-of-type {
+    left: 35px;
+  }
 
-@media (min-width: 768px) {
+  .review-container .swiper-container svg:last-of-type {
+    right: 35px;
+  }
+}
+@media (min-width: 700px) {
+  .review-container .swiper-container svg:first-of-type {
+    left: 90px;
+  }
+
+  .review-container .swiper-container svg:last-of-type {
+    right: 90px;
+  }
+}
+
+@media (min-width: 800px) {
+  .review-container .swiper-container svg:first-of-type {
+    left: 130px;
+  }
+
+  .review-container .swiper-container svg:last-of-type {
+    right: 130px;
+  }
+}
+@media (min-width: 998px) {
   .review-container .swiper-slide {
     flex: 0 0 33.333%;
     min-width: 33.33%;
+  }
+  .review-container .swiper-container svg:first-of-type {
+    left: 16px;
+  }
+
+  .review-container .swiper-container svg:last-of-type {
+    right: 16px;
   }
 }
