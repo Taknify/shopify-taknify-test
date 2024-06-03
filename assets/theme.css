@@ -495,6 +495,7 @@ table tbody tr:last-child {
   text-align: center;
   color: #f1f1f1;
   background-color: #e80f88;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 600px) {
@@ -588,22 +589,52 @@ table tbody tr:last-child {
   font-size: 28px;
   text-align: center;
   font-weight: 500;
-  padding: 20px;
+  padding: 40px 20px 0 20px;
   line-height: 34px;
-  margin-bottom: 40px;
 }
 .review-container .swiper-container {
   width: 100%;
-  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
 }
+
+.review-container .swiper-container svg {
+  cursor: pointer;
+  fill: #e80f88;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.review-container .swiper-container svg:first-of-type {
+  left: 10px;
+}
+
+.review-container .swiper-container svg:last-of-type {
+  right: 10px;
+}
+
+.review-container .slide-content {
+  width: 100%;
+}
+
 .review-container .swiper-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  scroll-behavior: smooth;
+  width: 100%;
+  transition: all 1s ease;
+  scroll-snap-type: x mandatory;
 }
 .review-container .swiper-slide {
   display: flex;
   justify-content: center;
+  min-width: 100%;
+  position: relative;
+  overflow: visible;
+  margin-top: 100px;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
 }
 .review-container .card {
   background-color: #fff;
@@ -616,13 +647,14 @@ table tbody tr:last-child {
   justify-content: center;
   align-items: center;
   width: 380px;
+  overflow: visible;
 }
 
 .review-container .card .card-image {
   position: absolute;
-  top: -65px;
+  top: -70px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%);
   height: 140px;
   width: 140px;
 }
@@ -650,4 +682,11 @@ table tbody tr:last-child {
   font-weight: 600;
   margin: 8px 0 20px 0;
   color: #e80f88;
+}
+
+@media (min-width: 768px) {
+  .review-container .swiper-slide {
+    flex: 0 0 33.333%;
+    min-width: 33.33%;
+  }
 }
