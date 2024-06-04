@@ -1,0 +1,60 @@
+<section class= "image-with-text">
+  <div class = "image-content">  
+    <img  src="{{ section.settings.Image | img_url:'1200x600' }}" alt="Image">
+  </div>
+  <div class = "right-section">
+    <div class = "text-description">
+      <h2>{{ section.settings.TextHeading }}</h2>
+      <p class="text-name">{{ section.settings.TextName }}</p>
+      <p class="text-info">{{ section.settings.TextInfo }}</p>
+    </div>     
+  </div>
+</section>
+
+<style>
+  .image-with-text .text-description h2{
+    color:{{section.settings.HeadingColor}};
+  }
+</style>
+{% schema %}
+  {
+    "name": "Image With Text",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"Image",
+        "label": "Pick an image."             
+      },
+      {
+        "type":"text",
+        "id":"TextHeading",
+        "label":"Topic",
+        "default":" Pretium Vulpute Sapien"  
+      },
+      {
+        "type":"text",
+        "id":"TextName",
+        "label":"Text Name",
+        "default":" Maecenas, Volutpat Bland."
+      },
+      {
+        "type":"textarea",
+        "id":"TextInfo",
+        "label":"Text Info",
+        "default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo a diam sollicitudin tempor id eu nisl nunc. Magna etiam tempor orci eu. Amet aliquam id diam maecenas. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. Nunc aliquet bibendum enim facilisis gravida. "
+      },
+      {
+        "type":"color",
+        "id":"HeadingColor",
+        "label":"Heading color",
+        "default":"#E80F88"
+      }
+    ],
+    "presets": [
+      {
+        "name":"Second Image With Text",
+        "category":" Second Image and Text"
+      }
+    ]   
+  }
+{% endschema %}
