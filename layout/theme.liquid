@@ -268,7 +268,7 @@
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-
+  
     {%- if settings.predictive_search_enabled -%}
       <link
         rel="stylesheet"
@@ -277,14 +277,12 @@
         onload="this.media='all'"
       >
     {%- endif -%}
-
+    <script src="{{ 'tabs.js' | asset_url }}"></script>
     <script>
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
-    </script>
-    
-    
+    </script>       
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -358,7 +356,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <!--<script src="{{ 'slider.js' | asset_url }}"></script>
+    <!--
     {{ 'swiper-bundle.min.js' | asset_url | script_tag }}
     -->
     
