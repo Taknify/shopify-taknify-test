@@ -5,6 +5,13 @@
     {% for block in section.blocks %}
     <div class="tab">
       <a id="tab-{{forloop.index}}" href="#tab{{forloop.index}}" class="tab-link">{{block.settings.TabText}}
+        <span class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" class="plus-icon">
+          <path d="M6 12H18M12 6V18" stroke="#e80f88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" class="minus-icon">
+          <path d="M6 12L18 12" stroke="#e80f88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
       </a>
       <div id="tab{{forloop.index}}-panel" class="tab-panel" hidden>
         <img src="{{block.settings.TabImage | img_url: '360x240'}}" alt="">
@@ -17,13 +24,14 @@
 </section>
 {% endif %}
 
-
-
  <style>
-    .tab-list a[aria-selected="true"] {
-      color: #e80f88 !important;
-      
+    a[aria-selected="true"] {
+      color: #e80f88 !important;      
     }
+    svg[aria-selected="true"] {
+      color:#e80f88;
+    }
+</style>
 
 {% schema %}
 {
