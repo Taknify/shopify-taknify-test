@@ -934,7 +934,7 @@ table tbody tr:last-child {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
   color: black;
   margin-bottom: 5px;
 }
