@@ -1,32 +1,22 @@
 {% if section.blocks.size > 0 %}
 <section class="tabs-wrapper">
-  <h2>{{ section.settings.tabs-title }}</h2>
+  <h2>{{section.settings.tabs-title}}</h2>
   <div class="tabs-container">
     {% for block in section.blocks %}
     <div class="tab">
-      <div class="tab-buttons">
-        <a id="tab-{{ forloop.index }}" href="#tab{{ forloop.index }}" class="tab-link" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
-          {{ block.settings.TabText }}
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" class="plus-icon" {% if forloop.first %}style="display: none;"{% endif %}>
-              <path d="M4 12H20M12 4V20" stroke="#e80f88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" class="minus-icon" {% unless forloop.first %}style="display: none;"{% endunless %}>
-              <path d="M6 12L18 12" stroke="#e80f88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </a>
-      </div>
-      <div id="tab{{ forloop.index }}-panel" class="tab-panel" {% unless forloop.first %}hidden{% endunless %}>
-        <img src="{{ block.settings.TabImage | img_url: '360x240' }}" alt="">
-        <h3>{{ block.settings.TextInfo }}</h3>
-        <p>{{ block.settings.ExtraInfo }}</p>
+      <a id="tab-{{forloop.index}}" href="#tab{{forloop.index}}" class="tab-link">{{block.settings.TabText}}
+      </a>
+      <div id="tab{{forloop.index}}-panel" class="tab-panel" hidden>
+        <img src="{{block.settings.TabImage | img_url: '360x240'}}" alt="">
+        <h3>{{block.settings.TextInfo}}</h3>
+        <p>{{block.settings.ExtraInfo}}</p>
       </div>
     </div>
     {% endfor %}
   </div>
 </section>
 {% endif %}
+
 
 
  <style>
