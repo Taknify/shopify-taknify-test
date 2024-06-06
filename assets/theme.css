@@ -357,7 +357,7 @@ body {
 }
 
 .two-columns-table thead th:first-child {
-  background-color: #e80f88; /* Adjusted to match the image */
+  background-color: #e80f88;
   color: white;
 }
 
@@ -1072,4 +1072,129 @@ table tbody tr:last-child {
     margin-left: 17px;
     margin-right: 17px;
   }
+}
+
+/* Two- Columns-Image-Text */
+
+.two-columns-image {
+  margin-top: 30px;
+}
+
+.two-columns-image h2 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.two-columns-image .swiper-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.two-columns-image .swiper-button-prev,
+.two-columns-image .swiper-button-next {
+  cursor: pointer;
+  fill: #e80f88;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.swiper-pagination-bullet {
+  background-color: #e80f88;
+}
+.pagination-container {
+  padding-top: 40px;
+}
+
+.two-columns-image .swiper-button-prev {
+  left: 2px;
+}
+
+.two-columns-image .swiper-button-next {
+  right: 2px;
+}
+
+.two-columns-image .swiper-wrapper {
+  display: flex;
+}
+
+.two-columns-image .swiper-slide {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  margin-top: 60px;
+  scroll-snap-align: start;
+}
+
+.two-columns-image .card {
+  margin: 20px 40px;
+  border-radius: 8px;
+  width: 380px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.two-columns-image .card .image-section img {
+  aspect-ratio: 3/2;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.two-columns-image .card .card-content h3 {
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.two-columns-image .card .card-content .text-icons {
+  padding-left: 15px;
+}
+
+.two-columns-image .card .card-content .learn-more {
+  padding-left: 15px;
+}
+.two-columns-image .card .card-content .learn-more a {
+  color: #e80f88;
+  font-size: 17px;
+}
+.two-columns-image .card .card-content .column-button {
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.two-columns-image .card .card-content .column-button .text {
+  font-size: 17px;
+}
+
+.two-columns-image .card .card-content .column-button .button-text {
+  margin-bottom: 20px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-columns-image .card .card-content .column-button .button-text a {
+  color: #fff;
+  background-color: #e80f88;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  padding: 8px 10px;
 }
