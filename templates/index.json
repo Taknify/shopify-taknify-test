@@ -520,6 +520,22 @@
         "text_PxgXjG": {
           "type": "text",
           "settings": {
+            "Image": "shopify:\/\/shop_images\/hands-1866619_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "3 hours",
+            "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "LearnMore": "",
+            "Text": "$799.00",
+            "Button": "",
+            "ButtonName": "lorem epsum"
+          }
+        },
+        "text_6BB4Fy": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/pearls-1527060_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "3 hours",
             "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -536,7 +552,8 @@
         "text_miNLgR",
         "text_hn6cV3",
         "text_8VKUKG",
-        "text_PxgXjG"
+        "text_PxgXjG",
+        "text_6BB4Fy"
       ],
       "settings": {
         "Heading": "Sitmag Amet Facilisis En Magna Etiam"
