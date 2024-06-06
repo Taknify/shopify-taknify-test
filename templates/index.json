@@ -262,6 +262,14 @@
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
         },
+        "images_A3kTCw": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-2178816_1280.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
+        },
         "images_BEJVDJ": {
           "type": "images",
           "settings": {
@@ -301,15 +309,25 @@
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
+        },
+        "images_aEajwa": {
+          "type": "images",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/girl-3033718_1280.jpg",
+            "TextTitle": "bibendum at",
+            "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
+          }
         }
       },
       "block_order": [
         "images_jLrDhm",
+        "images_A3kTCw",
         "images_BEJVDJ",
         "images_GVUEEx",
         "images_dGrNmp",
         "images_zWEbQG",
-        "images_6keweb"
+        "images_6keweb",
+        "images_aEajwa"
       ],
       "settings": {
         "Heading": "convals puere morbi",
