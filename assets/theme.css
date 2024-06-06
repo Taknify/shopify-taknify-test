@@ -537,7 +537,7 @@ table tbody tr:last-child {
     margin: 50px 230px 0 230px;
   }
   .three-columns-pictures .columns-button {
-    margin: 20px 210px 10px 210px;
+    margin: 20px 160px 10px 160px;
   }
 }
 
@@ -750,7 +750,7 @@ table tbody tr:last-child {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding: 20px;
 }
 
@@ -906,24 +906,14 @@ table tbody tr:last-child {
 /* tabs */
 .tabs-wrapper {
   padding: 10px;
+  margin-top: 20px;
 }
 
 .tabs-wrapper h2 {
-  font-size: 24px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.tabs-wrapper {
-  padding: 15px;
-}
-
-.tabs-wrapper h2 {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 30px;
+  line-height: 30px;
   margin-bottom: 28px;
   text-align: center;
-  color: #e80f88;
   font-weight: 600;
 }
 
@@ -939,15 +929,15 @@ table tbody tr:last-child {
   margin-bottom: 5px;
 }
 
-.tabs-wrapper .tabs-container .tab-panel img {
+.tabs-wrapper .tabs-container .tab .tab-panel .tab-content img {
   aspect-ratio: 3/2;
   max-width: 350px;
   width: 100%;
   height: auto;
-  border-radius: 8px;
   margin-top: 4px;
   padding: 10px;
   margin-bottom: 0;
+  border-radius: 8px;
 }
 
 .tabs-wrapper .tabs-container .tab-panel h3 {
@@ -958,4 +948,128 @@ table tbody tr:last-child {
 .tabs-wrapper .tabs-container .tab-panel p {
   margin-top: 0px;
   font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .tabs-wrapper {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tabs-wrapper .tabs-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+  }
+  .tabs-wrapper .tabs-container .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs-wrapper .tabs-container .tab a {
+    width: 100%;
+  }
+
+  .tabs-wrapper .tabs-container .tab a .icon {
+    display: none;
+  }
+
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 15px;
+  }
+
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content .tab-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content .tab-text h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content .tab-text p {
+    font-size: 13px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 912px) {
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content {
+    padding: 0 60px;
+    gap: 30px;
+  }
+  .tabs-wrapper .tabs-container .tab a {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content img {
+    aspect-ratio: 3/2;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content .tab-text h3 {
+    font-size: 18px;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content .tab-text p {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: normal;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tabs-wrapper {
+    margin-top: 40px;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content {
+    padding: 0 220px;
+    gap: 30px;
+  }
+  .tabs-wrapper .tabs-container .tab a {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content img {
+    aspect-ratio: 3/2;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content .tab-text h3 {
+    font-size: 18px;
+  }
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content .tab-text p {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: normal;
+  }
+}
+@media (min-width: 1450px) {
+  .tabs-wrapper .tabs-container .tab .tab-panel .tab-content {
+    padding: 0 310px;
+  }
+  .tabs-wrapper .tabs-container .tab a {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
 }

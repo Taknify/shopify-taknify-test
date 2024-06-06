@@ -12,11 +12,17 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" class="minus-icon">
           <path d="M6 12L18 12" stroke="#e80f88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
+          </span>
       </a>
       <div id="tab{{forloop.index}}-panel" class="tab-panel" hidden>
-        <img src="{{block.settings.TabImage | img_url: '360x240'}}" alt="">
-        <h3>{{block.settings.TextInfo}}</h3>
-        <p>{{block.settings.ExtraInfo}}</p>
+        <div class="tab-content">
+          <img src="{{block.settings.TabImage | img_url: '360x240'}}" alt="">
+          <div class="tab-text">
+            <h3>{{block.settings.TextInfo}}</h3>
+            <p>{{block.settings.ExtraInfo}}</p>
+          </div>       
+        </div>
+        
       </div>
     </div>
     {% endfor %}
@@ -26,11 +32,14 @@
 
  <style>
     a[aria-selected="true"] {
-      color: #e80f88 !important;      
+      color: #e80f88 !important; 
+      border-bottom: 3px solid #e80f88 !important;
     }
     svg[aria-selected="true"] {
-      color:#e80f88;
+      color:#e80f88 !important;    
     }
+ 
+    
 </style>
 
 {% schema %}
