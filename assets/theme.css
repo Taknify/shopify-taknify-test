@@ -907,6 +907,8 @@ table tbody tr:last-child {
 .tabs-wrapper {
   padding: 10px;
   margin-top: 20px;
+  z-index: 10;
+  position: relative;
 }
 
 .tabs-wrapper h2 {
@@ -1064,7 +1066,7 @@ table tbody tr:last-child {
     line-height: normal;
   }
 }
-@media (min-width: 1450px) {
+@media (min-width: 1402px) {
   .tabs-wrapper .tabs-container .tab .tab-panel .tab-content {
     padding: 0 310px;
   }
@@ -1077,7 +1079,9 @@ table tbody tr:last-child {
 /* Two- Columns-Image-Text */
 
 .two-columns-image {
-  margin-top: 30px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .two-columns-image h2 {
@@ -1100,7 +1104,6 @@ table tbody tr:last-child {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
   pointer-events: auto;
 }
 
@@ -1197,4 +1200,28 @@ table tbody tr:last-child {
   border: none;
   text-decoration: none;
   padding: 8px 10px;
+}
+
+@media (min-width: 768px) {
+  .two-columns-image .swiper-container {
+    display: none;
+  }
+  .two-columns-grid-container {
+    margin-top: 300px;
+    z-index: 1;
+  }
+
+  .two-columns-grid-container h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .two-columns-grid-container .two-columns-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .two-columns-grid-container .two-columns-grid :nth-child(1) {
+    grid-column: span 2;
+  }
 }
