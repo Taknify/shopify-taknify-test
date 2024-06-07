@@ -468,6 +468,96 @@
       "settings": {
         "tabs-title": "Non Diam Phasellus Vestibulum"
       }
+    },
+    "two_columns_image_text_qVRcEK": {
+      "type": "two-columns-image-text",
+      "blocks": {
+        "text_miNLgR": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/shouzhu-1942385_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "3 hours",
+            "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "LearnMore": "",
+            "Text": "$799.00",
+            "Button": "",
+            "ButtonName": "lorem epsum"
+          }
+        },
+        "text_hn6cV3": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/freshwater-pearl-2302852_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "3 hours",
+            "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "LearnMore": "",
+            "Text": "$799.00",
+            "Button": "",
+            "ButtonName": "lorem epsum"
+          }
+        },
+        "text_8VKUKG": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/makeup-1137706_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "3 hours",
+            "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "LearnMore": "",
+            "Text": "$799.00",
+            "Button": "",
+            "ButtonName": "lorem epsum"
+          }
+        },
+        "text_PxgXjG": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/hands-1866619_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "3 hours",
+            "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "LearnMore": "",
+            "Text": "$799.00",
+            "Button": "",
+            "ButtonName": "lorem epsum"
+          }
+        },
+        "text_6BB4Fy": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/pearls-1527060_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "3 hours",
+            "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "List3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "LearnMore": "",
+            "Text": "$799.00",
+            "Button": "",
+            "ButtonName": "lorem epsum"
+          }
+        }
+      },
+      "block_order": [
+        "text_miNLgR",
+        "text_hn6cV3",
+        "text_8VKUKG",
+        "text_PxgXjG",
+        "text_6BB4Fy"
+      ],
+      "settings": {
+        "Heading": "Sitmag Amet Facilisis En Magna Etiam"
+      }
     }
   },
   "order": [
@@ -480,6 +570,7 @@
     "three_pictures_columns_8KbeFQ",
     "reviews_VDFyDi",
     "image_with_text2_JQinM9",
-    "five_tabs_cwERdD"
+    "five_tabs_cwERdD",
+    "two_columns_image_text_qVRcEK"
   ]
 }
