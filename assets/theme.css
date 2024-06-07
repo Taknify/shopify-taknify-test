@@ -1271,6 +1271,7 @@ table tbody tr:last-child {
 .two-columns-grid-container .card .card-content .text-icons {
   padding-left: 15px;
   margin-top:0;
+  margin-bottom:0;
 }
 
  .two-columns-grid-container .card .card-content .learn-more {
