@@ -1314,7 +1314,7 @@ table tbody tr:last-child {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1450px) {
   .two-columns-grid-container .two-columns-grid .grid-item .card {
     display: flex;
     flex-direction: column;
