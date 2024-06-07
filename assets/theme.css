@@ -1336,11 +1336,5 @@ table tbody tr:last-child {
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card-content {
     margin: 40px 50px 40px 50px;
   }
-  .two-columns-grid-container .two-columns-grid .grid-item:first-child .card {
-  height: 600px; 
- }
 
- .two-columns-grid-container .two-columns-grid .grid-item:not(:first-child) .card {
-  height: 400px; 
- }
 }
