@@ -1308,7 +1308,6 @@ table tbody tr:last-child {
 
 @media (min-width: 1024px) {
   .two-columns-grid-container .two-columns-grid .grid-item .card {
-    margin:15px 150px 15px 150px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -1318,6 +1317,13 @@ table tbody tr:last-child {
    .two-columns-grid-container .two-columns-grid .grid-item:first-child .card {
     flex-direction: row;
     margin:15px 150px 15px 150px;
+  }
+  .two-columns-grid-container .two-columns-grid .grid-item:nth-child(even) .card {
+    margin-left: 150px; 
+  }
+
+  .two-columns-grid-container .two-columns-grid .grid-item:nth-child(odd) .card {
+    margin-right: 150px; 
   }
  .two-columns-grid-container .card .card-content h3 {
   font-size: 28px; 
