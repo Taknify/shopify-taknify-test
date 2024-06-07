@@ -1333,6 +1333,9 @@ table tbody tr:last-child {
   .two-columns-grid-container .two-columns-grid .grid-item:nth-child(odd) .card {
     margin-right: 260px; 
   }
+ .two-columns-grid-container .card .card-content h3 {
+  font-size: 28px; 
+ }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card-content {
     margin: 40px 50px 40px 50px;
   }
