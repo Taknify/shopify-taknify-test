@@ -1230,5 +1230,6 @@ table tbody tr:last-child {
   .two-columns-grid-container .two-columns-grid .grid-item .card :nth-child(1) {
     display: flex;
     flex-direction: row;
+    gap:15px;
   }
 }
