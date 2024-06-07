@@ -1221,9 +1221,7 @@ table tbody tr:last-child {
     font-weight: 600;
   }
   .two-columns-grid-container .two-columns-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
+    margin: 15px;
   }
   .two-columns-grid-container .two-columns-grid :nth-child(1) {
     grid-column: span 2;
