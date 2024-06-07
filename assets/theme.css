@@ -1232,7 +1232,7 @@ table tbody tr:last-child {
     flex-direction: row;
   }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card-content {
-    margin: 30px;
+    margin: 40px 30px 40px 50px;
   }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card .image-section img {
   width: 100%;
