@@ -1202,6 +1202,9 @@ table tbody tr:last-child {
   text-decoration: none;
   padding: 8px 10px;
 }
+.two-columns-grid-container{
+  display:none;
+}
 
 @media (min-width: 768px) {
   .two-columns-image .swiper-container {
