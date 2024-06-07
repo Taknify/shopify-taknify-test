@@ -917,6 +917,7 @@ table tbody tr:last-child {
   margin-bottom: 28px;
   text-align: center;
   font-weight: 600;
+  color:#e80f88;
 }
 
 .tabs-wrapper .tabs-container a {
