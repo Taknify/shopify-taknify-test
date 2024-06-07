@@ -917,7 +917,6 @@ table tbody tr:last-child {
   margin-bottom: 28px;
   text-align: center;
   font-weight: 600;
-  color:#e80f88;
 }
 
 .tabs-wrapper .tabs-container a {
@@ -947,6 +946,7 @@ table tbody tr:last-child {
   margin-top: 4px;
   font-size: 14px;
   font-weight: 600;
+  color:#e80f88;
 }
 .tabs-wrapper .tabs-container .tab-panel p {
   margin-top: 0px;
