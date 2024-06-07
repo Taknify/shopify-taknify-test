@@ -1227,7 +1227,7 @@ table tbody tr:last-child {
   .two-columns-grid-container .two-columns-grid :nth-child(1) {
     grid-column: span 2;
   }
-  .two-columns-grid-container .two-columns-grid .grid-item: first-child .card {
+  .two-columns-grid-container .two-columns-grid .grid-item:first-child .card {
     flex-direction: row;
   }
    .two-columns-grid-container .two-columns-grid .grid-item .card {
@@ -1245,5 +1245,4 @@ table tbody tr:last-child {
     height: auto;
   }
   
-  .
 }
