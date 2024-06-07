@@ -1237,6 +1237,15 @@ table tbody tr:last-child {
     flex-direction: column;
     gap: 15px;
   }
+  .two-columns-grid-container .two-columns-grid .grid-item .card .image-section,
+  .two-columns-grid-container .two-columns-grid .grid-item .card .card-content {
+    flex: 1;
+  }
+  
+  .two-columns-grid-container .two-columns-grid .grid-item .card .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
   
   .
 }
