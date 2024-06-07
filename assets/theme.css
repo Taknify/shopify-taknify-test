@@ -1309,7 +1309,7 @@ table tbody tr:last-child {
 @media (min-width: 1024px) {
   
   .two-columns-grid-container .two-columns-grid .grid-item .card {
-    margin:15px 50px 15px 50px;
+    margin:15px 80px 15px 80px;
     display: flex;
     flex-direction: column;
     gap: 15px;
