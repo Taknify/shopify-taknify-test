@@ -1324,7 +1324,7 @@ table tbody tr:last-child {
   }
    .two-columns-grid-container .two-columns-grid .grid-item:first-child .card {
     flex-direction: row;
-    margin:15px 200px 15px 200px;
+    margin:15px 200px 15px 200px !important;
   }
   .two-columns-grid-container .two-columns-grid .grid-item:nth-child(even) .card {
     margin-left: 150px; 
