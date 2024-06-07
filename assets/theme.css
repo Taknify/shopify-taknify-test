@@ -1246,7 +1246,7 @@ table tbody tr:last-child {
    max-height: 100%; 
    object-fit: cover;
    object-position: center;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 3/2;
   }
   .two-columns-grid-container .two-columns-grid .grid-item .card {
      margin:15px;
