@@ -1315,6 +1315,10 @@ table tbody tr:last-child {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius:8px;
   }
+   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card {
+    flex-direction: row;
+    margin:15px 150px 15px 150px;
+  }
  .two-columns-grid-container .card .card-content h3 {
   font-size: 28px; 
  }
