@@ -1248,7 +1248,7 @@ table tbody tr:last-child {
    object-fit: cover;
    object-position: center;
     aspect-ratio: 3/2;
-    border-bottom: 0;
+   margin-bottom: 0;
   }
   .two-columns-grid-container .two-columns-grid .grid-item .card {
      margin:15px;
