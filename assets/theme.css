@@ -1307,12 +1307,9 @@ table tbody tr:last-child {
 
 
 @media (min-width: 1024px) {
-  .two-columns-image .swiper-container {
-    display: none;
-  }
-
+  
   .two-columns-grid-container .two-columns-grid .grid-item .card {
-     margin:15px;
+    margin:15px 50px 15px 50px;
     display: flex;
     flex-direction: column;
     gap: 15px;
