@@ -1316,10 +1316,7 @@ table tbody tr:last-child {
     border-radius:8px;
   }
  .two-columns-grid-container .card .card-content h3 {
-  padding-left: 15px;
-  font-weight: 600;
-  font-size: 28px;
-  margin-bottom: 0;
+  font-size: 28px; 
  }
 
 }
