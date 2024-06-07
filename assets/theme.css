@@ -1081,7 +1081,7 @@ table tbody tr:last-child {
 .two-columns-image {
   margin-top: 50px;
   position: relative;
-  z-index: 1;
+  z-index: 20;
 }
 
 .two-columns-image h2 {
