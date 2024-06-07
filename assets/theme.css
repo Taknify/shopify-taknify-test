@@ -1337,10 +1337,10 @@ table tbody tr:last-child {
     margin: 40px 50px 40px 50px;
   }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card {
-  height: 400px; 
+  height: 600px; 
  }
 
  .two-columns-grid-container .two-columns-grid .grid-item:not(:first-child) .card {
-  height: 200px; 
+  height: 400px; 
  }
 }
