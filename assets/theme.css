@@ -1241,9 +1241,12 @@ table tbody tr:last-child {
   }
   
   .two-columns-grid-container .two-columns-grid .grid-item .card .image-section img {
-    width: 100%;
-    height: 50%;
-    object-fit:cover;
+   width: 100%;
+   height: auto;
+   max-height: 100%; 
+   object-fit: cover;
+   object-position: center;
+    aspect-ratio: 2 / 1;
   }
   .two-columns-grid-container .two-columns-grid .grid-item .card {
      margin:15px;
