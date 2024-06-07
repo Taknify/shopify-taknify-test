@@ -1307,7 +1307,6 @@ table tbody tr:last-child {
 
 
 @media (min-width: 1024px) {
-  
   .two-columns-grid-container .two-columns-grid .grid-item .card {
     margin:15px 150px 15px 150px;
     display: flex;
@@ -1318,48 +1317,9 @@ table tbody tr:last-child {
   }
  .two-columns-grid-container .card .card-content h3 {
   padding-left: 15px;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 28px;
   margin-bottom: 0;
  }
-.two-columns-grid-container .card .card-content .text-icons {
-  padding-left: 15px;
-}
 
- .two-columns-grid-container .card .card-content .learn-more {
-  padding-left: 15px;
-}
-.two-columns-grid-container .card .card-content .learn-more a {
-  color: #e80f88;
-  font-size: 17px;
-}
-.two-columns-grid-container .card .card-content .column-button {
-  padding-left: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-.two-columns-grid-container .card .card-content .column-button .text {
-  font-size: 17px;
-}
-
-.two-columns-grid-container .card .card-content .column-button .button-text {
-  margin-bottom: 20px;
-  margin-right: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.two-columns-grid-container .card .card-content .column-button .button-text a {
-  color: #fff;
-  background-color: #e80f88;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 8px;
-  border: none;
-  text-decoration: none;
-  padding: 8px 10px;
-}
-  
 }
