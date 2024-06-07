@@ -1228,9 +1228,7 @@ table tbody tr:last-child {
     grid-column: span 2;
   }
   .two-columns-grid-container .two-columns-grid .grid-item: first-child .card {
-    display: flex;
     flex-direction: row;
-    gap:15px;
   }
    .two-columns-grid-container .two-columns-grid .grid-item .card {
     display: flex;
