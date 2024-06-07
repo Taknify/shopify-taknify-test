@@ -1242,7 +1242,7 @@ table tbody tr:last-child {
   
   .two-columns-grid-container .two-columns-grid .grid-item .card .image-section img {
     max-width: 100%;
-    height: auto;
+    height: 50%;
   }
   .two-columns-grid-container .two-columns-grid .grid-item .card {
      margin:15px;
