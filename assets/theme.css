@@ -1221,7 +1221,9 @@ table tbody tr:last-child {
     font-weight: 600;
   }
   .two-columns-grid-container .two-columns-grid {
-    margin: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
   }
   .two-columns-grid-container .two-columns-grid :nth-child(1) {
     grid-column: span 2;
@@ -1230,10 +1232,7 @@ table tbody tr:last-child {
     flex-direction: row;
   }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card-content {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    margin: 30px;
   }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card .image-section img {
   width: 100%;
