@@ -1203,9 +1203,9 @@ table tbody tr:last-child {
 }
 
 @media (min-width: 768px) {
-  .two-columns-image .swiper-container {
+  /*.two-columns-image .swiper-container {
     display: none;
-  }
+  } */
   .two-columns-grid-container {
     margin-top: 300px;
     z-index: 1;
