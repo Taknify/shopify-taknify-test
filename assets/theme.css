@@ -1337,7 +1337,7 @@ table tbody tr:last-child {
   font-size: 28px; 
  }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card-content {
-    margin: 40px 10px 40px 60px;
+    margin: 40px 0 40px 60px;
   }
 
 }
