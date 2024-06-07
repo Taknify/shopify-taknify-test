@@ -1266,6 +1266,7 @@ table tbody tr:last-child {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 0;
+   margin-top: 0;
  }
 .two-columns-grid-container .card .card-content .text-icons {
   padding-left: 15px;
