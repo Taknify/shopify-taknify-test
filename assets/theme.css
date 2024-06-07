@@ -1231,6 +1231,12 @@ table tbody tr:last-child {
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card {
     flex-direction: row;
   }
+  .two-columns-grid-container .two-columns-grid .grid-item:first-child .card-content {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
   .two-columns-grid-container .two-columns-grid .grid-item:first-child .card .image-section img {
   width: 100%;
   height: 100%;
