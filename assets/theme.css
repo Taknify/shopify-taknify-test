@@ -1287,7 +1287,7 @@ table tbody tr:last-child {
   align-items: center;
 }
 
-.two-columns-image .card .card-content .column-button .button-text a {
+.two-columns-grid-container .card .card-content .column-button .button-text a {
   color: #fff;
   background-color: #e80f88;
   font-size: 14px;
