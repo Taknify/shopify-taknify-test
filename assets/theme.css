@@ -1327,11 +1327,11 @@ table tbody tr:last-child {
     margin:15px 260px 15px 260px !important;
   }
   .two-columns-grid-container .two-columns-grid .grid-item:nth-child(even) .card {
-    margin-left: 150px; 
+    margin-left: 260px; 
   }
 
   .two-columns-grid-container .two-columns-grid .grid-item:nth-child(odd) .card {
-    margin-right: 150px; 
+    margin-right: 260px; 
   }
  .two-columns-grid-container .card .card-content h3 {
   font-size: 28px; 
