@@ -1207,9 +1207,9 @@ table tbody tr:last-child {
 }
 
 .two-columns-image .text-buttons h2{
-  font-size: 32px;
+  font-size: 28px;
   line-height: 30px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
 }
