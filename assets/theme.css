@@ -1247,7 +1247,8 @@ table tbody tr:last-child {
   .two-columns .two-columns-grid-container h2 {
     font-size: 30px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 600; 
+    margin-bottom:20px;
   }
   .two-columns-grid-container .two-columns-grid {
     display: grid;
