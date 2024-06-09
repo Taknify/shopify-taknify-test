@@ -1395,6 +1395,9 @@ table tbody tr:last-child {
  .two-columns-grid-container .card .card-content h3 {
   font-size: 28px; 
  }
+  .two-columns .text-buttons a{
+  padding: 10px 60px;
+}
   
 
 }
