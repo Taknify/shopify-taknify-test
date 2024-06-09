@@ -1219,7 +1219,7 @@ table tbody tr:last-child {
   font-size: 14px;
   font-weight: 600;
   border-radius: 8px;
-  border: none;
+  border: 0.5px solid #e80f88;
   text-decoration: none;
   padding: 8px 10px;
 }
