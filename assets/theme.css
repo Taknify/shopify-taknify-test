@@ -1205,7 +1205,12 @@ table tbody tr:last-child {
   text-decoration: none;
   padding: 8px 10px;
 }
-
+.two-columns-image .text-buttons{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:20px;
+}
 .two-columns-image .text-buttons h2{
   font-size: 28px;
   line-height: 30px;
@@ -1213,6 +1218,7 @@ table tbody tr:last-child {
   text-align: center;
   font-weight: 500;
 }
+
 .two-columns-image .text-buttons a{
   color: #e80f88 ;
   background-color: #fff;
