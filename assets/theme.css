@@ -1209,6 +1209,7 @@ table tbody tr:last-child {
   display:flex;
   flex-direction:column;
   justify-content:center;
+  align-items:center;
   gap:20px;
 }
 .two-columns-image .text-buttons h2{
