@@ -1213,6 +1213,18 @@ table tbody tr:last-child {
   text-align: center;
   font-weight: 500;
 }
+.two-columns-image .text-buttons a{
+  color: #e80f88 ;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+
 @media (min-width: 768px) {
   .two-columns-image {
     display: none;
