@@ -1206,7 +1206,13 @@ table tbody tr:last-child {
   padding: 8px 10px;
 }
 
-
+.two-columns-image .text-buttons h2{
+  font-size: 32px;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 500;
+}
 @media (min-width: 768px) {
   .two-columns-image {
     display: none;
