@@ -1084,6 +1084,9 @@ table tbody tr:last-child {
   position: relative;
   z-index: 5;
 }
+.two-columns-grid-container{
+  display:none;
+}
 
 .two-columns-image h2 {
   font-size: 30px;
