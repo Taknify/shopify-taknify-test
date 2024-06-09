@@ -1228,7 +1228,7 @@ table tbody tr:last-child {
   border: 0.5px solid #e80f88;
   text-decoration: none;
   padding: 8px 10px;
-  
+  margin-bottom: 20px;
 }
 
 
