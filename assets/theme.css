@@ -1347,14 +1347,14 @@ table tbody tr:last-child {
   align-items:center;
   gap:18px;
 }
-.two-columns-image .text-buttons h2{
+.two-columns-grid-container .text-buttons h2{
   font-size: 28px;
   line-height: 30px;
   text-align: center;
   font-weight: 500;
 }
 
-.two-columns-image .text-buttons a{
+.two-columns-grid-container .text-buttons a{
   color: #e80f88 ;
   background-color: #fff;
   font-size: 14px;
