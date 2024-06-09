@@ -1088,7 +1088,7 @@ table tbody tr:last-child {
   display:none;
 }
 
-.two-columns-image h2, .two-columns-grid-container h2{
+.two-columns-image h2{
   font-size: 30px;
   line-height: 30px;
   margin-bottom: 0;
