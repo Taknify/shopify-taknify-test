@@ -1340,21 +1340,21 @@ table tbody tr:last-child {
   padding: 8px 10px;
 }
 
-  .two-columns-grid-container .text-buttons{
+  .two-columns-grid .text-buttons{
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   gap:18px;
 }
-.two-columns-grid-container .text-buttons h2{
+.two-columns-grid .text-buttons h2{
   font-size: 28px;
   line-height: 30px;
   text-align: center;
   font-weight: 500;
 }
 
-.two-columns-grid-container .text-buttons a{
+.two-columns-grid .text-buttons a{
   color: #e80f88 ;
   background-color: #fff;
   font-size: 14px;
