@@ -1222,6 +1222,8 @@ table tbody tr:last-child {
   border: 0.5px solid #e80f88;
   text-decoration: none;
   padding: 8px 10px;
+  text-align:center;
+  margin-top: 15px;
 }
 
 
