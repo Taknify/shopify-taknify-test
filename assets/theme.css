@@ -1213,6 +1213,7 @@ table tbody tr:last-child {
   }
 
   .two-columns-grid-container {
+    display:block;
     margin-top: 200px;
     z-index: 5;
     position:relative;
