@@ -1340,7 +1340,7 @@ table tbody tr:last-child {
   padding: 8px 10px;
 }
 
-  .two-columns-image .text-buttons{
+  .two-columns-grid-container .text-buttons{
   display:flex;
   flex-direction:column;
   justify-content:center;
