@@ -1416,6 +1416,12 @@ table tbody tr:last-child {
   text-align: center;
   font-weight: 600;
 }
+.three-grid-columns h3{
+  font-size: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: 600;
+}
 
 .two-columns-image .swiper-container {
   width: 100%;
