@@ -1565,7 +1565,7 @@ table tbody tr:last-child {
 
 @media (min-width: 1024px){
   .three-grid-columns .card {
-  width: 390px;
+  width: 400px;
 }
 .three-grid-columns .card .image-section img {
   max-width: 400px;
