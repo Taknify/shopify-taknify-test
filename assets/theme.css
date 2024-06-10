@@ -1563,7 +1563,7 @@ table tbody tr:last-child {
 }
 
 .three-grid-columns .card {
-  margin: 10px 0;
+  margin: 10px 10px;
   border-radius: 8px;
   width: 380px;
   overflow: visible;
