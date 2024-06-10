@@ -1542,10 +1542,10 @@ table tbody tr:last-child {
   max-width: 400px;
 }
 .three-grid-columns .swiper-button-prev {
-  left: 80px;
+  left: 100px;
 }
 
 .three-grid-columns .swiper-button-next {
-  right: 80px;
+  right: 100px;
 }
 }
