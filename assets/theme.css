@@ -795,6 +795,17 @@ table tbody tr:last-child {
   margin: 10px 0 20px 0;
   font-weight: 400;
 }
+.two-columns .text-buttons a{
+  color: #e80f88 ;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 0.5px solid #e80f88;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
 
 @media (min-width: 469px) {
   .image-with-text .text-description h2 {
