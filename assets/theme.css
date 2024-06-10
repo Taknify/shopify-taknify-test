@@ -1551,7 +1551,5 @@ table tbody tr:last-child {
 }
 
 @media (min-width: 1280px){
-  .three-grid-columns .swiper-slide {
-  margin: 10px;
-}
+  
 }
