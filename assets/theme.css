@@ -1494,6 +1494,7 @@ table tbody tr:last-child {
 }
 .three-grid-columns .card .card-content .text-info {
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .three-grid-columns .card .card-content .learn-more {
