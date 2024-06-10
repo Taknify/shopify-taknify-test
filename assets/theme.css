@@ -805,6 +805,7 @@ table tbody tr:last-child {
   text-decoration: none;
   padding: 10px 30px;
   margin-bottom: 30px;
+  text-align:center;
 }
 
 @media (min-width: 469px) {
