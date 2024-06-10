@@ -1552,12 +1552,22 @@ table tbody tr:last-child {
 
 @media (min-width: 1280px){
   .three-grid-columns .swiper-slide {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .three-grid-columns .card {
   margin: 10px 0;
 }
 
+}
+
+
+@media (min-width: 1024px){
+  .three-grid-columns .card {
+  width: 390px;
+}
+.three-grid-columns .card .image-section img {
+  max-width: 400px;
+}
 }
