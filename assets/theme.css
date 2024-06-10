@@ -1423,6 +1423,7 @@ table tbody tr:last-child {
 }
 
 .three-grid-columns .swiper-container {
+  margin-top:0px;
   width: 100%;
   position: relative;
   overflow: hidden;
