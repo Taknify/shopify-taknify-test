@@ -1217,6 +1217,7 @@ table tbody tr:last-child {
   line-height: 30px;
   text-align: center;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .two-columns-image .text-buttons a{
