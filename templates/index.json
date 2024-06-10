@@ -556,7 +556,15 @@
         "text_6BB4Fy"
       ],
       "settings": {
-        "Heading": "Sitmag Amet Facilisis En Magna Etiam"
+        "Heading": "Sitmag Amet Facilisis En Magna Etiam",
+        "BlogUrl": ""
+      }
+    },
+    "three_grid_columns_dyp8pk": {
+      "type": "three-grid-columns",
+      "settings": {
+        "Heading": "Pulvinar Neque Laoreet Suspendisse",
+        "SubHeading": "Lorem ipsum dolor sit amet, consectetur elit,labore et dolore magna aliqua."
       }
     }
   },
@@ -571,6 +579,7 @@
     "reviews_VDFyDi",
     "image_with_text2_JQinM9",
     "five_tabs_cwERdD",
-    "two_columns_image_text_qVRcEK"
+    "two_columns_image_text_qVRcEK",
+    "three_grid_columns_dyp8pk"
   ]
 }
