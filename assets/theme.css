@@ -1541,4 +1541,11 @@ table tbody tr:last-child {
 .three-grid-columns .card .image-section img {
   max-width: 400px;
 }
+.three-grid-columns .swiper-button-prev {
+  left: 20px;
+}
+
+.three-grid-columns .swiper-button-next {
+  right: 20px;
+}
 }
