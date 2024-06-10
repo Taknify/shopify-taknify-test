@@ -1539,12 +1539,6 @@ table tbody tr:last-child {
   width: 370px;
 }
 .three-grid-columns .card .image-section img {
-  aspect-ratio: 3/2;
-  width: 100%;
   max-width: 400px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
 }
 }
