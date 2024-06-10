@@ -1551,5 +1551,27 @@ table tbody tr:last-child {
 }
 
 @media (min-width: 1280px){
-  
+  .three-grid-columns .swiper-slide {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  margin-top: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+  scroll-snap-align: start;
+}
+
+.three-grid-columns .card {
+  margin: 10px 0;
+  border-radius: 8px;
+  width: 380px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 }
