@@ -1499,6 +1499,7 @@ table tbody tr:last-child {
 
 .three-grid-columns .card .card-content .learn-more {
   padding-left: 15px;
+  margin-bottom: 10px;
 }
 .three-grid-columns .card .card-content .learn-more a {
   color: #e80f88;
