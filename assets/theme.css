@@ -1249,7 +1249,7 @@ table tbody tr:last-child {
     font-size: 30px;
     text-align: center;
     font-weight: 600; 
-    margin-bottom:20px;
+    margin-bottom:30px;
   }
   .two-columns-grid-container .two-columns-grid {
     display: grid;
