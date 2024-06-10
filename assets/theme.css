@@ -1536,7 +1536,7 @@ table tbody tr:last-child {
 
 @media (min-width: 768px){
   .three-grid-columns .card {
-  width: 380px;
+  width: 370px;
 }
 .three-grid-columns .card .image-section img {
   aspect-ratio: 3/2;
