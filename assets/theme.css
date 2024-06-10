@@ -1423,7 +1423,6 @@ table tbody tr:last-child {
 }
 
 .three-grid-columns .swiper-container {
-  margin-top:0px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -1466,7 +1465,7 @@ table tbody tr:last-child {
   scroll-snap-align: start;
 }
 .three-grid-columns .card {
-  margin: 20px 40px;
+  margin: 10px 40px;
   border-radius: 8px;
   width: 380px;
   overflow: visible;
