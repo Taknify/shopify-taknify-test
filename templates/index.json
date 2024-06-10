@@ -562,6 +562,49 @@
     },
     "three_grid_columns_dyp8pk": {
       "type": "three-grid-columns",
+      "blocks": {
+        "text_yMTP8y": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/man-2564902_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
+            "LearnMore": "",
+            "Text": "Free",
+            "Button": "",
+            "ButtonName": "fusce ut"
+          }
+        },
+        "text_MVnc9J": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-6771278_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
+            "LearnMore": "",
+            "Text": "Free",
+            "Button": "",
+            "ButtonName": "fusce ut"
+          }
+        },
+        "text_QwCkVQ": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/beanie-2562646_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
+            "LearnMore": "",
+            "Text": "Free",
+            "Button": "",
+            "ButtonName": "fusce ut"
+          }
+        }
+      },
+      "block_order": [
+        "text_yMTP8y",
+        "text_MVnc9J",
+        "text_QwCkVQ"
+      ],
       "settings": {
         "Heading": "Pulvinar Neque Laoreet Suspendisse",
         "SubHeading": "Lorem ipsum dolor sit amet, consectetur elit,labore et dolore magna aliqua."
