@@ -1541,7 +1541,7 @@ table tbody tr:last-child {
 .three-grid-columns .card .image-section img {
   aspect-ratio: 3/2;
   width: 100%;
-  max-width: 390px;
+  max-width: 400px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
