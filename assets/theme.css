@@ -1603,6 +1603,10 @@ table tbody tr:last-child {
   align-items: center;
 }
 
-.faq .question h3{
-  font-size: 18px; 
+.faq .answer p{
+  font-size: 14px; 
+  padding-top: 10px;
+  line-height: 16px;
+  
 }
+
