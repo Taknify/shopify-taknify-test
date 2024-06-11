@@ -1601,7 +1601,7 @@ table tbody tr:last-child {
   margin-bottom:0;
 }
 .faq .question h3{
-  font-weight:500;
+  font-weight:600;
 }
 .faq .answer{
   max-height: 0;
