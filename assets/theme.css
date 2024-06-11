@@ -1602,7 +1602,7 @@ table tbody tr:last-child {
 
 .faq .answer p{
   font-size: 14px; 
-  padding-top: 10px;
+  padding-top: 2px;
   line-height: 16px;
   
 }
