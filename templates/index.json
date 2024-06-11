@@ -640,11 +640,35 @@
             "Questions": "Sed do eiusmod tempor incididunt?",
             "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           }
+        },
+        "accordion_6x94hH": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_K8iNei": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_CiEaPU": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
         }
       },
       "block_order": [
         "accordion_qdkcmW",
-        "accordion_Rcchyd"
+        "accordion_Rcchyd",
+        "accordion_6x94hH",
+        "accordion_K8iNei",
+        "accordion_CiEaPU"
       ],
       "settings": {
         "Heading": "Frequently Asked Questions"
