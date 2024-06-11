@@ -1654,3 +1654,9 @@ table tbody tr:last-child {
   margin: 10px 320px 0 320px; 
 }
 }
+
+@media (min-width: 1450px){
+  .faq{
+    margin:10px 400px 0 400px;
+  }
+}
