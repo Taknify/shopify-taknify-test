@@ -1592,4 +1592,5 @@ table tbody tr:last-child {
   margin-top: 20px;
   padding-bottom: 10px;
   border-bottom:1px solid #31363F;
+  cursor:pointer;
 }
