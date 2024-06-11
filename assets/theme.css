@@ -1590,7 +1590,7 @@ table tbody tr:last-child {
   max-width: 700px;
   margin-top: 10px;
   padding-bottom: 10px;
-  border-bottom:0.8px solid #31363F;
+  border-bottom:0.4px solid #31363F;
   cursor:pointer;
   
 }
