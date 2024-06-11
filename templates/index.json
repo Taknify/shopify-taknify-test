@@ -623,6 +623,12 @@
         "ButtonLink": "",
         "ButtonText": "Blandit Aliquam Etiam"
       }
+    },
+    "fa_qs_bk6gyL": {
+      "type": "FAQs",
+      "settings": {
+        "Heading": "Frequently Asked Questions"
+      }
     }
   },
   "order": [
@@ -638,6 +644,7 @@
     "five_tabs_cwERdD",
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
-    "image_with_text2_YYzWrx"
+    "image_with_text2_YYzWrx",
+    "fa_qs_bk6gyL"
   ]
 }
