@@ -1581,14 +1581,14 @@ table tbody tr:last-child {
 
 .accordion h2{
   font-size: 24px;
-  margin-bottom: 0;
+  margin-bottom: 2px;
   text-align: center;
   font-weight: 500;
 }
 
 .faq{
   max-width: 700px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-bottom: 10px;
   border-bottom:1px solid #31363F;
   cursor:pointer;
