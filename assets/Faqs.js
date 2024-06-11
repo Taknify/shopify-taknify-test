@@ -5,5 +5,5 @@ document.addEventListener('DOMContentLoaded', function(){
   faq.addEventListener("click",() =>{
     faq.classList.toggle("active");
   })  
-}
+})
 })
