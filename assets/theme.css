@@ -1638,3 +1638,9 @@ table tbody tr:last-child {
     transform:translateY(0px);
   }
 }
+
+@media (min-width: 768px){
+  .faq{
+  margin-top: 10px 50px 0 50px; 
+}
+}
