@@ -1613,6 +1613,7 @@ table tbody tr:last-child {
 
 .faq.active .answer{
   max-height: 300px;
+  animation: fade 1s ease-in-out;
 }
 
 .faq.active svg{
@@ -1622,4 +1623,15 @@ table tbody tr:last-child {
 .faq svg{
   transition:transform 0.5s ease-in;
   
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+    transform:translateY(-10px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0px);
+  }
 }
