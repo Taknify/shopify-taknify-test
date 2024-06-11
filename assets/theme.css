@@ -1571,5 +1571,12 @@ table tbody tr:last-child {
 .three-grid-columns .card {
   margin: 10px 0;
 }
+}
 
+/*FAQs */
+.accordion{
+  padding: 20px;
+  background-color:#f1f1f1;
+  
+  
 }
