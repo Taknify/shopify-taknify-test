@@ -1615,3 +1615,7 @@ table tbody tr:last-child {
   max-height: 300px;
 }
 
+.faq.active svg{
+  transform:rotate(180deg)
+}
+
