@@ -1620,6 +1620,6 @@ table tbody tr:last-child {
 }
 
 .faq svg{
-  transition:transform;
+  transition:transform 0.5s ease-in;
   
 }
