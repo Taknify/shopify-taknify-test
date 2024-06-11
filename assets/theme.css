@@ -1600,7 +1600,11 @@ table tbody tr:last-child {
   align-items: center;
   margin-bottom:0;
 }
-
+.faq .answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
 .faq .answer p{
   font-size: 14px; 
   line-height: 16px;
