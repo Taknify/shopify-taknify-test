@@ -1600,6 +1600,9 @@ table tbody tr:last-child {
   align-items: center;
   margin-bottom:0;
 }
+.faq .question h3{
+  font-weight:500;
+}
 .faq .answer{
   max-height: 0;
   overflow: hidden;
