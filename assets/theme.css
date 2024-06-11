@@ -1604,6 +1604,6 @@ table tbody tr:last-child {
 .faq .answer p{
   font-size: 14px; 
   line-height: 16px;
-  
+  margin-top:0;
 }
 
