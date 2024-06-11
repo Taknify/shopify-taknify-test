@@ -1,11 +1,18 @@
-<section class="FAQs">
+<section class="accordion">
   <h2>{{ section.settings.Heading }}</h2>
+  {% for block in section.blocks %}
+    <div class="faq">
+      <div class="question">
+      </div>
+      
+    </div>
+  {% endfor %}
   
 </section>
 
 {% schema %}
   {
-    "name": "Section name",
+    "name": "FAQs",
     "settings": [
       {
         "type":"text",
@@ -13,6 +20,24 @@
         "label":"Title",
         "default":"Frequently Asked Questions"
       }
-    ]
+    ],
+    "presets": [
+      {
+        "name":"FAQs",
+        "category":"FAQs"
+      }
+    ],
+    "blocks":[{
+      "type":"accordion",
+      "name":"questions",
+      "settings":[
+        {
+          "type":"textarea",
+          "id":"Question",
+          "label":"Questions",
+          "default":"Sed do eiusmod tempor incididunt ut labore et?"
+        }
+      ]
+    }]
   }
 {% endschema %}
