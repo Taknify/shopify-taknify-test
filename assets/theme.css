@@ -1616,6 +1616,9 @@ table tbody tr:last-child {
 }
 
 .faq.active svg{
-  transform:rotate(180deg)
+  transform:rotate(180deg);
 }
 
+.faq svg{
+  
+}
