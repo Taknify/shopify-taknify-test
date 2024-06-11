@@ -1607,3 +1607,7 @@ table tbody tr:last-child {
   margin-top:0;
 }
 
+.faq.active .answer{
+  max-height: 300px;
+}
+
