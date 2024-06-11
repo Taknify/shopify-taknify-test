@@ -626,6 +626,42 @@
     },
     "fa_qs_bk6gyL": {
       "type": "FAQs",
+      "blocks": {
+        "accordion_EcDMPV": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt ut labore et?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_9xTTHe": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt ut labore et?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_EeYerG": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt ut labore et?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_AAE79d": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt ut labore et?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        }
+      },
+      "block_order": [
+        "accordion_EcDMPV",
+        "accordion_9xTTHe",
+        "accordion_EeYerG",
+        "accordion_AAE79d"
+      ],
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
