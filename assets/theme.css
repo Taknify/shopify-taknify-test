@@ -1598,6 +1598,7 @@ table tbody tr:last-child {
   display:flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom:0;
 }
 
 .faq .answer p{
