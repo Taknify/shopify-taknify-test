@@ -1641,6 +1641,11 @@ table tbody tr:last-child {
 
 @media (min-width: 768px){
   .faq{
-  margin: 10px 110px 0 110px; 
+  margin: 10px 120px 0 120px; 
+}
+}
+@media (min-width: 1024px){
+  .faq{
+  margin: 10px 140px 0 140px; 
 }
 }
