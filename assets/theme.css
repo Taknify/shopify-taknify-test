@@ -1593,4 +1593,6 @@ table tbody tr:last-child {
   padding-bottom: 10px;
   border-bottom:1px solid #31363F;
   cursor:pointer;
+  display: flex;
+  flex-direction: column;
 }
