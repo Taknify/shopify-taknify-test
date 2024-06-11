@@ -1,0 +1,1 @@
+const faqs = document.querySelectorAll(".faq")
