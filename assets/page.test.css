@@ -1,11 +1,6 @@
-.front-page-banner {
-  padding: 15px;
-  position: relative;
-}
-
 .front-page-banner .Headings {
   display: flex;
-  justify-content: space-between; /* Align items at the center and the right */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -13,22 +8,26 @@
   font-weight: 900;
 }
 
+.front-page-banner .Headings .heading {
+  flex-grow: 1; /* Let the heading take up remaining space */
+  text-align: center; /* Center the text */
+}
+
 .front-page-banner .Headings .heading a {
   color: #151515 !important;
   text-decoration: none;
   position: relative;
-  border-bottom: 2px solid transparent; /* Add bottom border */
+  border-bottom: 2px solid transparent;
 }
 
 .front-page-banner .Headings .heading a:hover {
-  border-color: #151515; /* Change border color on hover */
+  border-color: #151515;
 }
 
 .image-section img {
   width: 100%;
   object-fit: cover;
 }
-
 
 .swiper-container {
   overflow: hidden; 
