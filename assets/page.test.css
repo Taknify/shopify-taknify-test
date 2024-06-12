@@ -1,31 +1,34 @@
 .front-page-banner {
   padding: 15px;
-  position: relative; /* Ensure proper stacking context */
+  position: relative;
 }
 
 .front-page-banner .Headings {
-  position: absolute; /* Position link absolutely */
-  top: 10px; /* Adjust the top position as needed */
-  left: 50%; /* Position link at the horizontal center */
-  transform: translateX(-50%); /* Center the link horizontally */
-  z-index: 2; /* Ensure the link is above the images */
+  display: flex;
+  justify-content: space-between; /* Align items at the center and the right */
+  align-items: center;
 }
 
 .front-page-banner .Headings .icon {
-  position: absolute;
-  right: 0;
   font-weight: 900;
 }
 
 .front-page-banner .Headings .heading a {
   color: #151515 !important;
   text-decoration: none;
+  position: relative;
+  border-bottom: 2px solid transparent; /* Add bottom border */
+}
+
+.front-page-banner .Headings .heading a:hover {
+  border-color: #151515; /* Change border color on hover */
 }
 
 .image-section img {
   width: 100%;
   object-fit: cover;
 }
+
 
 .swiper-container {
   overflow: hidden; 
