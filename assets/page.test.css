@@ -117,21 +117,4 @@
   border-radius: 5px; /* Add border radius as needed */
 }
 
-/* Hide the select dropdown arrow */
-.shade-selector select::-ms-expand {
-  display: none;
-}
 
-.shade-selector select::-webkit-select {
-  -webkit-appearance: none;
-  appearance: none;
-  padding-right: 25px;
-  background-image: url('arrow-down.png'); /* Add custom dropdown arrow if needed */
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-.shade-selector select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
-}
