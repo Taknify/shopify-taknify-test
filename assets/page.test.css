@@ -28,14 +28,25 @@
   position: relative;
   border-bottom: 1px solid #151515;
 }
+
 .image-section {
+  position: relative;
   height: 500px;
-   width: 100%;
+  width: 100%;
 }
+
 .image-section img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.pagination-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .swiper-container {
@@ -50,7 +61,7 @@
 }
 
 .swiper-slide {
-  overflow: hidden;
+  position: relative;
 }
 
 .swiper-button-prev,
@@ -61,26 +72,20 @@
 .swiper-pagination-current,
 .swiper-pagination-total {
   color: #151515; 
-  
-}
-.pagination-container {
-  position: absolute;
-  bottom: 10px; 
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
 }
 
 .pagination-container .swiper-pagination {
   display: flex;
   align-items: center;
 }
-.product-description{
-  display:flex;
+
+.product-description {
+  display: flex;
   flex-direction: column;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
+
 .shade-selector {
   margin-top: 20px;
   display: flex;
@@ -92,6 +97,3 @@
   margin-right: 10px;
   font-weight: bold;
 }
-
-
-
