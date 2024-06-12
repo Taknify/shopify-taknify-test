@@ -80,7 +80,7 @@
   margin: 0 2px;
 }
 .swiper-pagination-fraction {
-    left: auto; /* Set left to auto */
+    left: auto;
 }
 .product-description {
   display: flex;
