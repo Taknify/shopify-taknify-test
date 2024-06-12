@@ -79,7 +79,9 @@
   font-weight: bold;
   margin: 0 2px;
 }
-
+.swiper-pagination-fraction {
+    left: auto; /* Set left to auto */
+}
 .product-description {
   display: flex;
   flex-direction: column;
