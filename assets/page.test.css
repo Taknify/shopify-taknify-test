@@ -18,17 +18,9 @@
   color: #151515 !important;
   text-decoration:none;
   position:relative;
+  bottom-border: 1px solid #151515;
 }
 
-.front-page-banner .Headings .heading a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 1px;
-  height: 1px;
-  background-color: #151515;
-}
 .image-section img {
   aspect-ratio:3/3;
   width: 100%;
