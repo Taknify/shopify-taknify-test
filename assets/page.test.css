@@ -20,7 +20,7 @@
   color: #151515 !important;
   text-decoration: none;
   position: relative;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid #151515;
 }
 
 .image-section img {
