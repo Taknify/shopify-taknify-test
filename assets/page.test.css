@@ -1,5 +1,6 @@
 .front-page-banner {
   position: relative;
+  z-index:1;
 }
 
 .front-page-banner .Headings {
