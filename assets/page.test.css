@@ -16,15 +16,11 @@
   text-align: center; 
 }
 
-.front-page-banner .Headings .heading a {
+.front-page-banner .Headings .heading {
   color: #151515 !important;
   text-decoration: none;
   position: relative;
   border-bottom: 2px solid transparent;
-}
-
-.front-page-banner .Headings .heading a:hover {
-  border-color: #151515;
 }
 
 .image-section img {
