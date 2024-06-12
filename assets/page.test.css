@@ -1,3 +1,9 @@
 .front-page-banner{
   padding:15px;
 }
+
+.front-page-banner .Headings{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
