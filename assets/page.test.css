@@ -30,15 +30,13 @@
   background-color: #151515;
 }
 .image-section img {
-  margin-top: 20px;
   aspect-ratio:3/3;
   width: 100%;
-  
-
   object-fit: cover;
 }
 .swiper-container {
   overflow: hidden; 
+  margin-top: 30px;
 }
 .swiper-container,
 .swiper-slide {
