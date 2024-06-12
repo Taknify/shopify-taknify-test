@@ -80,7 +80,7 @@
   margin: 0 2px;
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  left:150px;
+  left:50%;
   top: 100px;
 }
 .product-description {
