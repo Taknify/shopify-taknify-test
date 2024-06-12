@@ -15,7 +15,7 @@
   font-weight:900;
 }
 .front-page-banner .Headings .heading a{
-  color: #151515;
+  color: #151515 !important;
   text-decoration:none;
   position:relative;
 }
