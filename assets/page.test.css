@@ -74,10 +74,23 @@
   color: #151515; 
 }
 
+.pagination-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
 .pagination-container .swiper-pagination {
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
 
 .product-description {
   display: flex;
