@@ -1,44 +1,44 @@
-.front-page-banner{
+.front-page-banner {
   position: relative;
 }
 
-.front-page-banner .Headings{
+.front-page-banner .Headings {
   position: absolute; 
-  top: 10px; 
+  top: 0; 
   left: 50%; 
   transform: translateX(-50%); 
   z-index: 2; 
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
-  padding:0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
 }
 
-.front-page-banner .Headings .icon{
-  position:absolute;
+.front-page-banner .Headings .icon {
+  position: absolute;
   right: 0;
-  font-weight:900;
+  font-weight: 900;
 }
-.front-page-banner .Headings .heading{
+
+.front-page-banner .Headings .heading {
   color: #151515 !important;
-  text-decoration:none;
-  position:relative;
+  text-decoration: none;
+  position: relative;
   border-bottom: 1px solid #151515;
-  
 }
 
 .image-section img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
 }
-
 
 .swiper-container {
   overflow: hidden; 
   margin-top: 30px;
 }
+
 .swiper-container,
 .swiper-slide {
   margin: 0; 
@@ -53,8 +53,9 @@
 .swiper-button-next {
   fill: grey; 
 }
+
 .swiper-pagination-current,
 .swiper-pagination-total {
-  color: #151515; /* Adjust the color as needed */
-  font-weight: bold; /* Add additional styles as needed */
+  color: #151515; 
+  font-weight: bold; 
 }
