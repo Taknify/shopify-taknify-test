@@ -47,3 +47,8 @@
 .swiper-slide {
   overflow: hidden;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  fill: grey; 
+}
