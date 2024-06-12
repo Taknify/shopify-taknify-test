@@ -1,0 +1,116 @@
+<section class="three-grid-columns">
+  <h2>{{section.settings.Heading}}</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="image-section">
+              <img src="{{block.settings.Image |  img_url:'360X240'}}" alt="Image">
+            </div>
+            <div class="card-content">
+              <h3>{{block.settings.TextTopic}}</h3>
+              <p class="text-info"> 
+                {{block.settings.TextInfo}}</p>
+                <div class="learn-more">
+                  <a href="{{block.settings.LearnMore}}">Learn more</a>
+                </div>
+                <div class="column-button">
+                  <div class="text">
+                    {{block.settings.Text}}
+                  </div>
+                  <div class="button-text">
+                    <a href="{{block.settings.Button}}">{{block.settings.ButtonName}}</a>
+                  </div>
+                </div>              
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="pagination-container">
+      <div class="swiper-pagination"></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="swiper-button-prev">
+      <polygon points="15.293 3.293 6.586 12 15.293 20.707 16.707 19.293 9.414 12 16.707 4.707 15.293 3.293"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="swiper-button-next">
+      <polygon points="7.293 4.707 14.586 12 7.293 19.293 8.707 20.707 17.414 12 8.707 3.293 7.293 4.707"/>
+    </svg>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Two-Columns-Image-Text",
+  "settings": [
+    {
+      "type":"text",
+      "id":"Heading",
+      "label":"Heading",
+      "default": "Pulvinar Neque Laoreet Suspendisse"
+    },
+    {
+      "type":"text",
+      "id":"SubHeading",
+      "label":"SubHeading",
+      "default": "Lorem ipsum dolor sit amet, consectetur elit,labore et dolore magna aliqua."
+    }
+    ],
+    "presets":[
+      {
+        "name":"Three-grid-Columns",
+        "category":"Three Grid Columns"
+      }
+    ],
+    "blocks": [
+      {
+        "type":"text",
+        "name":"Columns",
+        "settings":[
+          {             
+          "id": "Image",
+          "type": "image_picker",
+          "label": "Pick a image"         
+          },
+          {
+            "id":"TextTopic",
+            "type":"text",
+            "label":"Heading",
+            "default":"Donec Ultrices Tincidunt"
+          },
+          {
+            "id":"TextInfo",
+            "type":"textarea",
+            "label":"Text Area",
+            "default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra."
+          },
+          {
+            "type":"url",
+            "id":"LearnMore",
+            "label":"Link"
+          },
+          {
+            "id":"Text",
+            "type":"text",
+            "label":"Text",
+            "default":"Free"
+          },
+          {
+            "type":"url",
+            "id":"Button",
+            "label":"Link"
+          },
+          {
+            "id":"ButtonName",
+            "type":"text",
+            "label":"Text",
+            "default":"fusce ut"
+          }
+        ]
+      }
+    ]
+    }
+{% endschema %}

@@ -7,6 +7,9 @@
       <h2>{{ section.settings.TextHeading }}</h2>
       <p class="text-name">{{ section.settings.TextName }}</p>
       <p class="text-info">{{ section.settings.TextInfo }}</p>
+      {% if section.settings.ButtonText != blank %}
+      <a href="{{section.settings.ButtonLink  }}">{{ section.settings.ButtonText }}</a>
+    {% endif %}
     </div>     
   </div>
 </section>
@@ -48,6 +51,16 @@
         "id":"HeadingColor",
         "label":"Heading color",
         "default":"#E80F88"
+      },
+      {
+       "type":"url",
+        "id":"ButtonLink",
+        "label":"Button Link"
+      },
+      {
+        "type":"text",
+        "id":"ButtonText",
+        "label":"Button Text"
       }
     ],
     "presets": [

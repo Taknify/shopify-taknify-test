@@ -93,7 +93,7 @@
       ],
       "settings": {
         "BannerImage": "shopify:\/\/shop_images\/pexels-anastasiya-gepp-654466-1462637.jpg",
-        "TextHeading": "elei donec pretium vulputate sapien nec",
+        "TextHeading": "elei donec pretium vulput sapien nec",
         "TextInfo": "Lorem ipsum dolor sit amet, sed do. Odio ut enim blandit maecenas volutpat bland.",
         "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur ut adipiscing elit, sed do eiusmod tempor do incididunt ut labore et dolore magna aliqua. Odiout enim blandit volutpat maecenas volutpat blandit.",
         "HeadingColor": "#e80f88",
@@ -406,7 +406,9 @@
         "TextHeading": "Pretium Vulpute Sapien",
         "TextName": "Maecenas, Volutpat Bland",
         "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo a diam sollicitudin tempor id eu nisl nunc. Magna etiam tempor orci eu. Amet aliquam id diam maecenas. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. Nunc aliquet bibendum enim facilisis gravida.",
-        "HeadingColor": "#e80f88"
+        "HeadingColor": "#e80f88",
+        "ButtonLink": "",
+        "ButtonText": ""
       }
     },
     "five_tabs_cwERdD": {
@@ -556,7 +558,120 @@
         "text_6BB4Fy"
       ],
       "settings": {
-        "Heading": "Sitmag Amet Facilisis En Magna Etiam"
+        "Heading": "Sitmag Amet Facilisis En Magna Etiam",
+        "BlogUrl": ""
+      }
+    },
+    "three_grid_columns_dyp8pk": {
+      "type": "three-grid-columns",
+      "blocks": {
+        "text_yMTP8y": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/man-2564902_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
+            "LearnMore": "",
+            "Text": "Free",
+            "Button": "",
+            "ButtonName": "fusce ut"
+          }
+        },
+        "text_MVnc9J": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/woman-6771278_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
+            "LearnMore": "",
+            "Text": "Free",
+            "Button": "",
+            "ButtonName": "fusce ut"
+          }
+        },
+        "text_QwCkVQ": {
+          "type": "text",
+          "settings": {
+            "Image": "shopify:\/\/shop_images\/beanie-2562646_1280.jpg",
+            "TextTopic": "Donec Ultrices Tincidunt",
+            "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
+            "LearnMore": "",
+            "Text": "Free",
+            "Button": "",
+            "ButtonName": "fusce ut"
+          }
+        }
+      },
+      "block_order": [
+        "text_yMTP8y",
+        "text_MVnc9J",
+        "text_QwCkVQ"
+      ],
+      "settings": {
+        "Heading": "Pulvinar Neque Laoreet Suspendisse",
+        "SubHeading": "Lorem ipsum dolor sit amet, consectetur elit,labore et dolore magna aliqua."
+      }
+    },
+    "image_with_text2_YYzWrx": {
+      "type": "image-with-text2",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/man-2564902_1280.jpg",
+        "TextHeading": "Pretium Vulpute Sapien",
+        "TextName": "Maecenas, Volutpat Bland",
+        "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo a diam sollicitudin tempor id eu nisl nunc. Magna etiam tempor orci eu. Amet aliquam id diam maecenas.",
+        "HeadingColor": "#e80f88",
+        "ButtonLink": "",
+        "ButtonText": "Blandit Aliquam Etiam"
+      }
+    },
+    "fa_qs_bk6gyL": {
+      "type": "FAQs",
+      "blocks": {
+        "accordion_qdkcmW": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_Rcchyd": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_6x94hH": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_K8iNei": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        },
+        "accordion_CiEaPU": {
+          "type": "accordion",
+          "settings": {
+            "Questions": "Sed do eiusmod tempor incididunt?",
+            "Answers": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qdkcmW",
+        "accordion_Rcchyd",
+        "accordion_6x94hH",
+        "accordion_K8iNei",
+        "accordion_CiEaPU"
+      ],
+      "settings": {
+        "Heading": "Frequently Asked Questions"
       }
     }
   },
@@ -571,6 +686,9 @@
     "reviews_VDFyDi",
     "image_with_text2_JQinM9",
     "five_tabs_cwERdD",
-    "two_columns_image_text_qVRcEK"
+    "two_columns_image_text_qVRcEK",
+    "three_grid_columns_dyp8pk",
+    "image_with_text2_YYzWrx",
+    "fa_qs_bk6gyL"
   ]
 }
