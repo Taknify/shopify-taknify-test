@@ -71,7 +71,7 @@
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  z-index:3;
+  z-index:4;
 }
 
 .swiper-pagination-current,
@@ -91,6 +91,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 .product-description h2{
   font-size: 15px;
