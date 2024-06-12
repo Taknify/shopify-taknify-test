@@ -106,10 +106,32 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.shade-selector label {
-  margin-right: 10px;
-  font-weight: bold;
+/* Style the select element */
+.shade-selector select {
+  width: 70%;
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Add border as needed */
+  border-radius: 5px; /* Add border radius as needed */
+}
+
+/* Hide the select dropdown arrow */
+.shade-selector select::-ms-expand {
+  display: none;
+}
+
+.shade-selector select::-webkit-select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding-right: 25px;
+  background-image: url('arrow-down.png'); /* Add custom dropdown arrow if needed */
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.shade-selector select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
