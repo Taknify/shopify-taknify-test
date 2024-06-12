@@ -37,6 +37,11 @@
 .swiper-container {
   overflow: hidden; 
 }
+.swiper-container,
+.swiper-slide {
+  margin: 0; 
+  padding: 0; 
+}
 
 .swiper-slide {
   overflow: hidden;
