@@ -18,4 +18,15 @@
   color: #151515;
   text-decoration:none;
   border-bottom: 1px solid #151515;
+  position:relative;
+}
+
+.front-page-banner .Headings a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px; /* Adjust this value to move the border up or down */
+  height: 1px;
+  background-color: #151515;
 }
