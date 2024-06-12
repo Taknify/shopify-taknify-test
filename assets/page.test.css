@@ -44,7 +44,7 @@
 .pagination-container {
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 100%;
   transform: translateX(-50%);
   z-index: 3;
 }
