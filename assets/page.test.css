@@ -30,6 +30,7 @@
 }
 .image-section {
   height: 500px;
+   width: 100%;
 }
 .image-section img {
   width: 100%;
