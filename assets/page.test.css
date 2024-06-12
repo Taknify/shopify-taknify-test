@@ -212,6 +212,8 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  position: relative; 
+  z-index: 1;
 }
 
 .shade-selector select {
