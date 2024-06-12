@@ -76,4 +76,17 @@
   align-items: center;
 }
 
+.shade-selector {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shade-selector label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+
 
