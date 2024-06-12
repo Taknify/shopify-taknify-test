@@ -12,8 +12,8 @@
 }
 
 .front-page-banner .Headings .heading {
-  flex-grow: 1; /* Let the heading take up remaining space */
-  text-align: center; /* Center the text */
+  flex-grow: 1; 
+  text-align: center; 
 }
 
 .front-page-banner .Headings .heading a {
