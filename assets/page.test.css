@@ -12,5 +12,8 @@
 .front-page-banner .Headings .icon{
   position:absolute;
   right: 0;
- 
+  font-weight:600;
+}
+.front-page-banner .Headings a{
+  color: #151515;
 }
