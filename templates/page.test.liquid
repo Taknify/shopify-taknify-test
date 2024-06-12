@@ -75,9 +75,7 @@
           loop: true,
           pagination: {
             el: '.swiper-pagination',
-            renderCustom: function (swiper, current, total) {
-    return '<span class="swiper-pagination-current">' + current + '</span> / <span class="swiper-pagination-total">' + total + '</span>';
-  }
+            renderCustom: function (swiper, current, total) {return '<span class="swiper-pagination-current">' + current + '</span> / <span class="swiper-pagination-total">' + total + '</span>';}
           },
           navigation: {
             nextEl: '.swiper-button-next',
