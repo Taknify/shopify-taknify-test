@@ -6,12 +6,11 @@
   display:flex;
   justify-content:center;
   align-items:center;
+  position:relative;
 }
-.front-page-banner .Headings a{
-  text-align:center;
- 
-}
+
 .front-page-banner .Headings .icon{
-  margin-left:auto;
+  position:absolute;
+  right: 0;
  
 }
