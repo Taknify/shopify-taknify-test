@@ -69,26 +69,14 @@
   fill: #D8D9DA; 
 }
 
-.swiper-pagination-current,
-.swiper-pagination-total {
-  color: #151515; 
-}
-
-.pagination-container {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-}
-
-.pagination-container .swiper-pagination {
+.swiper-pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .swiper-pagination-current,
@@ -97,6 +85,7 @@
   font-size: 16px; 
   font-weight: bold;
 }
+
 .product-description {
   display: flex;
   flex-direction: column;
