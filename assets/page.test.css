@@ -20,7 +20,7 @@
   position:relative;
 }
 
-.front-page-banner .Headings .heading ::after {
+.front-page-banner .Headings .heading a::after {
   content: "";
   position: absolute;
   left: 0;
