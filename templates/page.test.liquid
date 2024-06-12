@@ -21,27 +21,21 @@
         <div class="swiper-slide">
           <div class="image-section">
             <img src="{{'front-image2.jpg' | asset_url }}" alt="Image">
-            <div class="pagination-container">
-              <div class="swiper-pagination"></div>
-            </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="image-section">
             <img src="{{'front-image3.jpg' |asset_url }}" alt="Image">
-            <div class="pagination-container">
-              <div class="swiper-pagination"></div>
-            </div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="image-section">
             <img src="{{'front-page4.jpg' |asset_url }}" alt="Image">
-            <div class="pagination-container">
-              <div class="swiper-pagination"></div>
-            </div>
           </div>
         </div>
+      </div>
+      <div class="pagination-container">
+        <div class="swiper-pagination"></div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="swiper-button-prev">
         <polygon points="15.293 3.293 6.586 12 15.293 20.707 16.707 19.293 9.414 12 16.707 4.707 15.293 3.293"/>
@@ -105,4 +99,9 @@
           event.stopPropagation();
         });
       } else {
-        console.error('Swiper container
+        console.error('Swiper container not found');
+      }
+    });
+  </script>
+</body>
+</html>
