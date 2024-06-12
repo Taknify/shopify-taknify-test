@@ -81,7 +81,7 @@
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   left:150px;
-  top: 50px;
+  top: 100px;
 }
 .product-description {
   display: flex;
