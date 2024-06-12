@@ -8,6 +8,7 @@
   align-items:center;
 }
 
-.front-page-banner .Headings svg{
-  color: #72311f;
+.front-page-banner .Headings .icon{
+  justify-self:flex-end;
+ 
 }
