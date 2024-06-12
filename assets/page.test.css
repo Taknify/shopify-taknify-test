@@ -91,15 +91,15 @@
   align-items: center;
 }
 .product-description h2{
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   margin-bottom:0;
   text-transform:uppercase;
 }
 .product-description h3{
   font-size: 18px;
-  font-weight: 500;
-  margin-top:5px;
+  font-weight: 600;
+  margin-top:10px;
 }
 
 .shade-selector {
