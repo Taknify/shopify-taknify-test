@@ -1,31 +1,32 @@
-.front-page-banner{
-  padding:15px;
+.front-page-banner {
+  padding: 15px;
+  position: relative; /* Ensure proper stacking context */
 }
 
-.front-page-banner .Headings{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  position:relative;
+.front-page-banner .Headings {
+  position: absolute; /* Position link absolutely */
+  top: 10px; /* Adjust the top position as needed */
+  left: 50%; /* Position link at the horizontal center */
+  transform: translateX(-50%); /* Center the link horizontally */
+  z-index: 2; /* Ensure the link is above the images */
 }
 
-.front-page-banner .Headings .icon{
-  position:absolute;
+.front-page-banner .Headings .icon {
+  position: absolute;
   right: 0;
-  font-weight:900;
+  font-weight: 900;
 }
-.front-page-banner .Headings .heading {
+
+.front-page-banner .Headings .heading a {
   color: #151515 !important;
-  text-decoration:none;
-  position:relative;
-   border-bottom: 2px solid #151515;
+  text-decoration: none;
 }
 
 .image-section img {
-  aspect-ratio:3/3;
   width: 100%;
   object-fit: cover;
 }
+
 .swiper-container {
   overflow: hidden; 
   margin-top: 30px;
