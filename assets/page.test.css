@@ -14,13 +14,13 @@
   right: 0;
   font-weight:900;
 }
-.front-page-banner .Headings a{
+.front-page-banner .Headings .heading a{
   color: #151515;
   text-decoration:none;
   position:relative;
 }
 
-.front-page-banner .Headings a::after {
+.front-page-banner .Headings .heading a::after {
   content: "";
   position: absolute;
   left: 0;
