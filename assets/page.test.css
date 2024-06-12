@@ -79,9 +79,10 @@
   font-weight: bold;
   margin: 0 2px;
 }
-.swiper-pagination-fraction {
-    left: auto;
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+   left: auto;
 }
+
 .product-description {
   display: flex;
   flex-direction: column;
