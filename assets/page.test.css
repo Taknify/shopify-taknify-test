@@ -249,34 +249,18 @@
         padding: 10px 20px;
         z-index: 3;
       }
-       .product-description .search-store{
-          margin-top:10px;
-          margin-bottom: 20px;
-      }
-     .swiper-button-prev,
-     .swiper-button-next {
-        width: 100px;
-        height: 200px;
-      }
      .product-description .search-store{
       position:absolute;
       top:460px;
       right: -70px;
       }
-      .product-description .search-store a{
-        font-size:14px;
-      }
+
      .product-description .help{
       display:block;
       position:absolute;
       top: 470px;
       right: -190px;
      }
-     .product-description .help a{
-      color: #151515 !important;
-      text-decoration: none;
-      border-bottom: 1px solid #151515;
-      font-size: 14px;
-    }
+
 }
 
