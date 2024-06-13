@@ -407,6 +407,7 @@
     grid-template-columns:repeat(3, 1fr);
     gap: 5px;
     padding:20px;
+    margin-top:20px;
   }
   .two-columns-grid .first-column{
     grid-column: span 2;
