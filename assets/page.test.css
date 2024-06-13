@@ -195,7 +195,6 @@
       }
       .front-page-banner .Headings.scrolled {
         background-color: transparent; 
-        position:absolute;
       }
      .swiper-button-prev,
      .swiper-button-next {
@@ -228,9 +227,6 @@
   .front-page-banner .Headings {
         justify-content: space-between;
         top:440px;
-      }
-  .front-page-banner .Headings.scrolled {
-        background-color: transparent; 
       }
       .swiper-pagination {
         position: absolute;
