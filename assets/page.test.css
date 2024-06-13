@@ -179,7 +179,7 @@
 @media (min-width: 912px){
   .front-page-banner .Headings {
         justify-content: space-between;
-        top:600px;
+        top:700px;
       }
 
       .front-page-banner .Headings .heading {
@@ -198,14 +198,12 @@
       }
       .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         left:50%;
-        top: 600px;
+        top: 700px;
       }
       .image-section {
         height: 800px;
         width: 100%;
       }
-      .front-page-banner .Headings.scrolled {
-      display:none;
-      }
+      
 }
 
