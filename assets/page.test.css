@@ -209,7 +209,7 @@
       }
       .page-description {
         position: absolute;
-        top: 20px; /* Adjust based on your needs */
+        top: 20px; 
         width: 100%;
         text-align: center;
         z-index: 3;
