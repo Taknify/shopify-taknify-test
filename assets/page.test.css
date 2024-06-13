@@ -66,7 +66,7 @@
   transform: translateY(-50%);
   fill: #fff; 
   width: 40px;
-  height: 40px;
+  height: 60px;
   cursor: pointer;
   z-index: 10;
 }
