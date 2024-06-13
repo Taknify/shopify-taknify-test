@@ -212,7 +212,7 @@
         left:33%;
         top: 35%; 
         text-align: center;
-        background-color: rgba(255, 255, 255, 0.5); 
+        background-color: rgba(255, 255, 255, 0.7); 
         padding: 10px 20px;
         z-index: 3;
       }
@@ -220,5 +220,11 @@
           margin-top:10px;
           margin-bottom: 20px;
         }
+     .swiper-button-prev,
+      .swiper-button-next {
+        position: absolute;
+        width: 50px;
+        height: 200px;
+      }
 }
 
