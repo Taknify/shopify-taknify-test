@@ -330,18 +330,17 @@
         iconMinus.style.display = "none";
     });
   }
-  function toggleIcon(plusIcon, minusIcon) {
-  plusIcon.toggleAttribute("hidden");
-  minusIcon.toggleAttribute("hidden");
- }
+      
   function activateTab(tab) {
     const tabLink = tab.querySelector(".tab-link");
-    const tabPanel = tab.querySelector(".tab-panel");
+    const tabPanel = document.querySelector(tabLink.getAttribute("href"));
     const iconPlus = tab.querySelector(".plus-icon");
     const iconMinus = tab.querySelector(".minus-icon");
+
     tabLink.setAttribute("aria-selected", "true");
     tabPanel.removeAttribute("hidden");
-    toggleIcon(iconPlus, iconMinus);
+    iconPlus.style.display = "none";
+    iconMinus.style.display = "inline";
   }
 
   tabs.forEach((tab) => {
