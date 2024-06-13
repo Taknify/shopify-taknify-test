@@ -327,6 +327,11 @@
       top: 380px;
       right: -290px;
      }
+  .product-description {
+        position: absolute;
+        left:32%;
+        top: 28%; 
+      }
 }
 
 
