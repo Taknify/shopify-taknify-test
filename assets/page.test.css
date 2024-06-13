@@ -207,9 +207,7 @@
         height: 800px;
         width: 100%;
       }
-      .front-page-banner .Headings.scrolled {
-        background-color: transparent; 
-      }
+     
       .product-description {
         position: absolute;
         left:33%;
@@ -265,10 +263,7 @@
         height: 480px;
         width: 100%;
       }
-      .front-page-banner .Headings.scrolled {
-        background-color: transparent; 
-        position:absolute;
-      }
+      
       .product-description {
         position: absolute;
         left:33%;
