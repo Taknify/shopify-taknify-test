@@ -349,3 +349,9 @@
 .two-columns-grid{
   padding: 10px;
 }
+.two-columns-grid .location{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
