@@ -389,7 +389,7 @@
   margin-left: 8px; /* Adjust icon spacing */
 }
 
-.two-columns-grid .grid-container a[aria-selected="true"] .plus-icon {
+.two-columns-grid .grid-container a[aria-selected="false"] .plus-icon {
   display: none;
 }
 
