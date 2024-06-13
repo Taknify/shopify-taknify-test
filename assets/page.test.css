@@ -380,19 +380,3 @@
   color: black;
   margin-bottom: 5px;
 }
-.two-columns-grid .grid-container a .icon {
-  display: flex;
-  align-items: center;
-}
-
-.two-columns-grid .grid-container a .icon svg {
-  margin-left: 8px; /* Adjust icon spacing */
-}
-
-.two-columns-grid .grid-container a[aria-selected="false"] .plus-icon {
-  display: none;
-}
-
-.two-columns-grid .grid-container a[aria-selected="true"] .minus-icon {
-  display: inline;
-}
