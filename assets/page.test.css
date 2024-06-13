@@ -246,6 +246,10 @@
       border-bottom: 1px solid #151515;
       font-size: 14px;
     }
+    .front-page-banner .Headings.scrolled {
+      position:absolute;
+      background-color: transparent; 
+    }
 }
 
 
