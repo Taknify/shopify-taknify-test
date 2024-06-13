@@ -319,14 +319,15 @@
 
   function deactivateAllTabs() {
     tabs.forEach((otherTab) => {
-      const iconPlus = otherTab.querySelector(".plus-icon");
-      const iconMinus = otherTab.querySelector(".minus-icon");
-      otherTab
-        .querySelector(".tab-link")
-        .setAttribute("aria-selected", "false");
-      otherTab.querySelector(".tab-panel").setAttribute("hidden", true);
-      iconPlus.removeAttribute("hidden");
-      iconMinus.setAttribute("hidden", true);
+       const iconPlus = otherTab.querySelector(".plus-icon");
+        const iconMinus = otherTab.querySelector(".minus-icon");
+        const tabLink = otherTab.querySelector(".tab-link");
+        const tabPanel = document.querySelector(tabLink.getAttribute("href"));
+
+        tabLink.setAttribute("aria-selected", "false");
+        tabPanel.setAttribute("hidden", true);
+        iconPlus.style.display = "inline";
+        iconMinus.style.display = "none";
     });
   }
   function toggleIcon(plusIcon, minusIcon) {
