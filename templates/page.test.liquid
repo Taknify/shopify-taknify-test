@@ -325,8 +325,8 @@
         .querySelector(".tab-link")
         .setAttribute("aria-selected", "false");
       otherTab.querySelector(".tab-panel").setAttribute("hidden", true);
-      iconPlus.style.display = "inline";
-      iconMinus.style.display = "none";
+      iconPlus.removeAttribute("hidden");
+      iconMinus.setAttribute("hidden", true);
     });
   }
 
