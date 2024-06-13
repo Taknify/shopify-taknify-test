@@ -222,9 +222,9 @@
        .product-description .search-store{
           margin-top:10px;
           margin-bottom: 20px;
-        }
+      }
      .swiper-button-prev,
-      .swiper-button-next {
+     .swiper-button-next {
         width: 100px;
         height: 200px;
       }
@@ -232,12 +232,12 @@
       position:absolute;
       top:460px;
       right: -70px;
-    }
+      }
      .product-description .help{
       display:block;
       position:absolute;
-      top: 460px;
+      top: 465px;
       right: -190px;
-    }
+     }
 }
 
