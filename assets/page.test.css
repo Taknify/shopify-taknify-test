@@ -65,8 +65,8 @@
   top: 50%;
   transform: translateY(-50%);
   fill: #fff; 
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   z-index: 10;
 }
