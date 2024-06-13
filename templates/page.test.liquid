@@ -344,16 +344,14 @@
   }
 
   tabs.forEach((tab) => {
-    const tabLink = tab.querySelector(".tab-link");
+     const tabLink = tab.querySelector(".tab-link");
     tabLink.addEventListener("click", function (e) {
-      e.preventDefault();
-      if (tabLink.getAttribute("aria-selected") !== "true") {
-        deactivateAllTabs();
-        activateTab(tab);
-      }else {
-      tab.querySelector(".tab-panel").toggleAttribute("hidden");
-      toggleIcon(tab.querySelector(".plus-icon"), tab.querySelector(".minus-icon"));
-    }
+        e.preventDefault();
+        if (tabLink.getAttribute("aria-selected") !== "true") {
+            deactivateAllTabs();
+            activateTab(tab);
+        }
+  
     });
   });
     });
