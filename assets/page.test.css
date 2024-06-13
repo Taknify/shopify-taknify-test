@@ -185,58 +185,14 @@
         top:760px;
       }
 
-      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-        left:50%;
-        top: 760px;
-      }
-      .image-section {
-        height: 800px;
-        width: 100%;
-      }
-      .front-page-banner .Headings.scrolled {
-        background-color: transparent; 
-        position:absolute;
-      }
-       .product-description .search-store{
-          margin-top:10px;
-          margin-bottom: 20px;
-      }
-     .swiper-button-prev,
-     .swiper-button-next {
-        width: 100px;
-        height: 200px;
-      }
-     .product-description .search-store{
-      position:absolute;
-      top:460px;
-      right: -70px;
-      }
-      .product-description .search-store a{
-        font-size:14px;
-      }
-     .product-description .help{
-      display:block;
-      position:absolute;
-      top: 470px;
-      right: -190px;
-     }
-     .product-description .help a{
-      color: #151515 !important;
-      text-decoration: none;
-      border-bottom: 1px solid #151515;
-      font-size: 14px;
-    }
-}
-
-@media (min-width: 1024px){
-  .front-page-banner .Headings {
-        justify-content: space-between;
-        top:150px;
-      }
-  .front-page-banner .Headings.scrolled {
-        background-color: transparent; 
+      .front-page-banner .Headings .heading {
+        position: absolute;
+        left: 20px;
       }
 
+      .front-page-banner .Headings .icon {
+        right: 20px;
+      }
 
       .swiper-pagination {
         position: absolute;
@@ -248,7 +204,7 @@
         top: 760px;
       }
       .image-section {
-        height: 500px;
+        height: 800px;
         width: 100%;
       }
       .front-page-banner .Headings.scrolled {
@@ -293,4 +249,5 @@
       font-size: 14px;
     }
 }
+
 
