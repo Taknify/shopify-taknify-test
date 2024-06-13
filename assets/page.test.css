@@ -393,3 +393,7 @@
 .two-columns-grid .grid-container .minus-icon{
   display:none;
 }
+
+.two-columns-grid .second-column{
+  display:none;
+}
