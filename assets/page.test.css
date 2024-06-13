@@ -61,7 +61,14 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  fill: #D8D9DA; 
+   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #fff; 
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .swiper-pagination {
