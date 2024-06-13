@@ -410,5 +410,9 @@
   .two-columns-grid .second-column{
     display:block;
   }
+  .two-columns-grid .second-column .product-image {
+    width: 400px;
+    height: 300px;
+  }
   
 }
