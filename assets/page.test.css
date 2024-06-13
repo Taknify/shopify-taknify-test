@@ -141,12 +141,11 @@
 .product-description .shopping-bag{
   margin-top:10px;
   border: 1px solid #151515;
-  padding: 7px 80px;
+  padding: 7px 70px;
   background-color:#151515;
 }
 .product-description .shopping-bag a{
   color: #fff !important;
-  
   text-decoration: none;
   text-transform:uppercase;
   font-size: 14px;
