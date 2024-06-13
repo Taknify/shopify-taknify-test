@@ -207,6 +207,12 @@
       .front-page-banner .Headings.scrolled {
         background-color: transparent; 
       }
-      
+      .page-description {
+        position: absolute;
+        top: 20px; /* Adjust based on your needs */
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+      }
 }
 
