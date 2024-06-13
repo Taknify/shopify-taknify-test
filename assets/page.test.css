@@ -223,7 +223,7 @@
      .swiper-button-prev,
       .swiper-button-next {
         position: absolute;
-        width: 50px;
+        width: 100px;
         height: 200px;
       }
 }
