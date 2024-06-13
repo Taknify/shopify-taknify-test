@@ -239,5 +239,11 @@
       top: 470px;
       right: -190px;
      }
+     .product-description .help a{
+      color: #151515 !important;
+      text-decoration: none;
+      border-bottom: 1px solid #151515;
+      font-size: 12px;
+    }
 }
 
