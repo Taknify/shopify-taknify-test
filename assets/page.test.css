@@ -130,5 +130,9 @@
   margin-top:10px;
 }
 .product-description .view-shade a{
-  
+  color: #151515 !important;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 1px solid #151515;
+  text-transform:uppercase;
 }
