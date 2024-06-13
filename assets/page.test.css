@@ -254,7 +254,7 @@
 @media (min-width: 1024px){
   .front-page-banner .Headings {
         justify-content: space-between;
-        top:760px;
+        top:460px;
       }
 
       .front-page-banner .Headings .heading {
@@ -271,7 +271,7 @@
         top: 760px;
       }
       .image-section {
-        height: 500px;
+        height: 480px;
         width: 100%;
       }
       .front-page-banner .Headings.scrolled {
