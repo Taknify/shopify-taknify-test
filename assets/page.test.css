@@ -233,5 +233,11 @@
       top:460px;
       right: -100px;
     }
+     .product-description .search-store{
+      display:block;
+      position:absolute;
+      top:460px;
+      right: -190px;
+    }
 }
 
