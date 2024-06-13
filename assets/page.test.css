@@ -185,20 +185,6 @@
         top:760px;
       }
 
-      .front-page-banner .Headings .heading {
-        position: absolute;
-        left: 20px;
-      }
-
-      .front-page-banner .Headings .icon {
-        right: 20px;
-      }
-
-      .swiper-pagination {
-        position: absolute;
-        top: 50%;
-        transform: translateX(-50%) translateY(-50%);
-      }
       .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         left:50%;
         top: 760px;
@@ -211,22 +197,9 @@
         background-color: transparent; 
         position:absolute;
       }
-      .product-description {
-        position: absolute;
-        left:33%;
-        top: 35%; 
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.7); 
-        padding: 10px 20px;
-        z-index: 3;
-      }
-       .product-description .search-store{
-          margin-top:10px;
-          margin-bottom: 20px;
-      }
      .swiper-button-prev,
      .swiper-button-next {
-        width: 100px;
+        width: 80px;
         height: 200px;
       }
      .product-description .search-store{
