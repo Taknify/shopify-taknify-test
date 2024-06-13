@@ -204,5 +204,8 @@
         height: 800px;
         width: 100%;
       }
+      .front-page-banner .Headings.scrolled {
+      display:none;
+      }
 }
 
