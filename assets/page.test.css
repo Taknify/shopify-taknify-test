@@ -320,14 +320,10 @@
         padding: 10px 20px;
         z-index: 3;
       }
-     .swiper-button-prev,
-     .swiper-button-next {
-        width: 70px;
-        height: 180px;
-      }
+
      .product-description .search-store{
       position:absolute;
-      top:285px;
+      top:200px;
       right: -70px;
       }
      .product-description .help{
