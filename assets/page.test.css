@@ -287,14 +287,10 @@
         padding: 10px 20px;
         z-index: 3;
       }
-       .product-description .search-store{
-          margin-top:10px;
-          margin-bottom: 20px;
-      }
      .swiper-button-prev,
      .swiper-button-next {
-        width: 100px;
-        height: 200px;
+        width: 70px;
+        height: 180px;
       }
      .product-description .search-store{
       position:absolute;
