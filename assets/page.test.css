@@ -406,7 +406,7 @@
   }
   .two-columns-grid .first-column{
     grid-column: span 2;
-    padding-right: 30px;
+    padding-right: 60px;
   }
   .two-columns-grid .second-column{
     display:block;
