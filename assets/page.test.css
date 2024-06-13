@@ -179,6 +179,7 @@
 @media (min-width: 912px){
   .front-page-banner .Headings {
         justify-content: space-between;
+        top:140;
       }
 
       .front-page-banner .Headings .heading {
