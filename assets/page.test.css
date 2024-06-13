@@ -209,6 +209,7 @@
       }
       .front-page-banner .Headings.scrolled {
         background-color: transparent; 
+        position:absolute;
       }
       .product-description {
         position: absolute;
