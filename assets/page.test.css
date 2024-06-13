@@ -227,13 +227,11 @@
 @media (min-width: 1024px){
   .front-page-banner .Headings {
         justify-content: space-between;
-        top:150px;
+        top:600px;
       }
   .front-page-banner .Headings.scrolled {
         background-color: transparent; 
       }
-
-
       .swiper-pagination {
         position: absolute;
         top: 50%;
