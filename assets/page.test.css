@@ -20,7 +20,8 @@
 }
 
 .front-page-banner .Headings.scrolled {
-  background-color: transparent; 
+  position:fixed;
+  background-color: #fff; 
 }
 .front-page-banner .Headings .icon {
   position: absolute;
