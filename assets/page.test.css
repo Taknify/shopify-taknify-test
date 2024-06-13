@@ -144,10 +144,9 @@
   padding: 7px 80px;
 }
 .product-description .shopping-bag a{
-  color: #151515 !important;
+  color: #fff !important;
   text-decoration: none;
-  position: relative;
-  border-bottom: 1px solid #151515;
   text-transform:uppercase;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight:900;
 }
