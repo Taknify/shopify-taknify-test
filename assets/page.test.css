@@ -228,7 +228,7 @@
      .product-description .search-store{
       position:absolute;
       top:430px;
-      right: 5px;
+      right: -10px;
     }
 }
 
