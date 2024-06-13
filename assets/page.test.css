@@ -19,6 +19,9 @@
   transition: background-color 0.3s ease;
 }
 
+.front-page-banner .Headings.scrolled {
+  background-color: #fff; 
+}
 .front-page-banner .Headings .icon {
   position: absolute;
   right: 0;
