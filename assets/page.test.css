@@ -409,7 +409,7 @@
   }
   .two-columns-grid .first-column{
     grid-column: span 2;
-    padding-right: 60px;
+    padding-right: 90px;
   }
   .two-columns-grid .second-column{
     display:block;
