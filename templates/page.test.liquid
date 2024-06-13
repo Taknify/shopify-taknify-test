@@ -111,6 +111,14 @@
       } else {
         console.error('Swiper container not found');
       }
+
+      window.addEventListener('scroll', function(){
+        if(window.scrollY > 50){
+          headings.classList.add('scrolled');
+        }else{
+          headings.classList.remove('scrolled');
+        }
+      })
     });
   </script>
 </body>
