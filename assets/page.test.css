@@ -413,6 +413,10 @@
   }
   .two-columns-grid .second-column{
     display:block;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
   }
   .two-columns-grid .second-column .product-image {
     width: 300px;
