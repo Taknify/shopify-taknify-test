@@ -200,5 +200,9 @@
         left:50%;
         top: 450px;
       }
+      .image-section {
+        height: 800px;
+        width: 100%;
+      }
 }
 
