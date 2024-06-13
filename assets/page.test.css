@@ -175,6 +175,9 @@
   border-bottom: 1px solid #151515;
   font-size: 12px;
 }
+.product-description .help{
+  display:none;
+}
 
 @media (min-width: 912px){
   .front-page-banner .Headings {
