@@ -380,3 +380,7 @@
   color: black;
   margin-bottom: 5px;
 }
+
+.two-columns-grid .grid-container .minus-icon{
+  display:none;
+}
