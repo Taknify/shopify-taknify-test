@@ -329,7 +329,10 @@
       iconMinus.setAttribute("hidden", true);
     });
   }
-
+  function toggleIcon(plusIcon, minusIcon) {
+  plusIcon.toggleAttribute("hidden");
+  minusIcon.toggleAttribute("hidden");
+ }
   function activateTab(tab) {
     const tabLink = tab.querySelector(".tab-link");
     const tabPanel = tab.querySelector(".tab-panel");
