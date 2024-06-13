@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-taknify-product",
       "blocks": {
         "vendor": {
           "type": "text",
