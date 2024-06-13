@@ -305,7 +305,7 @@
 
       .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         left:50%;
-        top: 580px;
+        top: 560px;
       }
       .image-section {
         height: 600px;
