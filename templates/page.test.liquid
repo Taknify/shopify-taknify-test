@@ -315,7 +315,30 @@
         }
       })
 
-  
+  const tabLinks = document.querySelectorAll('.tab-link');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+
+      // Loop through each tab link to add click event listener
+      tabLinks.forEach(tabLink => {
+        tabLink.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent default link behavior
+
+          // Toggle the active class on the clicked tab link
+          tabLinks.forEach(link => {
+            if (link === tabLink) {
+              link.classList.toggle('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+
+          // Toggle visibility of the corresponding tab panel
+          const tabPanel = document.querySelector(tabLink.getAttribute('href'));
+          if (tabPanel) {
+            tabPanel.hidden = !tabPanel.hidden;
+          }
+        });
+      });
 
   
 });
