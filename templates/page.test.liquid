@@ -340,8 +340,7 @@
     const iconMinus = tab.querySelector(".minus-icon");
     tabLink.setAttribute("aria-selected", "true");
     tabPanel.removeAttribute("hidden");
-    iconPlus.style.display = "none";
-    iconMinus.style.display = "inline";
+    toggleIcon(iconPlus, iconMinus);
   }
 
   tabs.forEach((tab) => {
