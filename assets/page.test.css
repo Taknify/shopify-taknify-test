@@ -87,6 +87,7 @@
 }
 
 .product-description {
+  background-color:#C7C8CC;
   display: flex;
   flex-direction: column;
   justify-content: center;
