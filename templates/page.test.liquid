@@ -315,33 +315,43 @@
         }
       })
 
-  const tabLinks = document.querySelectorAll('.tab-link');
-      const tabPanels = document.querySelectorAll('.tab-panel');
+  const tabs = document.querySelectorAll(".grid-container .columns");
 
-      // Loop through each tab link to add click event listener
-      tabLinks.forEach(tabLink => {
-        tabLink.addEventListener('click', function(e) {
-          e.preventDefault(); // Prevent default link behavior
+  function deactivateAllTabs() {
+    tabs.forEach((otherTab) => {
+      const iconPlus = otherTab.querySelector(".plus-icon");
+      const iconMinus = otherTab.querySelector(".minus-icon");
+      otherTab
+        .querySelector(".tab-link")
+        .setAttribute("aria-selected", "false");
+      otherTab.querySelector(".tab-panel").setAttribute("hidden", true);
+      iconPlus.style.display = "inline";
+      iconMinus.style.display = "none";
+    });
+  }
 
-          // Toggle the active class on the clicked tab link
-          tabLinks.forEach(link => {
-            if (link === tabLink) {
-              link.classList.toggle('active');
-            } else {
-              link.classList.remove('active');
-            }
-          });
+  function activateTab(tab) {
+    const tabLink = tab.querySelector(".tab-link");
+    const tabPanel = tab.querySelector(".tab-panel");
+    const iconPlus = tab.querySelector(".plus-icon");
+    const iconMinus = tab.querySelector(".minus-icon");
+    tabLink.setAttribute("aria-selected", "true");
+    tabPanel.removeAttribute("hidden");
+    iconPlus.style.display = "none";
+    iconMinus.style.display = "inline";
+  }
 
-          // Toggle visibility of the corresponding tab panel
-          const tabPanel = document.querySelector(tabLink.getAttribute('href'));
-          if (tabPanel) {
-            tabPanel.hidden = !tabPanel.hidden;
-          }
-        });
-      });
-
-  
-});
+  tabs.forEach((tab) => {
+    const tabLink = tab.querySelector(".tab-link");
+    tabLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (tabLink.getAttribute("aria-selected") !== "true") {
+        deactivateAllTabs();
+        activateTab(tab);
+      }
+    });
+  });
+    });
   </script>
 </body>
  </html>
