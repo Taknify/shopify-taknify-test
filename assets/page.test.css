@@ -222,11 +222,11 @@
         }
      .swiper-button-prev,
       .swiper-button-next {
-        position: absolute;
         width: 100px;
         height: 200px;
       }
      .product-description .search-store{
+      position:absolute;
       top:760px;
     }
 }
