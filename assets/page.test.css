@@ -364,8 +364,12 @@
   font-size: 12px;
 }
 
+.two-columns-grid .grid-container{
+  margin-top:20px;
+}
+
 .two-columns-grid .grid-container a{
-    display: flex;
+  display: flex;
   justify-content: space-between;
   padding: 10px;
   text-decoration: none;
