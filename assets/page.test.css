@@ -340,12 +340,12 @@
      .product-description .search-store{
       position:absolute;
       top:370px;
-      right: -250px;
+      right: -300px;
       }
      .product-description .help{
       display:block;
       position:absolute;
       top: 380px;
-      right: -350px;
+      right: -400px;
      }
 }
