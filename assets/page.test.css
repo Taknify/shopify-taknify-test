@@ -411,8 +411,8 @@
     display:block;
   }
   .two-columns-grid .second-column .product-image {
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
   }
   
 }
