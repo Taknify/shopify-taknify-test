@@ -227,7 +227,7 @@
 @media (min-width: 1024px){
   .front-page-banner .Headings {
         justify-content: space-between;
-        top:480px;
+        top:460px;
       }
   .front-page-banner .Headings.scrolled {
         background-color: transparent; 
