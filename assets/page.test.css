@@ -257,15 +257,6 @@
         top:445px;
       }
 
-      .front-page-banner .Headings .heading {
-        position: absolute;
-        left: 20px;
-      }
-
-      .front-page-banner .Headings .icon {
-        right: 20px;
-      }
-
       .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         left:50%;
         top: 760px;
