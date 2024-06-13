@@ -233,6 +233,9 @@
       top:460px;
       right: -70px;
       }
+      .product-description .search-store a{
+        font-size:14px;
+      }
      .product-description .help{
       display:block;
       position:absolute;
@@ -243,7 +246,7 @@
       color: #151515 !important;
       text-decoration: none;
       border-bottom: 1px solid #151515;
-      font-size: 12px;
+      font-size: 14px;
     }
 }
 
