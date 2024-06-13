@@ -179,7 +179,7 @@
 @media (min-width: 912px){
   .front-page-banner .Headings {
         justify-content: space-between;
-        top:800px;
+        top:760px;
       }
 
       .front-page-banner .Headings .heading {
@@ -204,9 +204,9 @@
         height: 800px;
         width: 100%;
       }
-  .front-page-banner .Headings.scrolled {
-  background-color: transparent; 
-}
+      .front-page-banner .Headings.scrolled {
+        background-color: transparent; 
+      }
       
 }
 
