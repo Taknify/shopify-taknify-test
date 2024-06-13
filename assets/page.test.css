@@ -285,13 +285,13 @@
       }
      .product-description .search-store{
       position:absolute;
-      top:400px;
+      top:370px;
       right: -70px;
       }
      .product-description .help{
       display:block;
       position:absolute;
-      top: 400px;
+      top: 380px;
       right: -190px;
      }
 }
