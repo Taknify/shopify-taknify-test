@@ -216,5 +216,9 @@
         padding: 10px 20px;
         z-index: 3;
       }
+       .product-description .search-store{
+          margin-top:10px;
+          margin-bottom: 20px;
+        }
 }
 
