@@ -417,7 +417,8 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    border: 0.2px solid grey;
+    border: 0.2px solid #C7C8CC;
+    padding:10px;
   }
   .two-columns-grid .second-column .product-image {
     width: 300px;
