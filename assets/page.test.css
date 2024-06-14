@@ -464,6 +464,8 @@
     position:absolute;
     fill: #000;
    cursor: pointer;
+  top:40%;
+   transform: translateY(-50%);
 }
 .product-collection .swiper-slide {
   position: relative;
