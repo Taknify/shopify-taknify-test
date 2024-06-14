@@ -379,6 +379,9 @@
         el: ' .swiper-pagination-2',
         type: 'bullets',
         clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+       },
       },
       navigation: {
         nextEl: '.swiper-button-next-2',
