@@ -514,7 +514,7 @@
 }
 
 @media(min-width: 768px){
-  .product-collection{
+  .product-collection .swiper-container{
   padding: 40px;
   position: relative;
 }
