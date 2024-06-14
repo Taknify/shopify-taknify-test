@@ -447,9 +447,8 @@
 }
 
 .images {
-  position: relative;
   height: 300px;
-  width: 100%;
+  width: 300px;
 }
 .images img {
   width: 100%;
