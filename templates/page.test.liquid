@@ -435,46 +435,6 @@
       }
     });
   });
-var productContainer = document.querySelector('.product-container');
-  if(productContainer){
-    var swiper = new Swiper ('.product-container', {
-      loop:true,
-      pagination:{
-        el:'.pagination',
-        type:'custom',
-        renderCustom: function(swiper, current, total){
-          return '<span class="pagination-current">'+ current + '</span> / <span class="pagination-total">' + total + '</span>';
-        }
-      },
-      navigation: {
-            nextEl: '.swiper-next',
-            prevEl: '.swiper-prev',
-          },
-      slidesPerView: 2,
-          breakpoints: {
-            912: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 10, 
-            },
-          }
-    });
-    document.querySelector('.swiper-next').addEventListener('click', function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-        });
-        document.querySelector('.swiper-prev').addEventListener('click', function (event) {
-          event.preventDefault();
-          event.stopPropagation();
-        });
-      } else {
-        console.error('Swiper container not found');
-      }
-  }
-      
     });
 
   
