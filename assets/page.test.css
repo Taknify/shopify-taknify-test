@@ -456,9 +456,12 @@
   height: 100%;
   object-fit: cover;
 }
-.product-collection{
-  position:relative;
+.product-collection .swiper-container {
+    overflow: hidden;
+    margin-top: 30px;
+    position: relative;
 }
+
 
 .product-collection .swiper-button-prev-2,
 .product-collection .swiper-button-next-2 {
@@ -470,10 +473,7 @@
 }
 .product-collection .swiper-slide {
   position: relative;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
+  width:auto;
 }
 .product-collection .swiper-slide h2{
   font-size: 14px;
