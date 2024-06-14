@@ -471,8 +471,8 @@
   align-items: center;
 }
 .images {
-  height: 170px;
-  width: 170px;
+  height: 180px;
+  width: 180px;
   display:flex;
   justify-content:center;
   align-items:center;
