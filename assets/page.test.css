@@ -194,7 +194,7 @@
         right: 20px;
       }
 
-      .swiper-pagination {
+      .swiper-pagination-1 {
         position: absolute;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
