@@ -445,3 +445,9 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
+.images {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
