@@ -479,6 +479,7 @@
 }
 .product-collection .swiper-slide h3{
   font-size: 14px;
+  margin-top: 0;
 }
 
 .product-collection .swiper-pagination-2 {
