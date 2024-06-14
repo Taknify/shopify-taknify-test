@@ -486,6 +486,11 @@
   text-align:center;
   font-weight: 500;
 }
+.product-collection .swiper-slide h4{
+  font-size: 16px;
+  text-align:center;
+  font-weight: 500;
+}
 
 .product-collection .swiper-pagination-2 {
   display: flex;
