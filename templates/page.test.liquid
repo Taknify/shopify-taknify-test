@@ -390,7 +390,8 @@
       breakpoints: {
         912: {
           slidesPerView: 4,
-        },
+        }
+      },
       on: {
       slideChange: function () {
       updatePagination();
@@ -398,14 +399,14 @@
       }
     });
     function updatePagination() {
-  var activeIndex = swiperProductCollection.activeIndex;
-  var totalSlides = swiperProductCollection.slides.length;
-  var paginationLine = document.querySelector('.pagination-line');
-
-  var percentage = (activeIndex / (totalSlides - swiperProductCollection.params.slidesPerView)) * 100;
-  paginationLine.style.width = percentage + '%';
-}
-updatePagination();
+      var activeIndex = swiperProductCollection.activeIndex;
+      var totalSlides = swiperProductCollection.slides.length;
+      var paginationLine = document.querySelector('.pagination-line');
+    
+      var percentage = (activeIndex / (totalSlides - swiperProductCollection.params.slidesPerView)) * 100;
+      paginationLine.style.width = percentage + '%';
+    }
+    updatePagination();
       
       var headings = document.querySelector('.Headings');
       window.addEventListener('scroll', function(){
