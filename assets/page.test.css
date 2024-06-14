@@ -466,6 +466,9 @@
 .product-collection .swiper-slide {
   position:relative;
   width:auto;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .images {
   height: 160px;
