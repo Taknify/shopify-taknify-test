@@ -455,4 +455,13 @@
   height: 100%;
   object-fit: cover;
 }
+.product-collection .swiper-button-prev,
+.product-collection .swiper-button-next {
+    fill: #000;
+}
+
+
+.product-collection .swiper-pagination {
+    top: 10px;
+}
 
