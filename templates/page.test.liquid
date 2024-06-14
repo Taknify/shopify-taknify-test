@@ -462,7 +462,20 @@
               slidesPerView: 4,
               spaceBetween: 10, 
             },
-    })
+          }
+    });
+    document.querySelector('.swiper-button-next').addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+        });
+        document.querySelector('.swiper-button-prev').addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+        });
+      } else {
+        console.error('Swiper container not found');
+      }
+ 
   }
   </script>
 </body>
