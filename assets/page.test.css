@@ -513,6 +513,10 @@
   background: #000;
 }
 
-@media(min-width: 912px){
-  
+@media(min-width: 762px){
+  .product-collection{
+  margin-top: 80px;
+  padding: 15px;
+  position: relative;
+}
 }
