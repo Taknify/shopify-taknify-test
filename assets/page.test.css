@@ -474,6 +474,9 @@
   justify-content:center;
   align-items: center;
 }
+.product-collection .swiper-slide h2{
+  font-size: 14px;
+}
 
 .product-collection .swiper-pagination-2 {
   display: flex;
