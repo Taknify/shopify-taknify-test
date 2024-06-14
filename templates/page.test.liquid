@@ -378,7 +378,8 @@
       spaceBetween: 10,
       pagination: {
         el: ' .swiper-pagination-2',
-        type: 'custom',
+        type: 'bullets',
+        clickable:true;
       },
       navigation: {
         nextEl: '.swiper-button-next-2',
@@ -395,17 +396,6 @@
        }
       }
     });
-    function updatePagination() {
-      var activeIndex = swiperProductCollection.activeIndex;
-      var totalSlides = swiperProductCollection.slides.length;
-      var paginationLine = document.querySelector('.pagination-line');
-      
-      var slidesPerView = swiperProductCollection.params.slidesPerView;
-      var totalVisibleSlides = totalSlides - slidesPerView;
-      var percentage = (activeIndex / totalVisibleSlides) * 100;
-      paginationLine.style.width = percentage + '%';
-    }
-    updatePagination();
       
       var headings = document.querySelector('.Headings');
       window.addEventListener('scroll', function(){
