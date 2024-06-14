@@ -353,9 +353,9 @@
     document.addEventListener('DOMContentLoaded', function () {
       var swiper1 = new Swiper('#swiper-section-1', {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 0,
       pagination: {
-        el: '.swiper-pagination-section-1',
+        el: '#swiper-section-1 .swiper-pagination',
         clickable: true,
         type: 'custom',
         renderCustom: function (swiper, current, total) {
@@ -363,8 +363,8 @@
         }
       },
       navigation: {
-        nextEl: '.swiper-button-next-section-1',
-        prevEl: '.swiper-button-prev-section-1',
+        nextEl: '#swiper-section-1 .swiper-button-next',
+        prevEl: '#swiper-section-1 .swiper-button-prev',
       },
       breakpoints: {
         912: {
@@ -374,11 +374,11 @@
     });
 
     // Swiper for the product collection section
-    var swiperProductCollection = new Swiper('.swiper-product-collection', {
+    var swiperProductCollection = new Swiper('#swiper-section-2', {
       slidesPerView: 2,
       spaceBetween: 10,
       pagination: {
-        el: '.swiper-pagination-product-collection',
+        el: '#swiper-section-2 .swiper-pagination',
         clickable: true,
         type: 'custom',
         renderCustom: function (swiper, current, total) {
@@ -386,8 +386,8 @@
          }
       },
       navigation: {
-        nextEl: '.swiper-button-next-product-collection',
-        prevEl: '.swiper-button-prev-product-collection',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       breakpoints: {
         912: {
