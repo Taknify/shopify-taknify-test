@@ -437,7 +437,33 @@
   });
     });
 
-  var productContainer = document.query
+  var productContainer = document.querySelector('.product-container');
+  if(productContainer){
+    var swiper = new Swiper ('.product-container', {
+      loop:true,
+      pagination:{
+        el:'.swiper-pagination',
+        type:'custom',
+        renderCustom: function(swiper, current, total){
+          return '<span class="swiper-pagination-current">'+ current + '</span> / <span class="swiper-pagination-total">' + total + '</span>';
+        }
+      },
+      navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      slidesPerView: 2,
+          breakpoints: {
+            912: {
+              slidesPerView: 2,
+              spaceBetween: 0,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 0, 
+            },
+    })
+  }
   </script>
 </body>
  </html>
