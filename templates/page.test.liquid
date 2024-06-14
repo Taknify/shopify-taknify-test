@@ -380,14 +380,11 @@
       pagination: {
         el: '#swiper-section-2 .swiper-pagination',
         clickable: true,
-        type: 'custom',
-        renderCustom: function (swiper, current, total) {
-              return '<span class="swiper-pagination-current">' + current + '</span> / <span class="swiper-pagination-total">' + total + '</span>';
-         }
+        type: 'fraction',
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#swiper-section-2 .swiper-button-next',
+        prevEl: '#swiper-section-2 .swiper-button-prev',
       },
       breakpoints: {
         912: {
