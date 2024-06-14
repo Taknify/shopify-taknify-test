@@ -377,10 +377,8 @@
       spaceBetween: 10,
       pagination: {
         el: ' .swiper-pagination-2',
-        type: 'custom',
-        renderCustom: function (swiper, current, total) {
-              return '<span class="swiper-pagination-current">' + current + '</span> / <span class="swiper-pagination-total">' + total + '</span>';
-        }
+        type: 'bullets',
+        clickable: true,
       },
       navigation: {
         nextEl: '.swiper-button-next-2',
