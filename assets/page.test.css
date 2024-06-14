@@ -533,9 +533,6 @@
   width: 180px;
 }
   .product-collection .swiper-wrapper{
-    margin: 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    margin: 20px 30px;
   }
 }
