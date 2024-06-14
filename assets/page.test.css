@@ -458,13 +458,16 @@
 .product-collection{
   position:relative;
 }
+
 .product-collection .swiper-button-prev-2,
 .product-collection .swiper-button-next-2 {
     position:absolute;
     fill: #000;
    cursor: pointer;
 }
-
+.product-collection .swiper-slide {
+  position: relative;
+}
 
 .product-collection .swiper-pagination-2 {
   display: flex;
