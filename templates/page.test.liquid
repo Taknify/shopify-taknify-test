@@ -353,33 +353,44 @@
     document.addEventListener('DOMContentLoaded', function () {
       var swiperContainer = document.querySelector('.swiper-container');
       var headings = document.querySelector('.Headings')
-      var swiperSection1 = new Swiper('.swiper-section-1', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        912: {
-          slidesPerView: 2,
-        }
-      }
-    });
+      if (swiperContainer) {
+        var swiper = new Swiper('.swiper-container', {
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+              return '<span class="swiper-pagination-current">' + current + '</span> / <span class="swiper-pagination-total">' + total + '</span>';
+            }
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          slidesPerView: 1,
+          breakpoints: {
+            912: {
+              slidesPerView: 2,
+              spaceBetween: 0,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 0, 
+            },
+          }
+        });
 
-    var swiperProductCollection = new Swiper('.swiper-product-collection', {
-      slidesPerView: 2,
-      spaceBetween: 10,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        912: {
-          slidesPerView: 4,
-        }
+        document.querySelector('.swiper-button-next').addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+        });
+        document.querySelector('.swiper-button-prev').addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+        });
+      } else {
+        console.error('Swiper container not found');
       }
-    });
 
       window.addEventListener('scroll', function(){
         if(window.scrollY > 50){
