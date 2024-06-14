@@ -459,13 +459,13 @@
     position:absolute;
     fill: #000;
    cursor: pointer;
-  top:50%;
+   top:50%;
    transform: translateY(-50%);
 }
 .product-collection .swiper-slide {
   position:relative;
   width:auto;
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
