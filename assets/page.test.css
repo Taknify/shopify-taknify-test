@@ -76,7 +76,7 @@
   z-index: 10;
 }
 
-.swiper-pagination {
+.swiper-pagination-1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,13 +455,13 @@
   height: 100%;
   object-fit: cover;
 }
-.product-collection .swiper-button-prev,
-.product-collection .swiper-button-next {
+.product-collection .swiper-button-prev-2,
+.product-collection .swiper-button-next-2 {
     fill: #000;
 }
 
 
-.product-collection .swiper-pagination {
+.product-collection .swiper-pagination-2 {
     top: 10px;
 }
 
