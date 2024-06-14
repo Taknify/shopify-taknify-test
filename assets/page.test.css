@@ -472,8 +472,9 @@
    transform: translateY(-50%);
 }
 .product-collection .swiper-slide {
-  position: relative;
+  
   width:auto;
+  flex: 0 0 auto;
 }
 .product-collection .swiper-slide h2{
   font-size: 14px;
