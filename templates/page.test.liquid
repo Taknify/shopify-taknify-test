@@ -390,7 +390,11 @@
       breakpoints: {
         912: {
           slidesPerView: 4,
-        }
+        },
+      on: {
+      slideChange: function () {
+      updatePagination();
+       }
       }
     });
       
