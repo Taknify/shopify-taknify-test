@@ -351,8 +351,7 @@
   <script src="{{'swiper-bundle.min.js'| asset_url}}"></script>   
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var swiperContainer = document.querySelector('.swiper-container');
-      var swiperSection1 = new Swiper('.swiper-section-1', {
+      var swiper1 = new Swiper('#swiper-section-1', {
       slidesPerView: 1,
       spaceBetween: 10,
       pagination: {
