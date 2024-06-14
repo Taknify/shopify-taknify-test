@@ -532,4 +532,7 @@
   height: 180px;
   width: 180px;
 }
+  .product-collection .swiper-wrapper{
+    margin: 20px;
+  }
 }
