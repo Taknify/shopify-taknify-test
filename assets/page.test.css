@@ -455,6 +455,9 @@
   height: 100%;
   object-fit: cover;
 }
+.product-collection{
+  position:relative;
+}
 .product-collection .swiper-button-prev-2,
 .product-collection .swiper-button-next-2 {
     fill: #000;
