@@ -489,4 +489,13 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.product-collection .swiper-pagination-2 .swiper-pagination-bullet {
+  width: 100%;
+  height: 5px;
+  background: #e0e0e0;
+  opacity: 1;
+}
 
+.product-collection .swiper-pagination-2 .swiper-pagination-bullet-active {
+  background: #000;
+}
