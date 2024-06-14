@@ -518,4 +518,8 @@
   padding: 40px;
   position: relative;
 }
+  .images {
+  height: 200px;
+  width: 200px;
+}
 }
