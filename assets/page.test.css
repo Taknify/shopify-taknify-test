@@ -469,6 +469,10 @@
 }
 .product-collection .swiper-slide {
   position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
 }
 
 .product-collection .swiper-pagination-2 {
