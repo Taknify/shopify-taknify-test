@@ -294,7 +294,6 @@
       </div>
     </div>   
   </section>
-          
 <section class="product-collection">
   <h2>You may also like</h2>
    <div class="product-container">
@@ -365,8 +364,8 @@
             }
           },
           navigation: {
-            nextEl: '.swiper-next',
-            prevEl: '.swiper-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
           },
           slidesPerView: 1,
           breakpoints: {
@@ -381,11 +380,11 @@
           }
         });
 
-        document.querySelector('.swiper-next').addEventListener('click', function (event) {
+        document.querySelector('.swiper-button-next').addEventListener('click', function (event) {
           event.preventDefault();
           event.stopPropagation();
         });
-        document.querySelector('.swiper-prev').addEventListener('click', function (event) {
+        document.querySelector('.swiper-button-prev').addEventListener('click', function (event) {
           event.preventDefault();
           event.stopPropagation();
         });
@@ -450,8 +449,8 @@
         }
       },
       navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
           },
       slidesPerView: 2,
           breakpoints: {
@@ -465,11 +464,11 @@
             },
           }
     });
-    document.querySelector('.swiper-button-next').addEventListener('click', function (event) {
+    document.querySelector('.swiper-next').addEventListener('click', function (event) {
           event.preventDefault();
           event.stopPropagation();
         });
-        document.querySelector('.swiper-button-prev').addEventListener('click', function (event) {
+        document.querySelector('.swiper-prev').addEventListener('click', function (event) {
           event.preventDefault();
           event.stopPropagation();
         });
