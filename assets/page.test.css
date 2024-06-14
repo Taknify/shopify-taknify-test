@@ -492,10 +492,11 @@
   transform: translateX(-50%);
 }
 .product-collection .swiper-pagination-2 .swiper-pagination-bullet {
-  width: 50%;
+  width: 100%;
   height: 1px;
   background: #e0e0e0;
   opacity: 1;
+  margin: 0 50px;
 }
 
 .product-collection .swiper-pagination-2 .swiper-pagination-bullet-active {
