@@ -436,5 +436,11 @@
 
 /* products- collection */
 .product-collection{
-  
+  padding: 15px;
+}
+
+.product-collection h2{
+  text-align:center;
+  text-transform: uppercase;
+  font-weight: 500;
 }
