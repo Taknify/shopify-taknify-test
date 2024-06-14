@@ -446,11 +446,6 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-.product-collection h4{
-  text-align:center;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
 .product-collection .swiper-container {
     overflow: hidden;
