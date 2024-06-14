@@ -465,6 +465,7 @@
 }
 .product-collection .swiper-slide {
   position:relative;
+  width:auto;
 }
 .images {
   height: 160px;
@@ -484,7 +485,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 100%;
+  top: 99%;
   left: 50%;
   transform: translateX(-50%);
 }
