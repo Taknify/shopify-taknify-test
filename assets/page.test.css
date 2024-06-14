@@ -277,8 +277,8 @@
         padding: 10px 20px;
         z-index: 3;
       }
-     .swiper-button-prev,
-     .swiper-button-next {
+     .swiper-button-prev-1,
+     .swiper-button-next-1 {
         width: 70px;
         height: 180px;
       }
