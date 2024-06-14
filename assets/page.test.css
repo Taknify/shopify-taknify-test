@@ -492,7 +492,7 @@
   transform: translateX(-50%);
 }
 .product-collection .swiper-pagination-2 .swiper-pagination-bullet {
-  width: 5px;
+  width: 10px;
   height: 1px;
   background: #e0e0e0;
   opacity: 1;
