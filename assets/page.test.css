@@ -470,6 +470,9 @@
 .images {
   height: 160px;
   width: 160px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 .images img {
   width: 100%;
