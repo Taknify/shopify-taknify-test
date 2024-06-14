@@ -356,11 +356,7 @@
       spaceBetween: 0,
       pagination: {
         el: '#swiper-section-1 .swiper-pagination',
-        clickable: true,
-        type: 'custom',
-        renderCustom: function (swiper, current, total) {
-              return '<span class="swiper-pagination-current">' + current + '</span> / <span class="swiper-pagination-total">' + total + '</span>';
-        }
+        type: 'fraction',
       },
       navigation: {
         nextEl: '#swiper-section-1 .swiper-button-next',
@@ -379,7 +375,6 @@
       spaceBetween: 10,
       pagination: {
         el: '#swiper-section-2 .swiper-pagination',
-        clickable: true,
         type: 'fraction',
       },
       navigation: {
