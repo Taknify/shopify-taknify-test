@@ -537,7 +537,7 @@
   height: 250px;
   width: 250px;
 }
-  .product-collection .swiper-wrapper{
+  .product-collection .swiper-container{
     margin: 20px 80px 20px 30px;
   }
 }
