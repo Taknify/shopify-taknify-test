@@ -523,14 +523,11 @@
   width: 250px;
 }
 }
-@media(min-width: 912px){
-  .product-collection .swiper-container{
+@media(min-width: 1280px){
   
-  position: relative;
-}
   .images {
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
 }
   .product-collection .swiper-wrapper{
     margin: 20px 30px;
