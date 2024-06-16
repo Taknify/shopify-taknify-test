@@ -398,7 +398,18 @@
       
     });
     function NavigationArrows(swiper){
-      const prevArrow = document.query
+      const prevArrow = document.querySelector('.swiper-button-prev-2');
+      const nextArrow = document.querySelector('.swiper-button-next-2');
+      if(swiper.isBeginning){
+        prevArrow.style.display='none';
+      }else{
+        prevArrow.style.display='block';
+      }
+      if(swiper.isEnd{
+        nextArrow.style.display='none';
+      }else{
+        nextArrow.style.display='block';
+      }
     }
       
       var headings = document.querySelector('.Headings');
