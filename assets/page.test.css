@@ -532,3 +532,12 @@
     margin: 20px 30px;
   }
 }
+@media(min-width: 1415px){
+  .images {
+  height: 250px;
+  width: 250px;
+}
+  .product-collection .swiper-wrapper{
+    margin: 20px 100px;
+  }
+}
