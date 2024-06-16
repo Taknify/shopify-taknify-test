@@ -470,8 +470,8 @@
   align-items: center;
 }
 .images {
-  height: 170px;
-  width: 170px;
+  height: 160px;
+  width: 160px;
   display:flex;
   justify-content:center;
   align-items:center;
