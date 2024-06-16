@@ -395,9 +395,20 @@
             spaceBetween: 2,
         }
       },
+      on:{
+        init: function(){
+          navigationArrows(this);
+        }
+        slideChange: function(){
+          navigationArrows(this);
+        },
+        resize: function(){
+          navigationArrows(this);
+        }
+      }
       
     });
-    function NavigationArrows(swiper){
+    function navigationArrows(swiper){
       const prevArrow = document.querySelector('.swiper-button-prev-2');
       const nextArrow = document.querySelector('.swiper-button-next-2');
       if(swiper.isBeginning){
