@@ -266,7 +266,7 @@
     </div>
     <div class="second-column">
       <div class="product-image">
-        <img src="{{ product.featured_image.src }}" alt="image"/>
+        <img src="{{ product.featured_image.src| img_url: 'medium' }}" alt="image"/>
       </div>
        <div class="location">
       <div class="earth-icon">
