@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -9,7 +18,7 @@
         "show-on-homepage": true,
         "link": "",
         "announcement_bar_text": "vel turpis nunc eget lorem dolor sed viverra",
-        "text-color": "#EEEEEE",
+        "text-color": "#eeeeee",
         "background-color": "#151515",
         "font-size": 10
       }
@@ -31,10 +40,29 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "1722584233278da66d": {
+      "type": "apps",
+      "blocks": {
+        "focused_metrics_app_star_rating_FQQepr": {
+          "type": "shopify:\/\/apps\/focused-metrics-app\/blocks\/star_rating\/d9fca989-80d9-487b-90a0-2e4c0f53a6f7",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "focused_metrics_app_star_rating_FQQepr"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "announcement_bar_tMqQfX",
-    "header"
+    "header",
+    "1722584233278da66d"
   ]
 }
