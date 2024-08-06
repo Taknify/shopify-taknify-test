@@ -41,20 +41,24 @@
         "padding_bottom": 20
       }
     },
-    "1722584233278da66d": {
+    "17229454198b671cb6": {
       "type": "apps",
       "blocks": {
-        "focused_metrics_app_star_rating_FQQepr": {
+        "focused_metrics_app_star_rating_TgJ7Wj": {
           "type": "shopify:\/\/apps\/focused-metrics-app\/blocks\/star_rating\/d9fca989-80d9-487b-90a0-2e4c0f53a6f7",
           "settings": {
-            "product": "",
-            "colour": "#ff0000"
           }
         }
       },
       "block_order": [
-        "focused_metrics_app_star_rating_FQQepr"
+        "focused_metrics_app_star_rating_TgJ7Wj"
       ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1722584233278da66d": {
+      "type": "apps",
       "settings": {
         "include_margins": true
       }
@@ -63,6 +67,7 @@
   "order": [
     "announcement_bar_tMqQfX",
     "header",
+    "17229454198b671cb6",
     "1722584233278da66d"
   ]
 }
