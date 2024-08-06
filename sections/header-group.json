@@ -41,6 +41,22 @@
         "padding_bottom": 20
       }
     },
+    "1722951002bc000dc9": {
+      "type": "apps",
+      "blocks": {
+        "focused_metrics_app_star_rating_hyDhPn": {
+          "type": "shopify:\/\/apps\/focused-metrics-app\/blocks\/star_rating\/d9fca989-80d9-487b-90a0-2e4c0f53a6f7",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "focused_metrics_app_star_rating_hyDhPn"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "17229454198b671cb6": {
       "type": "apps",
       "blocks": {
@@ -67,6 +83,7 @@
   "order": [
     "announcement_bar_tMqQfX",
     "header",
+    "1722951002bc000dc9",
     "17229454198b671cb6",
     "1722584233278da66d"
   ]
