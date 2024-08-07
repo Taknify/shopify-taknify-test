@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
@@ -673,6 +682,22 @@
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
+    },
+    "1723007764620a09ea": {
+      "type": "apps",
+      "blocks": {
+        "focused_metrics_app_star_rating_Fh47Rh": {
+          "type": "shopify:\/\/apps\/focused-metrics-app\/blocks\/star_rating\/d9fca989-80d9-487b-90a0-2e4c0f53a6f7",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "focused_metrics_app_star_rating_Fh47Rh"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -689,6 +714,7 @@
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
     "image_with_text2_YYzWrx",
-    "fa_qs_bk6gyL"
+    "fa_qs_bk6gyL",
+    "1723007764620a09ea"
   ]
 }
