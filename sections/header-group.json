@@ -41,17 +41,17 @@
         "padding_bottom": 20
       }
     },
-    "17229678994f364c01": {
+    "1723109805bbfbc228": {
       "type": "apps",
       "blocks": {
-        "focused_metrics_app_star_rating_cCctk8": {
-          "type": "shopify:\/\/apps\/focused-metrics-app\/blocks\/star_rating\/d9fca989-80d9-487b-90a0-2e4c0f53a6f7",
+        "app_taknify_development_star_rating_HwNbjf": {
+          "type": "shopify:\/\/apps\/app-taknify-development\/blocks\/star_rating\/e76d2691-ec42-45e5-a332-544ca6d550f7",
           "settings": {
           }
         }
       },
       "block_order": [
-        "focused_metrics_app_star_rating_cCctk8"
+        "app_taknify_development_star_rating_HwNbjf"
       ],
       "settings": {
         "include_margins": true
@@ -61,6 +61,6 @@
   "order": [
     "announcement_bar_tMqQfX",
     "header",
-    "17229678994f364c01"
+    "1723109805bbfbc228"
   ]
 }
