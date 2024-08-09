@@ -686,14 +686,14 @@
     "1723007764620a09ea": {
       "type": "apps",
       "blocks": {
-        "focused_metrics_app_star_rating_Fh47Rh": {
-          "type": "shopify:\/\/apps\/focused-metrics-app\/blocks\/star_rating\/d9fca989-80d9-487b-90a0-2e4c0f53a6f7",
+        "app_trendy_map_star_rating_GVLcng": {
+          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
           "settings": {
           }
         }
       },
       "block_order": [
-        "focused_metrics_app_star_rating_Fh47Rh"
+        "app_trendy_map_star_rating_GVLcng"
       ],
       "settings": {
         "include_margins": true
