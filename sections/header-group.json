@@ -40,10 +40,27 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "17231858877fc2b53d": {
+      "type": "apps",
+      "blocks": {
+        "app_trendy_map_star_rating_RLrGbC": {
+          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "app_trendy_map_star_rating_RLrGbC"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "announcement_bar_tMqQfX",
-    "header"
+    "header",
+    "17231858877fc2b53d"
   ]
 }
