@@ -9,22 +9,6 @@
 */
 {
   "sections": {
-    "1723007764620a09ea": {
-      "type": "apps",
-      "blocks": {
-        "app_trendy_map_star_rating_GVLcng": {
-          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "app_trendy_map_star_rating_GVLcng"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -698,10 +682,25 @@
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
+    },
+    "17231856351a44325a": {
+      "type": "apps",
+      "blocks": {
+        "app_trendy_map_star_rating_B4RYWH": {
+          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "app_trendy_map_star_rating_B4RYWH"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "1723007764620a09ea",
     "image_banner",
     "featured_collection",
     "first_image_with_text_89FFG9",
@@ -715,6 +714,7 @@
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
     "image_with_text2_YYzWrx",
-    "fa_qs_bk6gyL"
+    "fa_qs_bk6gyL",
+    "17231856351a44325a"
   ]
 }
