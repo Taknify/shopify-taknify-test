@@ -41,17 +41,17 @@
         "padding_bottom": 20
       }
     },
-    "1723456946ee729081": {
+    "17234587920020f3da": {
       "type": "apps",
       "blocks": {
-        "app_trendy_map_star_rating_rkTYCt": {
-          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+        "trendy_chandan_map_star_rating_Ud7MEM": {
+          "type": "shopify:\/\/apps\/trendy-chandan-map\/blocks\/star_rating\/cac516a4-c358-4e25-9120-5a9107d501b5",
           "settings": {
           }
         }
       },
       "block_order": [
-        "app_trendy_map_star_rating_rkTYCt"
+        "trendy_chandan_map_star_rating_Ud7MEM"
       ],
       "settings": {
         "include_margins": true
@@ -61,6 +61,6 @@
   "order": [
     "announcement_bar_tMqQfX",
     "header",
-    "1723456946ee729081"
+    "17234587920020f3da"
   ]
 }
