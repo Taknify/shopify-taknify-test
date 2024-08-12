@@ -41,17 +41,17 @@
         "padding_bottom": 20
       }
     },
-    "1723441785860646ab": {
+    "1723442240cbce9a72": {
       "type": "apps",
       "blocks": {
-        "app_trendy_map_star_rating_8mE69J": {
+        "app_trendy_map_star_rating_yqaVFf": {
           "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
           "settings": {
           }
         }
       },
       "block_order": [
-        "app_trendy_map_star_rating_8mE69J"
+        "app_trendy_map_star_rating_yqaVFf"
       ],
       "settings": {
         "include_margins": true
@@ -61,6 +61,6 @@
   "order": [
     "announcement_bar_tMqQfX",
     "header",
-    "1723441785860646ab"
+    "1723442240cbce9a72"
   ]
 }
