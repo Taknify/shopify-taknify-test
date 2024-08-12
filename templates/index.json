@@ -125,6 +125,22 @@
         "Button1": "aliquam etiam erat"
       }
     },
+    "1723459913d7f41304": {
+      "type": "apps",
+      "blocks": {
+        "trendy_chandan_map_star_rating_VGxGBL": {
+          "type": "shopify:\/\/apps\/trendy-chandan-map\/blocks\/star_rating\/cac516a4-c358-4e25-9120-5a9107d501b5",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "trendy_chandan_map_star_rating_VGxGBL"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "circular_images_YQpbUq": {
       "type": "circular-images",
       "blocks": {
@@ -705,6 +721,7 @@
     "image_banner",
     "featured_collection",
     "first_image_with_text_89FFG9",
+    "1723459913d7f41304",
     "circular_images_YQpbUq",
     "three_columns_text_xhGQML",
     "table_ykfafh",
