@@ -9,18 +9,14 @@
 */
 {
   "sections": {
+    "1724908416c7a57789": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
     "17231856351a44325a": {
       "type": "apps",
-      "blocks": {
-        "app_trendy_map_star_rating_B4RYWH": {
-          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "app_trendy_map_star_rating_B4RYWH"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -127,16 +123,6 @@
     },
     "1723459913d7f41304": {
       "type": "apps",
-      "blocks": {
-        "trendy_chandan_map_star_rating_VGxGBL": {
-          "type": "shopify:\/\/apps\/trendy-chandan-map\/blocks\/star_rating\/cac516a4-c358-4e25-9120-5a9107d501b5",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "trendy_chandan_map_star_rating_VGxGBL"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -717,6 +703,7 @@
     }
   },
   "order": [
+    "1724908416c7a57789",
     "17231856351a44325a",
     "image_banner",
     "featured_collection",
