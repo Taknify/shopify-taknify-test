@@ -9,18 +9,6 @@
 */
 {
   "sections": {
-    "1724908416c7a57789": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "17231856351a44325a": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -119,12 +107,6 @@
         "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur ut adipiscing elit, sed do eiusmod tempor do incididunt ut labore et dolore magna aliqua. Odiout enim blandit volutpat maecenas volutpat blandit.",
         "HeadingColor": "#e80f88",
         "Button1": "aliquam etiam erat"
-      }
-    },
-    "1723459913d7f41304": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
       }
     },
     "circular_images_YQpbUq": {
@@ -700,15 +682,28 @@
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
+    },
+    "1725414983a4794f8d": {
+      "type": "apps",
+      "blocks": {
+        "app_trendy_map_star_rating_ParjKw": {
+          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "app_trendy_map_star_rating_ParjKw"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "1724908416c7a57789",
-    "17231856351a44325a",
     "image_banner",
     "featured_collection",
     "first_image_with_text_89FFG9",
-    "1723459913d7f41304",
     "circular_images_YQpbUq",
     "three_columns_text_xhGQML",
     "table_ykfafh",
@@ -719,6 +714,7 @@
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
     "image_with_text2_YYzWrx",
-    "fa_qs_bk6gyL"
+    "fa_qs_bk6gyL",
+    "1725414983a4794f8d"
   ]
 }
