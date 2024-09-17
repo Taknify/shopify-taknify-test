@@ -40,29 +40,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "172656351534cd4a3a": {
-      "type": "apps",
-      "blocks": {
-        "trendy_chandan_map_template_selector_cCgK9M": {
-          "type": "shopify:\/\/apps\/trendy-chandan-map\/blocks\/template_selector\/cac516a4-c358-4e25-9120-5a9107d501b5",
-          "settings": {
-            "metafield_key": "design_1",
-            "namespace": "template_selection"
-          }
-        }
-      },
-      "block_order": [
-        "trendy_chandan_map_template_selector_cCgK9M"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "announcement_bar_tMqQfX",
-    "header",
-    "172656351534cd4a3a"
+    "header"
   ]
 }
