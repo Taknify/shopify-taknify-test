@@ -686,14 +686,26 @@
     "1725414983a4794f8d": {
       "type": "apps",
       "blocks": {
-        "app_trendy_map_star_rating_ParjKw": {
-          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/star_rating\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+        "app_trendy_map_template_one_QW6wHH": {
+          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/template_one\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        },
+        "app_trendy_map_template_two_dewUxU": {
+          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/template_two\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        },
+        "app_trendy_map_template_three_FtQCQF": {
+          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/template_three\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
           "settings": {
           }
         }
       },
       "block_order": [
-        "app_trendy_map_star_rating_ParjKw"
+        "app_trendy_map_template_one_QW6wHH",
+        "app_trendy_map_template_two_dewUxU",
+        "app_trendy_map_template_three_FtQCQF"
       ],
       "settings": {
         "include_margins": true
