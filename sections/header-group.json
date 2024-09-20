@@ -48,10 +48,16 @@
           "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/template_one\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
           "settings": {
           }
+        },
+        "trendy_chandan_map_template_one_QNrHwx": {
+          "type": "shopify:\/\/apps\/trendy-chandan-map\/blocks\/template_one\/cac516a4-c358-4e25-9120-5a9107d501b5",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "app_trendy_map_template_one_V6jR6V"
+        "app_trendy_map_template_one_V6jR6V",
+        "trendy_chandan_map_template_one_QNrHwx"
       ],
       "settings": {
         "include_margins": true
