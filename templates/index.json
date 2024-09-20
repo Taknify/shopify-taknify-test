@@ -682,34 +682,6 @@
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
-    },
-    "1725414983a4794f8d": {
-      "type": "apps",
-      "blocks": {
-        "app_trendy_map_template_one_QW6wHH": {
-          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/template_one\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
-          "settings": {
-          }
-        },
-        "app_trendy_map_template_two_dewUxU": {
-          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/template_two\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
-          "settings": {
-          }
-        },
-        "app_trendy_map_template_three_FtQCQF": {
-          "type": "shopify:\/\/apps\/app-trendy-map\/blocks\/template_three\/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "app_trendy_map_template_one_QW6wHH",
-        "app_trendy_map_template_two_dewUxU",
-        "app_trendy_map_template_three_FtQCQF"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -726,7 +698,6 @@
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
     "image_with_text2_YYzWrx",
-    "fa_qs_bk6gyL",
-    "1725414983a4794f8d"
+    "fa_qs_bk6gyL"
   ]
 }
