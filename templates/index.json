@@ -23,7 +23,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -101,7 +101,7 @@
         "button_JChHci"
       ],
       "settings": {
-        "BannerImage": "shopify:\/\/shop_images\/pexels-anastasiya-gepp-654466-1462637.jpg",
+        "BannerImage": "shopify://shop_images/pexels-anastasiya-gepp-654466-1462637.jpg",
         "TextHeading": "elei donec pretium vulput sapien nec",
         "TextInfo": "Lorem ipsum dolor sit amet, sed do. Odio ut enim blandit maecenas volutpat bland.",
         "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur ut adipiscing elit, sed do eiusmod tempor do incididunt ut labore et dolore magna aliqua. Odiout enim blandit volutpat maecenas volutpat blandit.",
@@ -115,35 +115,35 @@
         "image_wVVqAJ": {
           "type": "image",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/pexels-henrique-palmeira-1013623-1998880.jpg",
+            "Image": "shopify://shop_images/pexels-henrique-palmeira-1013623-1998880.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_YDhYtW": {
           "type": "image",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/man-4821291_1280_1.jpg",
+            "Image": "shopify://shop_images/man-4821291_1280_1.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_aKRGKh": {
           "type": "image",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-8277925_1280.jpg",
+            "Image": "shopify://shop_images/woman-8277925_1280.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_g7eGgD": {
           "type": "image",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-3153999_1280.jpg",
+            "Image": "shopify://shop_images/woman-3153999_1280.jpg",
             "ImageText": "auctor urna"
           }
         },
         "image_CRjwU3": {
           "type": "image",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-2593366_1280.jpg",
+            "Image": "shopify://shop_images/woman-2593366_1280.jpg",
             "ImageText": "auctor urna"
           }
         }
@@ -266,7 +266,7 @@
         "images_jLrDhm": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/girl-3033718_1280.jpg",
+            "Image": "shopify://shop_images/girl-3033718_1280.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -274,7 +274,7 @@
         "images_A3kTCw": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-2178816_1280.jpg",
+            "Image": "shopify://shop_images/woman-2178816_1280.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -282,7 +282,7 @@
         "images_BEJVDJ": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-8378634_1280.jpg",
+            "Image": "shopify://shop_images/woman-8378634_1280.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -290,7 +290,7 @@
         "images_GVUEEx": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/man-1866572_1280.jpg",
+            "Image": "shopify://shop_images/man-1866572_1280.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -298,7 +298,7 @@
         "images_dGrNmp": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-2178816_1280.jpg",
+            "Image": "shopify://shop_images/woman-2178816_1280.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -306,7 +306,7 @@
         "images_zWEbQG": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-8277925_1280.jpg",
+            "Image": "shopify://shop_images/woman-8277925_1280.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -314,7 +314,7 @@
         "images_6keweb": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/pexels-alipazani-2584269.jpg",
+            "Image": "shopify://shop_images/pexels-alipazani-2584269.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -322,7 +322,7 @@
         "images_aEajwa": {
           "type": "images",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/girl-3033718_1280.jpg",
+            "Image": "shopify://shop_images/girl-3033718_1280.jpg",
             "TextTitle": "bibendum at",
             "TextDescription": "varius quam quisque id diam velss ss quam element pulvinar etiam"
           }
@@ -350,7 +350,7 @@
         "text_ndqDAh": {
           "type": "text",
           "settings": {
-            "ReviewImage": "shopify:\/\/shop_images\/girl-3033718_1280.jpg",
+            "ReviewImage": "shopify://shop_images/girl-3033718_1280.jpg",
             "text": "Feugiat Pretium",
             "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
           }
@@ -358,7 +358,7 @@
         "text_LCQzGP": {
           "type": "text",
           "settings": {
-            "ReviewImage": "shopify:\/\/shop_images\/woman-8378634_1280.jpg",
+            "ReviewImage": "shopify://shop_images/woman-8378634_1280.jpg",
             "text": "Feugiat Pretium",
             "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
           }
@@ -366,7 +366,7 @@
         "text_pV6ihU": {
           "type": "text",
           "settings": {
-            "ReviewImage": "shopify:\/\/shop_images\/woman-1274056_1280.jpg",
+            "ReviewImage": "shopify://shop_images/woman-1274056_1280.jpg",
             "text": "Feugiat Pretium",
             "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
           }
@@ -374,7 +374,7 @@
         "text_c4jGJi": {
           "type": "text",
           "settings": {
-            "ReviewImage": "shopify:\/\/shop_images\/pexels-alipazani-2584269.jpg",
+            "ReviewImage": "shopify://shop_images/pexels-alipazani-2584269.jpg",
             "text": "Feugiat Pretium",
             "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
           }
@@ -382,7 +382,7 @@
         "text_tikDXk": {
           "type": "text",
           "settings": {
-            "ReviewImage": "shopify:\/\/shop_images\/woman-8277925_1280.jpg",
+            "ReviewImage": "shopify://shop_images/woman-8277925_1280.jpg",
             "text": "Feugiat Pretium",
             "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
           }
@@ -390,7 +390,7 @@
         "text_Fen6P4": {
           "type": "text",
           "settings": {
-            "ReviewImage": "shopify:\/\/shop_images\/pexels-marcelodias-2435474.jpg",
+            "ReviewImage": "shopify://shop_images/pexels-marcelodias-2435474.jpg",
             "text": "Feugiat Pretium",
             "textarea": "Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque"
           }
@@ -411,7 +411,7 @@
     "image_with_text2_JQinM9": {
       "type": "image-with-text2",
       "settings": {
-        "Image": "shopify:\/\/shop_images\/man-3803551_1280.jpg",
+        "Image": "shopify://shop_images/man-3803551_1280.jpg",
         "TextHeading": "Pretium Vulpute Sapien",
         "TextName": "Maecenas, Volutpat Bland",
         "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo a diam sollicitudin tempor id eu nisl nunc. Magna etiam tempor orci eu. Amet aliquam id diam maecenas. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem. Nunc aliquet bibendum enim facilisis gravida.",
@@ -426,7 +426,7 @@
         "tabs_NGLGbB": {
           "type": "tabs",
           "settings": {
-            "TabImage": "shopify:\/\/shop_images\/hands-1866619_1280.jpg",
+            "TabImage": "shopify://shop_images/hands-1866619_1280.jpg",
             "TabText": "pellentesque",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elite.",
             "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat."
@@ -435,7 +435,7 @@
         "tabs_9MeVLV": {
           "type": "tabs",
           "settings": {
-            "TabImage": "shopify:\/\/shop_images\/pearls-1527060_1280.jpg",
+            "TabImage": "shopify://shop_images/pearls-1527060_1280.jpg",
             "TabText": "pellentesque",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elite.",
             "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat."
@@ -444,7 +444,7 @@
         "tabs_pCjhVK": {
           "type": "tabs",
           "settings": {
-            "TabImage": "shopify:\/\/shop_images\/makeup-1137706_1280.jpg",
+            "TabImage": "shopify://shop_images/makeup-1137706_1280.jpg",
             "TabText": "pellentesque",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elite.",
             "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat."
@@ -453,7 +453,7 @@
         "tabs_XKpmPC": {
           "type": "tabs",
           "settings": {
-            "TabImage": "shopify:\/\/shop_images\/freshwater-pearl-2302852_1280.jpg",
+            "TabImage": "shopify://shop_images/freshwater-pearl-2302852_1280.jpg",
             "TabText": "pellentesque",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elite.",
             "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat."
@@ -462,7 +462,7 @@
         "tabs_J6NNEK": {
           "type": "tabs",
           "settings": {
-            "TabImage": "shopify:\/\/shop_images\/shouzhu-1942385_1280.jpg",
+            "TabImage": "shopify://shop_images/shouzhu-1942385_1280.jpg",
             "TabText": "pellentesque",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elite.",
             "ExtraInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam erat."
@@ -486,7 +486,7 @@
         "text_miNLgR": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/shouzhu-1942385_1280.jpg",
+            "Image": "shopify://shop_images/shouzhu-1942385_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "3 hours",
             "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -501,7 +501,7 @@
         "text_hn6cV3": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/freshwater-pearl-2302852_1280.jpg",
+            "Image": "shopify://shop_images/freshwater-pearl-2302852_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "3 hours",
             "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -516,7 +516,7 @@
         "text_8VKUKG": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/makeup-1137706_1280.jpg",
+            "Image": "shopify://shop_images/makeup-1137706_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "3 hours",
             "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -531,7 +531,7 @@
         "text_PxgXjG": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/hands-1866619_1280.jpg",
+            "Image": "shopify://shop_images/hands-1866619_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "3 hours",
             "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -546,7 +546,7 @@
         "text_6BB4Fy": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/pearls-1527060_1280.jpg",
+            "Image": "shopify://shop_images/pearls-1527060_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "3 hours",
             "List1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -577,7 +577,7 @@
         "text_yMTP8y": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/man-2564902_1280.jpg",
+            "Image": "shopify://shop_images/man-2564902_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
             "LearnMore": "",
@@ -589,7 +589,7 @@
         "text_MVnc9J": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/woman-6771278_1280.jpg",
+            "Image": "shopify://shop_images/woman-6771278_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
             "LearnMore": "",
@@ -601,7 +601,7 @@
         "text_QwCkVQ": {
           "type": "text",
           "settings": {
-            "Image": "shopify:\/\/shop_images\/beanie-2562646_1280.jpg",
+            "Image": "shopify://shop_images/beanie-2562646_1280.jpg",
             "TextTopic": "Donec Ultrices Tincidunt",
             "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu cursus euismod quis viverra.",
             "LearnMore": "",
@@ -624,7 +624,7 @@
     "image_with_text2_YYzWrx": {
       "type": "image-with-text2",
       "settings": {
-        "Image": "shopify:\/\/shop_images\/man-2564902_1280.jpg",
+        "Image": "shopify://shop_images/man-2564902_1280.jpg",
         "TextHeading": "Pretium Vulpute Sapien",
         "TextName": "Maecenas, Volutpat Bland",
         "TextInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo a diam sollicitudin tempor id eu nisl nunc. Magna etiam tempor orci eu. Amet aliquam id diam maecenas.",
@@ -682,6 +682,34 @@
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
+    },
+    "1727147875bbd88c58": {
+      "type": "apps",
+      "blocks": {
+        "app_trendy_map_template_one_kYFyTA": {
+          "type": "shopify://apps/app-trendy-map/blocks/template_one/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        },
+        "app_trendy_map_template_two_YNTiMn": {
+          "type": "shopify://apps/app-trendy-map/blocks/template_two/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        },
+        "app_trendy_map_template_three_YGVbcE": {
+          "type": "shopify://apps/app-trendy-map/blocks/template_three/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "app_trendy_map_template_one_kYFyTA",
+        "app_trendy_map_template_two_YNTiMn",
+        "app_trendy_map_template_three_YGVbcE"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -698,6 +726,7 @@
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
     "image_with_text2_YYzWrx",
-    "fa_qs_bk6gyL"
+    "fa_qs_bk6gyL",
+    "1727147875bbd88c58"
   ]
 }
