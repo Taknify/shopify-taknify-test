@@ -686,14 +686,14 @@
     "1727147875bbd88c58": {
       "type": "apps",
       "blocks": {
-        "app_trendy_map_template_one_QzCrgP": {
+        "app_trendy_map_template_one_ETUEnE": {
           "type": "shopify://apps/app-trendy-map/blocks/template_one/0e4aeb1f-ddcf-4f41-9e6f-cdc27f79e024",
           "settings": {
           }
         }
       },
       "block_order": [
-        "app_trendy_map_template_one_QzCrgP"
+        "app_trendy_map_template_one_ETUEnE"
       ],
       "settings": {
         "include_margins": true
