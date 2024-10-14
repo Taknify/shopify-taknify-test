@@ -58,11 +58,30 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "17288672082371023e": {
+      "type": "apps",
+      "blocks": {
+        "prasuna_map_app_location_MppYjF": {
+          "type": "shopify://apps/prasuna-map-app/blocks/location/520ca94f-4542-4bde-babb-343c0324f39f",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "prasuna_map_app_location_MppYjF"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "announcement_bar_tMqQfX",
     "header",
-    "172886720504bed5c5"
+    "172886720504bed5c5",
+    "17288672082371023e"
   ]
 }
