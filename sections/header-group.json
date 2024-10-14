@@ -43,8 +43,14 @@
     },
     "172886779516bb0c17": {
       "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17288680641d2abdd4": {
+      "type": "apps",
       "blocks": {
-        "prasuna_map_app_location_mPwmML": {
+        "prasuna_map_app_location_zDxp9j": {
           "type": "shopify://apps/prasuna-map-app/blocks/location/520ca94f-4542-4bde-babb-343c0324f39f",
           "settings": {
             "product": "",
@@ -53,7 +59,7 @@
         }
       },
       "block_order": [
-        "prasuna_map_app_location_mPwmML"
+        "prasuna_map_app_location_zDxp9j"
       ],
       "settings": {
         "include_margins": true
@@ -63,6 +69,7 @@
   "order": [
     "announcement_bar_tMqQfX",
     "header",
-    "172886779516bb0c17"
+    "172886779516bb0c17",
+    "17288680641d2abdd4"
   ]
 }
