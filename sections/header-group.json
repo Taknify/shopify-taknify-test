@@ -47,8 +47,7 @@
         "prasuna_map_app_location_AmGRdj": {
           "type": "shopify://apps/prasuna-map-app/blocks/location/520ca94f-4542-4bde-babb-343c0324f39f",
           "settings": {
-            "product": "",
-            "colour": "#ff0000"
+            "textColor": "#f53131"
           }
         }
       },
