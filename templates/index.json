@@ -682,23 +682,6 @@
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
-    },
-    "17293413480e1388d3": {
-      "type": "apps",
-      "blocks": {
-        "prasuna_map_app_single_location_menfHq": {
-          "type": "shopify://apps/prasuna-map-app/blocks/singleLocation/520ca94f-4542-4bde-babb-343c0324f39f",
-          "settings": {
-            "textColor": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "prasuna_map_app_single_location_menfHq"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -715,7 +698,6 @@
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
     "image_with_text2_YYzWrx",
-    "fa_qs_bk6gyL",
-    "17293413480e1388d3"
+    "fa_qs_bk6gyL"
   ]
 }
