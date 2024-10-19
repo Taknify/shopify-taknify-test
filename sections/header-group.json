@@ -40,28 +40,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "17288689000dc55d9f": {
-      "type": "apps",
-      "blocks": {
-        "prasuna_map_app_location_AmGRdj": {
-          "type": "shopify://apps/prasuna-map-app/blocks/location/520ca94f-4542-4bde-babb-343c0324f39f",
-          "settings": {
-            "textColor": "#f53131"
-          }
-        }
-      },
-      "block_order": [
-        "prasuna_map_app_location_AmGRdj"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "announcement_bar_tMqQfX",
-    "header",
-    "17288689000dc55d9f"
+    "header"
   ]
 }
