@@ -40,64 +40,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "17293400670606118d": {
-      "type": "apps",
-      "blocks": {
-        "prasuna_map_app_location_ByJqE3": {
-          "type": "shopify://apps/prasuna-map-app/blocks/location/520ca94f-4542-4bde-babb-343c0324f39f",
-          "settings": {
-            "textColor": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "prasuna_map_app_location_ByJqE3"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "17294283166551f515": {
-      "type": "apps",
-      "blocks": {
-        "prasuna_map_app_single_location_deN87b": {
-          "type": "shopify://apps/prasuna-map-app/blocks/singleLocation/520ca94f-4542-4bde-babb-343c0324f39f",
-          "settings": {
-            "textColor": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "prasuna_map_app_single_location_deN87b"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "17294346220fbd584a": {
-      "type": "apps",
-      "blocks": {
-        "prasuna_map_app_single_location_design2_V3AWTJ": {
-          "type": "shopify://apps/prasuna-map-app/blocks/singleLocation_design2/520ca94f-4542-4bde-babb-343c0324f39f",
-          "settings": {
-            "textColor": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "prasuna_map_app_single_location_design2_V3AWTJ"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "announcement_bar_tMqQfX",
-    "header",
-    "17293400670606118d",
-    "17294283166551f515",
-    "17294346220fbd584a"
+    "header"
   ]
 }
