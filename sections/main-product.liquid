@@ -478,6 +478,7 @@
                       role="img"
                       aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: product.metafields.reviews.rating.value, rating_max: product.metafields.reviews.rating.value.scale_max }}"
                     >
+                      <div> complementary product here</div>
                       <span
                         aria-hidden="true"
                         class="rating-star"
@@ -650,7 +651,7 @@
         </product-info>
       </div>
     </div>
-        <div> complementary product here</div>
+        
 
     {% render 'product-media-modal', variant_images: variant_images %}
 
