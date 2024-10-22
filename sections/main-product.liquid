@@ -636,6 +636,7 @@
                       </div>
                     </aside>
                   {%- endif -%}
+                  
                   {{ 'component-card.css' | asset_url | stylesheet_tag }}
                   {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
                   {%- if block.settings.enable_quick_add -%}
@@ -654,6 +655,7 @@
         </product-info>
       </div>
     </div>
+    <div> complementary product here</div>
         
 
     {% render 'product-media-modal', variant_images: variant_images %}
