@@ -584,21 +584,7 @@
                               </div>
                             {%- endfor -%}
                           </div>
-                           <div class="complementary_product"> 
-            {% if product.metafields.custom.product_goes_with  %}
-               {% assign product = product.metafields.custom.product_goes_with.value  %}
-                 <div class="image-wrapper">
-                   <img src="{{ product.featured_image | img_url }}" alt="{{ product.title }}">
-                  </div>
-                  <div class="product-title">
-                    {{product.title}}
-                  </div>
-                  <div class="product-price">
-                    ${{ product.price }}
-                  </div>
-                  <li>             
-            {% endif %}
-          </div>
+                          
                           
                           {%- if number_of_slides > 1 -%}
                             <div class="slider-buttons">
@@ -651,6 +637,21 @@
                       </div>
                     </aside>
                   {%- endif -%}
+                   <div class="complementary_product"> 
+            {% if product.metafields.custom.product_goes_with  %}
+               {% assign product = product.metafields.custom.product_goes_with.value  %}
+                 <div class="image-wrapper">
+                   <img src="{{ product.featured_image | img_url }}" alt="{{ product.title }}">
+                  </div>
+                  <div class="product-title">
+                    {{product.title}}
+                  </div>
+                  <div class="product-price">
+                    ${{ product.price }}
+                  </div>
+                  <li>             
+            {% endif %}
+          </div>
                   
                   {{ 'component-card.css' | asset_url | stylesheet_tag }}
                   {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
