@@ -501,7 +501,7 @@
                     </p>
                   </div>
                 {%- endif -%}
-                            <div> complementary product here</div>
+                            
               {%- when 'complementary' -%}
                 <product-recommendations
                   class="complementary-products quick-add-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
@@ -584,6 +584,7 @@
                               </div>
                             {%- endfor -%}
                           </div>
+                          <div> complementary product here</div>
                           {%- if number_of_slides > 1 -%}
                             <div class="slider-buttons">
                               <button
