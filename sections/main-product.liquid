@@ -656,7 +656,8 @@
       </div>
         <div> 
             {% if product.metafields.custom.product_goes_with  %}
-               complementary product here 
+               {% assign product = product.metafields.custom.product_goes_with.value  %}
+                 {{product.title  }}
             {% endif %}
           </div>
     </div>
