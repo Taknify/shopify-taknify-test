@@ -584,6 +584,21 @@
                               </div>
                             {%- endfor -%}
                           </div>
+                           <div class="complementary_product"> 
+            {% if product.metafields.custom.product_goes_with  %}
+               {% assign product = product.metafields.custom.product_goes_with.value  %}
+                 <div class="image-wrapper">
+                   <img src="{{ product.featured_image | img_url }}" alt="{{ product.title }}">
+                  </div>
+                  <div class="product-title">
+                    {{product.title}}
+                  </div>
+                  <div class="product-price">
+                    ${{ product.price }}
+                  </div>
+                  <li>             
+            {% endif %}
+          </div>
                           
                           {%- if number_of_slides > 1 -%}
                             <div class="slider-buttons">
@@ -654,36 +669,7 @@
           </a>
         </product-info>
       </div>
-        <div class="complementary_product"> 
-            {% if product.metafields.custom.product_goes_with  %}
-               {% assign product = product.metafields.custom.product_goes_with.value  %}
-                 <div class="image-wrapper">
-                   <img src="{{ product.featured_image | img_url }}" alt="{{ product.title }}">
-                  </div>
-                  <div class="product-title">
-                    {{product.title}}
-                  </div>
-                  <div class="product-price">
-                    ${{ product.price }}
-                  </div>
-                  <li>
-  {%- assign quick_add = block.settings.enable_quick_add | default: "none" -%}
-
-  {% render 'card-product',
-    card_product: product,
-    media_aspect_ratio: block.settings.image_ratio,
-    show_secondary_image: false,
-    lazy_load: false,
-    quick_add: quick_add,
-    section_id: section.id,
-    horizontal_class: true,
-    horizontal_quick_add: true
-  %}
-</li>
-
-                       
-            {% endif %}
-          </div>
+       
     </div>
     
         
