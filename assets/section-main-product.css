@@ -668,6 +668,17 @@ a.product__text {
   align-items: center;
   justify-content: center;
 }
+.complemeentary_product .image-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.complemeentary_product .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media screen and (min-width: 750px) {
   .product-media-modal__content {
