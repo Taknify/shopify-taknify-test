@@ -657,6 +657,9 @@
         <div class="complemeentary_product"> 
             {% if product.metafields.custom.product_goes_with  %}
                {% assign product = product.metafields.custom.product_goes_with.value  %}
+                 <div class="image-wrapper">
+                   <img src="{{ product.featured_image | img_url }}" alt="{{ product.title }}">
+                  </div>
                  <p>{{ product.featured_image |img_tag }} </p>
                  <p>{{product.title}}</p>
                  <p> ${{ product.price }}</p>        
