@@ -653,7 +653,11 @@
             {% render 'icon-arrow' %}
           </a>
         </product-info>
-          <div> complementary product here {{ product.metafields.custom.product_goes_with }}</div>
+          <div> 
+            complementary product here 
+            {% if product.metafields.custom.product_goes_with  %}
+            {% endif %}
+          </div>
       </div>
       
     </div>
