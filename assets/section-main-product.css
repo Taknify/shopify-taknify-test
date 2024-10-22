@@ -662,13 +662,13 @@ a.product__text {
   display: none;
 }
 
-.complemeentary_product {
+.complementary_product {
   didplay: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.complemeentary_product .image-wrapper {
+.complementary_product .image-wrapper {
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
@@ -676,13 +676,13 @@ a.product__text {
   padding-top: 0;
 }
 
-.complemeentary_product .image-wrapper img {
+.complementary_product .image-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.complemeentary_product .product-title {
-  font-sixe: 30px;
+.complementary_product .product-title {
+  font-size: 30px;
   margin-bottom: 0;
   padding-top: 0;
 }
