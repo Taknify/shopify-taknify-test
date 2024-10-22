@@ -659,6 +659,7 @@
                {% assign product = product.metafields.custom.product_goes_with.value  %}
                  {{product.title  }}
                 {{ product.featured_image |img_tag }}
+                {{ product.price.regular_price }}
             {% endif %}
           </div>
     </div>
