@@ -658,21 +658,7 @@
       </div>
        
     </div>
-     <div class="complementary_product"> 
-            {% if product.metafields.custom.product_goes_with  %}
-               {% assign product = product.metafields.custom.product_goes_with.value  %}
-                 <div class="image-wrapper">
-                   <img src="{{ product.featured_image | img_url }}" alt="{{ product.title }}">
-                  </div>
-                  <div class="product-title">
-                    {{product.title}}
-                  </div>
-                  <div class="product-price">
-                    ${{ product.price }}
-                  </div>
-                  <li>             
-            {% endif %}
-          </div>
+    
     
         
 
