@@ -676,10 +676,6 @@ a.product__text {
   padding-top: 0;
 }
 
-.complementary_product .image-wrapper img {
-  width: 100%;
-  height: 100%;
-}
 .complementary_product .product-title {
   font-size: 20px;
   margin-bottom: 0;
