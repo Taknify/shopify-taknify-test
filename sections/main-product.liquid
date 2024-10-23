@@ -446,7 +446,28 @@
                     {{ block.settings.text | default: block.settings.page.title | escape }}
                   </button>
                 </modal-opener>
-                
+                 <div class="complementary_product"> 
+         {% if product.metafields.custom.product_goes_with  %}
+           {% assign product = product.metafields.custom.product_goes_with.value  %}
+             <div class="image-wrapper">
+               <img src="{{ product.featured_image | img_url }}" alt="{{ product.title }}">
+             </div>
+             <div class="product-title">
+               {{product.title}}
+             </div>
+             <div class="product-price">
+               ${{ product.price }}
+             </div>
+             <div class="custom-add-to-cart">
+              {%- render 'buy-buttons',
+                product: product,
+                product_form_id: 'custom-product-form',
+                section_id: 'custom-section',
+               show_pickup_availability: false
+            -%}
+           </div>
+        {% endif %}
+      </div>      
               {%- when 'share' -%}
                 {% liquid
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
