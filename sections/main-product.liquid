@@ -455,7 +455,7 @@
                   {% if product.metafields.custom.product_goes_with  %}
                    {% assign product = product.metafields.custom.product_goes_with.value  %}
                      <div class="image-wrapper">
-                       <img src="{{ product.featured_image | img_url:'1080x1080' }}" alt="{{ product.title }}">
+                       <img src="{{ product.featured_image | img_url:'800x800' }}" alt="{{ product.title }}">
                      </div>
                     <div class="product-title">
                      {{product.title}}
