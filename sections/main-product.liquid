@@ -668,7 +668,15 @@
                   <div class="product-price">
                     ${{ product.price }}
                   </div>
-              
+                 <div class="custom-add-to-cart">
+  {%- render 'buy-buttons',
+    product: product,
+    product_form_id: 'custom-product-form',
+    section_id: 'custom-section',
+    show_pickup_availability: false
+  -%}
+</div>
+
                        
             {% endif %}
           </div>      
