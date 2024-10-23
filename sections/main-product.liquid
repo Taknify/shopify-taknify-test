@@ -451,9 +451,11 @@
                   assign share_url = product.selected_variant.url | default: product.url | prepend: request.origin
                   render 'share-button', block: block, share_link: share_url
                 %}
+                
                 <div class="complementary_product"> 
                   {% if product.metafields.custom.product_goes_with  %}
                    {% assign product = product.metafields.custom.product_goes_with.value  %}
+                     <div>Peope also buy</div>
                      <div class="image-wrapper">
                        <img src="{{ product.featured_image | img_url:'800x800' }}" alt="{{ product.title }}">
                      </div>
