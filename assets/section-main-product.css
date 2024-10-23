@@ -670,7 +670,7 @@ a.product__text {
 }
 .complementary_product .image-wrapper {
   width: 100%;
-  aspect-ratio: 1 / 1;
+
   overflow: hidden;
   margin-bottom: 0;
   padding-top: 0;
