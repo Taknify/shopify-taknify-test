@@ -155,8 +155,7 @@
         "image_g7eGgD",
         "image_CRjwU3"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "three_columns_text_xhGQML": {
       "type": "three-columns-text",
@@ -682,6 +681,23 @@
       "settings": {
         "Heading": "Frequently Asked Questions"
       }
+    },
+    "1734197899f6c35a23": {
+      "type": "apps",
+      "blocks": {
+        "app_taknify_map_location_CVCqqK": {
+          "type": "shopify://apps/app-taknify-map/blocks/location/6c6ceffd-008d-4ad6-a376-9288c2359bb2",
+          "settings": {
+            "textColor": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "app_taknify_map_location_CVCqqK"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -698,6 +714,7 @@
     "two_columns_image_text_qVRcEK",
     "three_grid_columns_dyp8pk",
     "image_with_text2_YYzWrx",
-    "fa_qs_bk6gyL"
+    "fa_qs_bk6gyL",
+    "1734197899f6c35a23"
   ]
 }
