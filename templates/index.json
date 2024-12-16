@@ -18,6 +18,12 @@
             "textColor": "#000000"
           }
         },
+        "app_taknify_map_dev_single_location_A6NHky": {
+          "type": "shopify://apps/app-taknify-map-dev/blocks/singleLocation/da17b3dd-0789-4754-b353-d79756b7e3a0",
+          "settings": {
+            "textColor": "#000000"
+          }
+        },
         "app_taknify_map_location_zmtNrr": {
           "type": "shopify://apps/app-taknify-map/blocks/location/6c6ceffd-008d-4ad6-a376-9288c2359bb2",
           "disabled": true,
@@ -28,6 +34,7 @@
       },
       "block_order": [
         "app_taknify_map_dev_location_AHP6hh",
+        "app_taknify_map_dev_single_location_A6NHky",
         "app_taknify_map_location_zmtNrr"
       ],
       "settings": {
