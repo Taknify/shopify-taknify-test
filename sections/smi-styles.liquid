@@ -1,12 +1,19 @@
-{%-liquid
-    assign _prefix = ''
-    if section.location == 'template'
-      assign _prefix = '.shopify-section'
-    endif 
+{%- liquid
+  assign _prefix = ''
+  if section.location == 'template'
+    assign _prefix = '.shopify-section'
+  endif
 -%}
-{% for block in section.blocks %}
-    {% case block.type %}
-        {% when 'color' %}
+<style>
+  {% if request.design_mode %}
+    section.smi-styles{
+        position: fixed;
+        top: 30%;
+    }
+  {% endif %}
+  {% for block in section.blocks %}
+      {% case block.type %}
+          {% when 'color' %}
 {%-liquid
     assign color_class1 = ', body .smi-color-scheme_'
     assign color_class2 = 'body .smi-section'
@@ -15,141 +22,159 @@
       assign color_class2 = 'body ' | append: _prefix | append: '.smi-section'
     endif 
 -%}
-<style>
-    {% for i in (1..10) -%}
-        {% assign scheme_classes = scheme_classes | append: color_class1 | append: i %}
-        {% if i == 1 -%}
-            body {{ _prefix }}.smi-section,
-        {%- endif %}
-        {%-liquid
-            assign key_bg = 'background_color' | append: i
-            assign key_gradient = 'background_gradient_color' | append: i
-            assign key_text = 'text_color' | append: i
-            assign key_subtext = 'subtext_color' | append: i
-            assign key_solid_bg = 'solid_background_button_color' | append: i
-            assign key_solid_label = 'solid_button_label_color' | append: i
-            assign key_outline = 'outline_button_color' | append: i
-            assign key_shadow = 'shadow_color' | append: i
-        -%}
-        body {{ _prefix }} .smi-color-scheme_{{ i }} {
-        --color-background: {{ block.settings[key_bg].red }},{{ block.settings[key_bg].green }},{{ block.settings[key_bg].blue }};
-        --color-background-alpha: {{ block.settings[key_bg].alpha }};
-        {% if block.settings[key_gradient] != empty %}
-            --gradient-background: {{ block.settings[key_gradient] }};
-        {% else %}
-            --gradient-background: {{ block.settings[key_bg] }};
-        {% endif %}
-        --color-foreground: {{ block.settings[key_text].red }},{{ block.settings[key_text].green }},{{ block.settings[key_text].blue }};
-        --color-subtext: {{ block.settings[key_subtext].red }},{{ block.settings[key_subtext].green }},{{ block.settings[key_subtext].blue }};
-        --color-shadow: {{ block.settings[key_shadow].red }},{{ block.settings[key_shadow].green }},{{ block.settings[key_shadow].blue }};
-        --color-button: {{ block.settings[key_solid_bg].red }},{{ block.settings[key_solid_bg].green }},{{ block.settings[key_solid_bg].blue }};
-        --color-button-text: {{ block.settings[key_solid_label].red }},{{ block.settings[key_solid_label].green }},{{ block.settings[key_solid_label].blue }};
-        --color-secondary-button: {{ block.settings[key_bg].red }},{{ block.settings[key_bg].green }},{{ block.settings[key_bg].blue }};
-        --color-secondary-button-text: {{ block.settings[key_outline].red }},{{ block.settings[key_outline].green }},{{ block.settings[key_outline].blue }};
-        --color-link: {{ block.settings[key_outline].red }},{{ block.settings[key_outline].green }},{{ block.settings[key_outline].blue }};
-        --color-badge-border: {{ block.settings[key_text].red }},{{ block.settings[key_text].green }},{{ block.settings[key_text].blue }};
-        }
-    {% endfor %}
-    {{ scheme_classes | prepend: color_class2 }} {
-        color: rgba(var(--color-foreground), 1);
-        background-color: rgba(var(--color-background), var(--color-background-alpha, 1));
-    }
-</style>
-        {% when 'typography' %}
-            <!-- Typography -->
-{% liquid
-    assign body_font_500 = block.settings.type_body_font | font_modify: 'weight', '500'
-    assign body_font_bold = block.settings.type_body_font | font_modify: 'weight', 'bold'
-    assign body_font_italic = block.settings.type_body_font | font_modify: 'style', 'italic'
-    assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-%}
-<style>
-    {% liquid
-        if block.settings.overwrite_font
-            echo block.settings.type_body_font | font_face: font_display: 'swap'
-            echo body_font_500 | font_face: font_display: 'swap'
-            echo body_font_bold | font_face: font_display: 'swap'
-            echo body_font_italic | font_face: font_display: 'swap'
-            echo body_font_bold_italic | font_face: font_display: 'swap'
-            echo block.settings.type_header_font | font_face: font_display: 'swap'
-        endif
-    %}
-    body {{ _prefix }}.smi-section {
-        {% if block.settings.overwrite_font %}
-            --font-body-family: {{ block.settings.type_body_font.family }},{{ block.settings.type_body_font.fallback_families }};
-            --font-body-style: {{ block.settings.type_body_font.style }};
-            --font-body-weight: {{ block.settings.type_body_font.weight }};
-            --font-body-weight-bold: {{ block.settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
-            --font-heading-family: {{ block.settings.type_header_font.family }},{{ block.settings.type_header_font.fallback_families }};
-            --font-heading-style: {{ block.settings.type_header_font.style }};
-            --font-heading-weight: {{ block.settings.type_header_font.weight }};       
-            font-family: var(--font-body-family);
-            font-style: var(--font-body-style);
-            font-weight: var(--font-body-weight);     
-        {% endif %}
-        --font-heading-scale: {{ block.settings.heading_scale | divided_by: 100.0 }};
-        {% if block.settings.heading_scale > 120 %}
-            --font-heading-scale-max: 1.2;
-            {% else %}
-            --font-heading-scale-max: {{ block.settings.heading_scale| divided_by: 100.0 }};
-        {% endif %}
-        --heading-line-height-scale: {{ block.settings.heading_line_height_scale | divided_by: 100.0 }};
-        --heading-letter-spacing-scale: {{ block.settings.heading_letter_spacing_scale }}px;
-        --heading-text-case: {% if block.settings.heading_text_case != 'original' %}{{ block.settings.heading_text_case }}{% else %}{{ 'unset' }}{% endif %};
-        --font-body-scale: {{ block.settings.body_scale | divided_by: 100.0 }};
-        --body-line-height-scale: {{ block.settings.body_line_height_scale | divided_by: 100.0 }};
-        --body-letter-spacing-scale: {{ block.settings.body_letter_spacing_scale }}px;
-        --body-line-height: calc((1 + .8 /{{ block.settings.body_scale | divided_by: 100.0 }}) * {{ block.settings.body_line_height_scale | divided_by: 100.0 }});
-        --button-font-family: var({{'--font-' | append: block.settings.button_font | append: '-family' }});
-        --button-text-case: {{ block.settings.button_text_case }};
-        --price-font-family: var({{'--font-' | append: block.settings.price_font | append: '-family' }});
-        --menu-font-family: var({{'--font-' | append: block.settings.menu_font | append: '-family' }});
-        --subheading-font-family: var({{'--font-' | append: block.settings.subheading_font | append: '-family' }});
-    }
-    {% if block.settings.overwrite_font %}
-        body {{ _prefix }}.smi-section h1,
-        body {{ _prefix }}.smi-section h2,
-        body {{ _prefix }}.smi-section h3,
-        body {{ _prefix }}.smi-section h4,
-        body {{ _prefix }}.smi-section h5,
-        body {{ _prefix }}.smi-section h6,
-        body {{ _prefix }}.smi-section .smi-h1,
-        body {{ _prefix }}.smi-section .smi-h2,
-        body {{ _prefix }}.smi-section .smi-h3,
-        body {{ _prefix }}.smi-section .smi-h4,
-        body {{ _prefix }}.smi-section .smi-h5,
-        body {{ _prefix }}.smi-section .smi-h6{
-                font-family: var(--font-heading-family);
-                font-style: var(--font-heading-style);
-                font-weight: var(--font-heading-weight);
-            }
-        body {{ _prefix }} .smi-text-xs,
-        body {{ _prefix }} .smi-text-sm,
-        body {{ _prefix }} .smi-text-md,
-        body {{ _prefix }} .smi-text-lg {
-            font-family: var(--font-body-family);
-        }
-        body {{ _prefix }} .smi-text-menu {
-            font-family: var(--menu-font-family);
-        }
-        body {{ _prefix }} .smi-text-button {
-            font-family: var(--button-font-family);
-        }
-        body {{ _prefix }} .smi-text-button-purchase {
-            font-family: var(--button-font-family);
-        }
-        body {{ _prefix }} .smi-text-sub {
-            font-family: var(--subheading-font-family);
-        }
-        body {{ _prefix }} .smi-text-price-md,
-        body {{ _prefix }} .smi-text-price-lg,
-        body {{ _prefix }} .smi-text-price-xl {
-            font-family: var(--price-font-family);
-        }
+{% for i in (1..10) -%}
+    {% assign scheme_classes = scheme_classes | append: color_class1 | append: i %}
+    {% if i == 1 -%}
+        body .smi-section,
+    {%- endif %}
+    {%-liquid
+        assign key_bg = 'background_color' | append: i
+        assign key_gradient = 'background_gradient_color' | append: i
+        assign key_text = 'text_color' | append: i
+        assign key_subtext = 'subtext_color' | append: i
+        assign key_solid_bg = 'solid_background_button_color' | append: i
+        assign key_solid_label = 'solid_button_label_color' | append: i
+        assign key_outline = 'outline_button_color' | append: i
+        assign key_shadow = 'shadow_color' | append: i
+    -%}
+    body {{ _prefix }} .smi-color-scheme_{{ i }} {
+    --color-background: {{ block.settings[key_bg].red }},{{ block.settings[key_bg].green }},{{ block.settings[key_bg].blue }};
+    --color-background-alpha: {{ block.settings[key_bg].alpha }};
+    {% if block.settings[key_gradient] != empty %}
+        --gradient-background: {{ block.settings[key_gradient] }};
+    {% else %}
+        --gradient-background: {{ block.settings[key_bg] }};
     {% endif %}
-</style>
-        {% when 'typography_advance' %}
-            <style>
+    --color-foreground: {{ block.settings[key_text].red }},{{ block.settings[key_text].green }},{{ block.settings[key_text].blue }};
+    --color-subtext: {{ block.settings[key_subtext].red }},{{ block.settings[key_subtext].green }},{{ block.settings[key_subtext].blue }};
+    --color-shadow: {{ block.settings[key_shadow].red }},{{ block.settings[key_shadow].green }},{{ block.settings[key_shadow].blue }};
+    --color-button: {{ block.settings[key_solid_bg].red }},{{ block.settings[key_solid_bg].green }},{{ block.settings[key_solid_bg].blue }};
+    --color-button-text: {{ block.settings[key_solid_label].red }},{{ block.settings[key_solid_label].green }},{{ block.settings[key_solid_label].blue }};
+    --color-secondary-button: {{ block.settings[key_bg].red }},{{ block.settings[key_bg].green }},{{ block.settings[key_bg].blue }};
+    --color-secondary-button-text: {{ block.settings[key_outline].red }},{{ block.settings[key_outline].green }},{{ block.settings[key_outline].blue }};
+    --color-link: {{ block.settings[key_outline].red }},{{ block.settings[key_outline].green }},{{ block.settings[key_outline].blue }};
+    --color-badge-border: {{ block.settings[key_text].red }},{{ block.settings[key_text].green }},{{ block.settings[key_text].blue }};
+    }
+{% endfor %}
+{{ scheme_classes | prepend: color_class2 }} {
+    color: rgba(var(--color-foreground), 1);
+    background-color: rgba(var(--color-background), var(--color-background-alpha, 1));
+}
+          {% when 'typography' %}
+{% liquid
+  assign bs = block.settings
+  assign typoAdvance = section.blocks | where: 'type', 'typography_advance' | first
+  if typoAdvance
+    assign tas = typoAdvance.settings
+    assign bodyFontWeight = ''
+    assign headingFontWeight = ''
+    assign bodyFontWeight = bodyFontWeight | append: tas.fontweight_badge | append: ','
+    if bs.button_font == 'heading'
+      assign headingFontWeight = headingFontWeight | append: tas.fontweight_button | append: ','
+    else
+      assign bodyFontWeight = bodyFontWeight | append: tas.fontweight_button | append: ','
+    endif
+    if bs.price_font == 'heading'
+      assign headingFontWeight = headingFontWeight | append: tas.fontweight_price | append: ','
+    else
+      assign bodyFontWeight = bodyFontWeight | append: tas.fontweight_price | append: ','
+    endif
+    if bs.menu_font == 'heading'
+      assign headingFontWeight = headingFontWeight | append: tas.fontweight_menu | append: ','
+    else
+      assign bodyFontWeight = bodyFontWeight | append: tas.fontweight_menu | append: ','
+    endif
+    if bs.subheading_font == 'heading'
+      assign headingFontWeight = headingFontWeight | append: tas.fontweight_subheading | append: ','
+    else
+      assign bodyFontWeight = bodyFontWeight | append: tas.fontweight_subheading | append: ','
+    endif
+    assign bodyFontWeight = bodyFontWeight | split: ',' | compact | uniq
+    assign headingFontWeight = headingFontWeight | split: ',' | compact | uniq
+  endif
+  if block.settings.overwrite_font
+    for i in bodyFontWeight
+      echo bs.type_body_font | font_modify: 'weight', i | font_face: font_display: 'swap'
+    endfor
+    for i in headingFontWeight
+      echo bs.type_header_font | font_modify: 'weight', i | font_face: font_display: 'swap'
+    endfor
+    echo block.settings.type_body_font | font_face: font_display: 'swap'
+    echo block.settings.type_header_font | font_face: font_display: 'swap'
+  endif
+%}
+{% capture preload_font -%}
+  {%- if block.settings.overwrite_font -%}
+    {%- unless block.settings.smi_type_body_font.system? -%}
+      {% comment %}theme-check-disable AssetPreload{% endcomment %}
+      <link rel="preload" as="font" href="{{ block.settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+      {%- for i in bodyFontWeight %}
+        <link rel="preload" as="font" href="{{ block.settings.type_body_font | font_modify: 'weight', i | font_url }}" type="font/woff2" crossorigin>
+      {% endfor -%}
+      {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    {%- endunless -%}
+    {%- unless block.settings.smi_type_header_font.system? -%}
+      {% comment %}theme-check-disable AssetPreload{% endcomment %}
+      <link rel="preload" as="font" href="{{ block.settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+      {%- for i in headingFontWeight %}
+        <link rel="preload" as="font" href="{{ block.settings.type_header_font | font_modify: 'weight', i | font_url }}" type="font/woff2" crossorigin>
+      {% endfor -%}
+      {% comment %}theme-check-enable AssetPreload{% endcomment %}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endcapture %}
+body {{ _prefix }}.smi-section {
+{% if block.settings.overwrite_font %}
+  --font-body-family: {{ block.settings.type_body_font.family }},{{ block.settings.type_body_font.fallback_families }};
+  --font-body-style: {{ block.settings.type_body_font.style }};
+  --font-body-weight: {{ block.settings.type_body_font.weight }};
+  --font-body-weight-bold: {{ block.settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
+  --font-heading-family: {{ block.settings.type_header_font.family }}, {{- block.settings.type_header_font.fallback_families -}};
+  --font-heading-style: {{ block.settings.type_header_font.style }};
+  --font-heading-weight: {{ block.settings.type_header_font.weight }};
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style); font-weight: var(--font-body-weight);
+{% endif %}
+--font-heading-scale: {{ block.settings.heading_scale | divided_by: 100.0 }};
+{% if block.settings.heading_scale > 120 %}
+  --font-heading-scale-max: 1.2;
+{% else %}
+  --font-heading-scale-max: {{ block.settings.heading_scale | divided_by: 100.0 }};
+{% endif %}
+--heading-line-height-scale: {{ block.settings.heading_line_height_scale | divided_by: 100.0 }};
+--heading-letter-spacing-scale: {{ block.settings.heading_letter_spacing_scale }}px;
+--heading-text-case:
+{%- if block.settings.heading_text_case != 'original' -%}
+  {{- block.settings.heading_text_case -}}
+{%- else -%}
+  {{- 'unset' -}}
+{%- endif -%};
+--font-body-scale: {{ block.settings.body_scale | divided_by: 100.0 }};
+--body-line-height-scale: {{ block.settings.body_line_height_scale | divided_by: 100.0 }};
+--body-letter-spacing-scale: {{ block.settings.body_letter_spacing_scale }}px;
+--body-line-height: calc((1 + .8 / {{- block.settings.body_scale | divided_by: 100.0 -}}) * {{ block.settings.body_line_height_scale | divided_by: 100.0 }});
+--button-font-family: var({{ '--font-' | append: block.settings.button_font | append: '-family' }});
+--button-text-case: {{ block.settings.button_text_case }}; --price-font-family: var({{- '--font-' | append: block.settings.price_font | append: '-family' -}});
+--menu-font-family: var({{ '--font-' | append: block.settings.menu_font | append: '-family' }});
+--subheading-font-family: var({{ '--font-' | append: block.settings.subheading_font | append: '-family' }});
+}
+{% if block.settings.overwrite_font %}
+  body {{ _prefix }}.smi-section h1, body {{ _prefix }}.smi-section h2, body {{ _prefix }}.smi-section h3, body
+  {{ _prefix }}.smi-section h4, body {{ _prefix }}.smi-section h5, body {{ _prefix }}.smi-section h6, body
+  {{ _prefix }}.smi-section .smi-h1, body {{ _prefix }}.smi-section .smi-h2, body {{ _prefix }}.smi-section .smi-h3,
+  body {{ _prefix }}.smi-section .smi-h4, body {{ _prefix }}.smi-section .smi-h5, body {{ _prefix }}.smi-section
+  .smi-h6{ font-family: var(--font-heading-family); font-style: var(--font-heading-style); font-weight:
+  var(--font-heading-weight); }
+  body {{ _prefix }} .smi-text-xs, body {{ _prefix }} .smi-text-sm, body {{ _prefix }} .smi-text-md, body
+  {{ _prefix }} .smi-text-lg { font-family: var(--font-body-family); }
+  body {{ _prefix }} .smi-text-menu { font-family: var(--menu-font-family); }
+  body {{ _prefix }} .smi-text-button { font-family: var(--button-font-family); }
+  body {{ _prefix }} .smi-text-button-purchase { font-family: var(--button-font-family); }
+  body {{ _prefix }} .smi-text-sub { font-family: var(--subheading-font-family); }
+  body {{ _prefix }} .smi-text-price-md, body {{ _prefix }} .smi-text-price-lg, body {{ _prefix }} .smi-text-price-xl {
+  font-family: var(--price-font-family); }
+{% endif %}
+          {% when 'typography_advance' %}
     body {{ _prefix }}.smi-section {
         --h1-font-size: {{ block.settings.fontsize_h1 }};
         --h2-font-size: {{ block.settings.fontsize_h2 }};
@@ -181,175 +206,160 @@
         --menu-letter-spacing-scale: {{ block.settings.menu_letter_spacing_scale }}px;
         --price-letter-spacing-scale: {{ block.settings.price_letter_spacing_scale }}px;
     }
-</style>
-        {% when 'layout' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --page-width: {{ block.settings.page_width }}px;
-        --page-width-margin: {% if block.settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
-        --spacing-sections-desktop: {{ block.settings.spacing_sections }}px;
-        --spacing-sections-mobile: {% if block.settings.spacing_sections < 24 %}{{ block.settings.spacing_sections }}{% else %}{{ block.settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
+          {% when 'layout' %}
+              body {{ _prefix }}.smi-section {
+    --page-width: {{ block.settings.page_width }}px;
+    --page-width-margin: {% if block.settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
+    --spacing-sections-desktop: {{ block.settings.spacing_sections }}px;
+    --spacing-sections-mobile: {% if block.settings.spacing_sections < 24 %}{{ block.settings.spacing_sections }}{% else %}{{ block.settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
+    --spacing-elements: {{ block.settings.spacing_elements_mobile | divided_by: 100.0 }};
+    --grid-desktop-vertical-spacing: {{ block.settings.spacing_grid_vertical }}px;
+    --grid-desktop-horizontal-spacing: {{ block.settings.spacing_grid_horizontal }}px;
+    --grid-mobile-vertical-spacing: {{ block.settings.spacing_grid_vertical | at_most: 15 }}px;
+    --grid-mobile-horizontal-spacing: {{ block.settings.spacing_grid_horizontal | at_most: 15 }}px;
+}
+@media screen and (min-width: 992px){
+    body {{ _prefix }}.smi-section{
         --spacing-elements: {{ block.settings.spacing_elements | divided_by: 100.0 }};
-        --grid-desktop-vertical-spacing: {{ block.settings.spacing_grid_vertical }}px;
-        --grid-desktop-horizontal-spacing: {{ block.settings.spacing_grid_horizontal }}px;
-        --grid-mobile-vertical-spacing: {{ block.settings.spacing_grid_vertical | at_most: 15 }}px;
-        --grid-mobile-horizontal-spacing: {{ block.settings.spacing_grid_horizontal | at_most: 15 }}px;
     }
-</style>
-        {% when 'buttons' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --buttons-scale: {{ block.settings.buttons_scale | divided_by: 100.0 }};
-        --buttons-radius: {{ block.settings.buttons_radius }}px;
-        --buttons-radius-outset: {% if block.settings.buttons_radius > 0 %}{{ block.settings.buttons_radius | plus: block.settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-        --buttons-border-width: {% if block.settings.buttons_border_opacity > 0 %}{{ block.settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-        --buttons-border-opacity: {{ block.settings.buttons_border_opacity | divided_by: 100.0 }};
-        --buttons-shadow-opacity: {{ block.settings.buttons_shadow_opacity | divided_by: 100.0 }};
-        --buttons-shadow-visible: {% if block.settings.buttons_shadow_opacity > 0 and block.settings.buttons_shadow != '0,0,0' %}1{% else %}0{% endif %};
-        {% assign smi_buttons_shadow = block.settings.buttons_shadow | split: "," %}
-        --buttons-shadow-horizontal-offset: {{ smi_buttons_shadow[0] }}px;
-        --buttons-shadow-vertical-offset: {{ smi_buttons_shadow[1] }}px;
-        --buttons-shadow-blur-radius: {{ smi_buttons_shadow[2] }}px;
-        --buttons-border-offset: {% if block.settings.buttons_radius > 0 or block.settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
-    }
-</style>
-        {% when 'variants' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        {% if block.settings.variant_pills_border_thickness == 0 %}
-        --variant-pills-border-width-min: 1px;
-        --border-product-button-20: 0;
-        --variant-pills-border-width-20-min: 1px;
+}
+          {% when 'buttons' %}
+              body {{ _prefix }}.smi-section {
+    --buttons-scale: {{ block.settings.buttons_scale | divided_by: 100.0 }};
+    --buttons-radius: {{ block.settings.buttons_radius }}px;
+    --buttons-radius-outset: {% if block.settings.buttons_radius > 0 %}{{ block.settings.buttons_radius | plus: block.settings.buttons_border_thickness }}{% else %}0{% endif %}px;
+    --buttons-border-width: {% if block.settings.buttons_border_opacity > 0 %}{{ block.settings.buttons_border_thickness }}{% else %}0{% endif %}px;
+    --buttons-border-opacity: {{ block.settings.buttons_border_opacity | divided_by: 100.0 }};
+    --buttons-shadow-opacity: {{ block.settings.buttons_shadow_opacity | divided_by: 100.0 }};
+    --buttons-shadow-visible: {% if block.settings.buttons_shadow_opacity > 0 and block.settings.buttons_shadow != '0,0,0' %}1{% else %}0{% endif %};
+    {% assign smi_buttons_shadow = block.settings.buttons_shadow | split: "," %}
+    --buttons-shadow-horizontal-offset: {{ smi_buttons_shadow[0] }}px;
+    --buttons-shadow-vertical-offset: {{ smi_buttons_shadow[1] }}px;
+    --buttons-shadow-blur-radius: {{ smi_buttons_shadow[2] }}px;
+    --buttons-border-offset: {% if block.settings.buttons_radius > 0 or block.settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
+}
+          {% when 'variants' %}
+              body {{ _prefix }}.smi-section {
+    {% if block.settings.variant_pills_border_thickness == 0 %}
+    --variant-pills-border-width-min: 1px;
+    --border-product-button-20: 0;
+    --variant-pills-border-width-20-min: 1px;
+    {% else %}
+    --variant-pills-border-width-min: {{ block.settings.variant_pills_border_thickness }}px;
+    --border-product-button-20: 0.2;
+    --variant-pills-border-width-20-min: {{ block.settings.variant_pills_border_thickness }}px;
+    {% endif %}
+    --variant-pills-border-width: {{ block.settings.variant_pills_border_thickness }}px;
+    --variant-pills-radius: {{ block.settings.variant_pills_radius }}px;
+    --variant-pills-shadow-opacity: {{ block.settings.smi_variant_pills_shadow_opacity | divided_by: 100.0 }};
+    {% assign smi_variant_pills_shadow = block.settings.smi_variant_pills_shadow | split: "," %}
+    --variant-pills-shadow-horizontal-offset: {{ smi_variant_pills_shadow[0] }}px;
+    --variant-pills-shadow-vertical-offset: {{ smi_variant_pills_shadow[1] }}px;
+    --variant-pills-shadow-blur-radius: {{ smi_variant_pills_shadow[2] }}px;
+}
+          {% when 'inputs' %}
+              body {{ _prefix }}.smi-section {
+--inputs-radius: {{ block.settings.inputs_radius }}px;
+--inputs-border-width: {{ block.settings.inputs_border_thickness }}px;
+--inputs-border-opacity: {{ block.settings.inputs_border_opacity | divided_by: 100.0 }};
+--inputs-shadow-opacity: {{ block.settings.inputs_shadow_opacity | divided_by: 100.0 }};
+{% assign smi_inputs_shadow = block.settings.inputs_shadow | split: "," %}
+--inputs-shadow-horizontal-offset: {{ smi_inputs_shadow[0] }}px;
+--inputs-margin-offset: {% if smi_inputs_shadow[1] != 0 and block.settings.inputs_shadow_opacity > 0 %}{{ smi_inputs_shadow[1] | abs }}{% else %}0{% endif %}px;
+--inputs-shadow-vertical-offset: {{ smi_inputs_shadow[1] }}px;
+--inputs-shadow-blur-radius: {{ smi_inputs_shadow[2] }}px;
+--inputs-radius-outset: {% if block.settings.inputs_radius > 0 %}{{ block.settings.inputs_radius | plus: block.settings.inputs_border_thickness }}{% else %}0{% endif %}px;
+--inputs-shadow-visible: {% if block.settings.inputs_shadow_opacity > 0 and block.settings.inputs_shadow != '0,0,0' %}1{% else %}0{% endif %};
+}
+          {% when 'icons' %}
+              {%- assign icon_thickness = block.settings.icon_thickness | minus: 1 -%}
+{%- assign icon_size = block.settings.icon_scale | divided_by: 100.0 | times: 24 -%}
+{%- assign icon_scale = block.settings.icon_scale | divided_by: 100.0 -%}
+body {{ _prefix }}.smi-section {
+--svg-stroke-width: {{ icon_thickness }};
+--svg-width: {{ icon_size }}px;
+--svg-height: {{ icon_size }}px;
+--icon-scale: {{ icon_scale }};
+}
+          {% when 'product_cards' %}
+              body {{ _prefix }}.smi-section {
+--product-card-image-padding: {{ block.settings.card_image_padding }}px;
+--product-card-corner-radius: {{ block.settings.card_corner_radius }}px;
+--product-card-text-alignment: {{ block.settings.card_text_alignment }};
+--product-card-border-width: {{ block.settings.card_border_thickness }}px;
+--product-card-border-opacity: {{ block.settings.card_border_opacity | divided_by: 100.0 }};
+--product-card-shadow-opacity: {{ block.settings.card_shadow_opacity | divided_by: 100.0 }};
+--product-card-shadow-visible: {% if block.settings.card_shadow_opacity > 0 and block.settings.card_shadow != '0,0,0' %}1{% else %}0{% endif %};
+{% assign card_shadow = block.settings.card_shadow | split: "," %}
+--product-card-shadow-horizontal-offset: {{ card_shadow[0] }}px;
+--product-card-shadow-vertical-offset: {{ card_shadow[1] }}px;
+--product-card-shadow-blur-radius: {{ card_shadow[2] }}px;
+}
+          {% when 'product_badges' %}
+              body {{ _prefix }}.smi-section {
+--badge-corner-radius: {{ block.settings.badge_corner_radius }}px;
+--color-badge-foreground: {{ block.settings.sale_badge_text_color.red }},{{ block.settings.sale_badge_text_color.green }},{{ block.settings.sale_badge_text_color.blue }};
+--color-badge-background: {{ block.settings.sale_badge_background_color.red }},{{ block.settings.sale_badge_background_color.green }},{{ block.settings.sale_badge_background_color.blue }};
+--color-sold-badge-foreground: {{ block.settings.sold_out_badge_text_color.red }},{{ block.settings.sold_out_badge_text_color.green }},{{ block.settings.sold_out_badge_text_color.blue }};
+--color-sold-badge-background: {{ block.settings.sold_out_badge_background_color.red }},{{ block.settings.sold_out_badge_background_color.green }},{{ block.settings.sold_out_badge_background_color.blue }};
+}
+          {% when 'blog_cards' %}
+              body {{ _prefix }}.smi-section {
+    --blog-card-image-padding: {{ block.settings.blog_card_image_padding }}px;
+    --blog-card-corner-radius: {{ block.settings.blog_card_corner_radius }}px;
+    --blog-card-border-width: {{ block.settings.blog_card_border_thickness }}px;
+    --blog-card-border-opacity: {{ block.settings.blog_card_border_opacity | divided_by: 100.0 }};
+    --blog-card-shadow-opacity: {{ block.settings.blog_card_shadow_opacity | divided_by: 100.0 }};
+    --blog-card-shadow-visible: {% if block.settings.blog_card_shadow_opacity > 0 and settings.blog_card_shadow != '0,0,0' %}1{% else %}0{% endif %};
+    {% assign blog_card_shadow = block.settings.blog_card_shadow | split: "," %}
+    --blog-card-shadow-horizontal-offset: {{ blog_card_shadow[0] }}px;
+    --blog-card-shadow-vertical-offset: {{ blog_card_shadow[1] }}px;
+    --blog-card-shadow-blur-radius: {{ blog_card_shadow[2] }}px;
+}
+          {% when 'content_containers' %}
+              body {{ _prefix }}.smi-section {
+    --text-boxes-border-opacity: {{ block.settings.text_boxes_border_opacity | divided_by: 100.0 }};
+    --text-boxes-border-width: {{ block.settings.text_boxes_border_thickness }}px;
+    {% if block.settings.text_boxes_border_thickness < 1 %}
+        --text-boxes-border-width-min: 1px;
         {% else %}
-        --variant-pills-border-width-min: {{ block.settings.variant_pills_border_thickness }}px;
-        --border-product-button-20: 0.2;
-        --variant-pills-border-width-20-min: {{ block.settings.variant_pills_border_thickness }}px;
-        {% endif %}
-        --variant-pills-border-width: {{ block.settings.variant_pills_border_thickness }}px;
-        --variant-pills-radius: {{ block.settings.variant_pills_radius }}px;
-        --variant-pills-shadow-opacity: {{ block.settings.variant_pills_shadow_opacity | divided_by: 100.0 }};
-        {% assign smi_variant_pills_shadow = block.settings.variant_pills_shadow | split: "," %}
-        --variant-pills-shadow-horizontal-offset: {{ smi_variant_pills_shadow[0] }}px;
-        --variant-pills-shadow-vertical-offset: {{ smi_variant_pills_shadow[1] }}px;
-        --variant-pills-shadow-blur-radius: {{ smi_variant_pills_shadow[2] }}px;
-    }
+        --text-boxes-border-width-min: {{ block.settings.text_boxes_border_thickness }}px;
+    {% endif %}
+    --text-boxes-radius: {{ block.settings.text_boxes_radius }}px;
+    --text-boxes-shadow-opacity: {{ block.settings.text_boxes_shadow_opacity | divided_by: 100.0 }};
+    --text-boxes-shadow-visible: {% if block.settings.text_boxes_shadow_opacity > 0 and block.settings.text_boxes_shadow != '0,0,0' %}1{% else %}0{% endif %};
+    {% assign smi_text_boxes_shadow = block.settings.text_boxes_shadow | split: "," %}
+    --text-boxes-shadow-horizontal-offset: {{ smi_text_boxes_shadow[0] }}px;
+    --text-boxes-shadow-vertical-offset: {{ smi_text_boxes_shadow[1] }}px;
+    --text-boxes-shadow-blur-radius: {{ smi_text_boxes_shadow[2] }}px;
+}
+          {% when 'media' %}
+              body {{ _prefix }}.smi-section {
+--media-border-opacity: {{ block.settings.media_border_opacity | divided_by: 100.0 }};
+--media-border-width: {{ block.settings.media_border_thickness }}px;
+--media-radius: {{ block.settings.media_radius }}px;
+--media-shadow-opacity: {{ block.settings.media_shadow_opacity | divided_by: 100.0 }};
+{% assign media_shadow = block.settings.media_shadow | split: "," %}
+--media-shadow-horizontal-offset: {{ media_shadow[0] }}px;
+--media-shadow-vertical-offset: {{ media_shadow[1] }}px;
+--media-shadow-blur-radius: {{ media_shadow[2] }}px;
+--media-shadow-visible: {% if block.settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
+}
+          {% when 'dropdown_popup_drawer' %}
+              body {{ _prefix }}.smi-section {
+--popup-border-width: {{ block.settings.popup_border_thickness }}px;
+--popup-border-opacity: {{ block.settings.popup_border_opacity | divided_by: 100.0 }};
+--popup-corner-radius: {{ block.settings.popup_corner_radius }}px;
+--popup-shadow-opacity: {{ block.settings.popup_shadow_opacity | divided_by: 100.0 }};
+{% assign smi_popup_shadow = block.settings.popup_shadow | split: "," %}
+--popup-shadow-horizontal-offset: {{ smi_popup_shadow[0] }}px;
+--popup-shadow-vertical-offset: {{ smi_popup_shadow[1] }}px;
+--popup-shadow-blur-radius: {{ smi_popup_shadow[2] }}px;
+}
+      {% endcase %}
+  {% endfor %}
 </style>
-        {% when 'inputs' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --inputs-radius: {{ block.settings.inputs_radius }}px;
-        --inputs-border-width: {{ block.settings.inputs_border_thickness }}px;
-        --inputs-border-opacity: {{ block.settings.inputs_border_opacity | divided_by: 100.0 }};
-        --inputs-shadow-opacity: {{ block.settings.inputs_shadow_opacity | divided_by: 100.0 }};
-        {% assign smi_inputs_shadow = block.settings.inputs_shadow | split: "," %}
-        --inputs-shadow-horizontal-offset: {{ smi_inputs_shadow[0] }}px;
-        --inputs-margin-offset: {% if smi_inputs_shadow[1] != 0 and block.settings.inputs_shadow_opacity > 0 %}{{ smi_inputs_shadow[1] | abs }}{% else %}0{% endif %}px;
-        --inputs-shadow-vertical-offset: {{ smi_inputs_shadow[1] }}px;
-        --inputs-shadow-blur-radius: {{ smi_inputs_shadow[2] }}px;
-        --inputs-radius-outset: {% if block.settings.inputs_radius > 0 %}{{ block.settings.inputs_radius | plus: block.settings.inputs_border_thickness }}{% else %}0{% endif %}px;
-    }
-</style> 
-        {% when 'icons' %}
-            <style>
-    {%- assign icon_thickness = block.settings.icon_thickness | minus: 1 -%}
-    {%- assign icon_size = block.settings.icon_scale | divided_by: 100.0 | times: 24 -%}
-    {%- assign icon_scale = block.settings.icon_scale | divided_by: 100.0 -%}
-    body {{ _prefix }}.smi-section {
-        --svg-stroke-width: {{ icon_thickness }};
-        --svg-width: {{ icon_size }}px;
-        --svg-height: {{ icon_size }}px;
-        --icon-scale: {{ icon_scale }};
-    }
-</style>
-        {% when 'product_cards' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --product-card-image-padding: {{ block.settings.card_image_padding }}px;
-        --product-card-corner-radius: {{ block.settings.card_corner_radius }}px;
-        --product-card-text-alignment: {{ block.settings.card_text_alignment }};
-        --product-card-border-width: {{ block.settings.card_border_thickness }}px;
-        --product-card-border-opacity: {{ block.settings.card_border_opacity | divided_by: 100.0 }};
-        --product-card-shadow-opacity: {{ block.settings.card_shadow_opacity | divided_by: 100.0 }};
-        --product-card-shadow-visible: {% if block.settings.card_shadow_opacity > 0 and block.settings.card_shadow != '0,0,0' %}1{% else %}0{% endif %};
-        {% assign card_shadow = block.settings.card_shadow | split: "," %}
-        --product-card-shadow-horizontal-offset: {{ card_shadow[0] }}px;
-        --product-card-shadow-vertical-offset: {{ card_shadow[1] }}px;
-        --product-card-shadow-blur-radius: {{ card_shadow[2] }}px;
-    }
-</style>
-        {% when 'product_badges' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --badge-corner-radius: {{ block.settings.badge_corner_radius }}px;
-        --color-badge-foreground: {{ block.settings.sale_badge_text_color.red }},{{ block.settings.sale_badge_text_color.green }},{{ block.settings.sale_badge_text_color.blue }};
-        --color-badge-background: {{ block.settings.sale_badge_background_color.red }},{{ block.settings.sale_badge_background_color.green }},{{ block.settings.sale_badge_background_color.blue }};
-        --color-sold-badge-foreground: {{ block.settings.sold_out_badge_text_color.red }},{{ block.settings.sold_out_badge_text_color.green }},{{ block.settings.sold_out_badge_text_color.blue }};
-        --color-sold-badge-background: {{ block.settings.sold_out_badge_background_color.red }},{{ block.settings.sold_out_badge_background_color.green }},{{ block.settings.sold_out_badge_background_color.blue }};
-    }
-</style>
-        {% when 'blog_cards' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --blog-card-image-padding: {{ block.settings.blog_card_image_padding }}px;
-        --blog-card-corner-radius: {{ block.settings.blog_card_corner_radius }}px;
-        --blog-card-border-width: {{ block.settings.blog_card_border_thickness }}px;
-        --blog-card-border-opacity: {{ block.settings.blog_card_border_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-opacity: {{ block.settings.blog_card_shadow_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-visible: {% if block.settings.blog_card_shadow_opacity > 0 and settings.blog_card_shadow != '0,0,0' %}1{% else %}0{% endif %};
-        {% assign blog_card_shadow = block.settings.blog_card_shadow | split: "," %}
-        --blog-card-shadow-horizontal-offset: {{ blog_card_shadow[0] }}px;
-        --blog-card-shadow-vertical-offset: {{ blog_card_shadow[1] }}px;
-        --blog-card-shadow-blur-radius: {{ blog_card_shadow[2] }}px;
-    }
-</style> 
-        {% when 'content_containers' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --text-boxes-border-opacity: {{ block.settings.text_boxes_border_opacity | divided_by: 100.0 }};
-        --text-boxes-border-width: {{ block.settings.text_boxes_border_thickness }}px;
-        {% if block.settings.text_boxes_border_thickness < 1 %}
-            --text-boxes-border-width-min: 1px;
-            {% else %}
-            --text-boxes-border-width-min: {{ block.settings.text_boxes_border_thickness }}px;
-        {% endif %}
-        --text-boxes-radius: {{ block.settings.text_boxes_radius }}px;
-        --text-boxes-shadow-opacity: {{ block.settings.text_boxes_shadow_opacity | divided_by: 100.0 }};
-        --text-boxes-shadow-visible: {% if block.settings.text_boxes_shadow_opacity > 0 and block.settings.text_boxes_shadow != '0,0,0' %}1{% else %}0{% endif %};
-        {% assign smi_text_boxes_shadow = block.settings.text_boxes_shadow | split: "," %}
-        --text-boxes-shadow-horizontal-offset: {{ smi_text_boxes_shadow[0] }}px;
-        --text-boxes-shadow-vertical-offset: {{ smi_text_boxes_shadow[1] }}px;
-        --text-boxes-shadow-blur-radius: {{ smi_text_boxes_shadow[2] }}px;
-    }
-</style> 
-        {% when 'media' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --media-border-opacity: {{ block.settings.media_border_opacity | divided_by: 100.0 }};
-        --media-border-width: {{ block.settings.media_border_thickness }}px;
-        --media-radius: {{ block.settings.media_radius }}px;
-        --media-shadow-opacity: {{ block.settings.media_shadow_opacity | divided_by: 100.0 }};
-        {% assign media_shadow = block.settings.media_shadow | split: "," %}
-        --media-shadow-horizontal-offset: {{ media_shadow[0] }}px;
-        --media-shadow-vertical-offset: {{ media_shadow[1] }}px;
-        --media-shadow-blur-radius: {{ media_shadow[2] }}px;
-        --media-shadow-visible: {% if block.settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
-    }
-</style> 
-        {% when 'dropdown_popup_drawer' %}
-            <style>
-    body {{ _prefix }}.smi-section {
-        --popup-border-width: {{ block.settings.popup_border_thickness }}px;
-        --popup-border-opacity: {{ block.settings.popup_border_opacity | divided_by: 100.0 }};
-        --popup-corner-radius: {{ block.settings.popup_corner_radius }}px;
-        --popup-shadow-opacity: {{ block.settings.popup_shadow_opacity | divided_by: 100.0 }};
-        {% assign smi_popup_shadow = block.settings.popup_shadow | split: "," %}
-        --popup-shadow-horizontal-offset: {{ smi_popup_shadow[0] }}px;
-        --popup-shadow-vertical-offset: {{ smi_popup_shadow[1] }}px;
-        --popup-shadow-blur-radius: {{ smi_popup_shadow[2] }}px;
-    }
-</style> 
-    {% endcase %}
-{% endfor %}
+{{ preload_font }}{%comment%}#includeFile##endIncludeFile#{%endcomment%}
 {% schema %}
 {
 	"name": "✧Smind Styles",
@@ -364,7 +374,7 @@
     ],
 	"blocks": [
 		{
-			"name": "Colors",
+			"name": "Color",
 			"limit": 1,
 			"type": "color",
 			"settings": [
@@ -913,7 +923,7 @@
 				{
 					"type": "font_picker",
 					"id": "type_header_font",
-					"default": "cardo_n4",
+					"default": "assistant_n4",
 					"label": "Heading font"
 				},
 				{
@@ -1587,7 +1597,17 @@
 					"max": 150,
 					"step": 1,
 					"unit": "%",
-					"label": "Space between elements",
+					"label": "Space between elements (desktop)",
+					"default": 100
+				},
+				{
+					"type": "range",
+					"id": "spacing_elements_mobile",
+					"min": 50,
+					"max": 150,
+					"step": 1,
+					"unit": "%",
+					"label": "Space between elements (mobile)",
 					"default": 100
 				},
 				{
@@ -2414,7 +2434,7 @@
 			]
 		},
 		{
-			"name": "Dropdown, popup",
+			"name": "Dropdown, popup, drawer",
 			"type": "dropdown_popup_drawer",
 			"limit": 1,
 			"settings": [

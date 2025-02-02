@@ -11,18 +11,17 @@
             assign background_image_class = 'smi-is-parallax'
         endif
     -%}
-
     <div class="smi-background-block smi-background-block--{{ background_animation }}" style="--background: {{ background }}; --background-overlay: {{ background_overlay }};">       
         {% if background_image != blank or background_image_mobile != blank %}
         <picture>
             {%- if background_image_mobile != blank -%}
-                <source media="(max-width:460px)" srcset="{{ background_image_mobile | image_url: width : 460 }}">
-                <source media="(max-width:767px)" srcset="{{ background_image_mobile | image_url: width : 767 }}">
+                <source media="(max-width:460px)" srcset="{{ background_image_mobile | image_url: width : 700 }}">
+                <source media="(max-width:767px)" srcset="{{ background_image_mobile | image_url: width : 1100 }}">
             {%- endif -%}
             {%- if background_image != blank -%}
                 {% if background_image_mobile == blank %}
-                    <source media="(max-width:460px)" srcset="{{ background_image | image_url: width : 460 }}">
-                    <source media="(max-width:920px)" srcset="{{ background_image | image_url: width : 920 }}">
+                    <source media="(max-width:460px)" srcset="{{ background_image | image_url: width : 700 }}">
+                    <source media="(max-width:767px)" srcset="{{ background_image | image_url: width : 1100 }}">
                 {% endif %}
                 {{ background_image | image_url: width : 1920 | image_tag: class: background_image_class }}
             {%- elsif background_image_mobile != blank -%}
@@ -31,7 +30,6 @@
             {%- endif -%}
         </picture>
         {% endif %}
-
         {% if background_block.settings.video != blank %}
             {{ background_block.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, image_size: '1100x', class: 'smi-background-video' }}
         {% elsif background_block.settings.video_url != blank %}

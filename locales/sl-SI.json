@@ -588,6 +588,7 @@
       "language": "Language",
       "country": "Country",
       "view_detail": "View detail",
+      "invalid_date_format": "Invalid date format",
       "all_all_reviews": "All reviews"
     },
     "collection": {
@@ -721,7 +722,8 @@
       "quick_add": "Quick add",
       "shipping": "Shipping",
       "calculated_at_checkout": "calculated at checkout",
-      "size_chart": "Size chart"
+      "size_chart": "Size chart",
+      "customer_reviews": "Customer review"
     },
     "cart": {
       "taxes_and_shipping_policy_at_checkout_html": "Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout",

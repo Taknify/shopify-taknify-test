@@ -534,7 +534,7 @@
       "load_more": "Load more",
       "verified_buyer": "Verified buyer",
       "show_more": "Show more",
-      "all_all_reviews": "All reviews",
+      "all_reviews": "All reviews",
       "search": "Search",
       "recent_searches": "Recent searches",
       "popular_searches": "Popular searches",
@@ -562,7 +562,10 @@
       "seconds": "Seconds",
       "login": "Login",
       "language": "Language",
-      "country": "Country"
+      "country": "Country",
+      "view_detail": "View detail",
+      "invalid_date_format": "Invalid date format",
+      "all_all_reviews": "All reviews"
     },
     "collection": {
       "clear_all": "Clear all",
@@ -694,7 +697,9 @@
       },
       "quick_add": "Quick add",
       "shipping": "Shipping",
-      "calculated_at_checkout": "calculated at checkout"
+      "calculated_at_checkout": "calculated at checkout",
+      "size_chart": "Size chart",
+      "customer_reviews": "Customer review"
     },
     "cart": {
       "taxes_and_shipping_policy_at_checkout_html": "Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
@@ -754,6 +759,7 @@
     "account": {
       "dashboard": "Dashboard",
       "address": "Address",
+      "view_addresses": "View addresses",
       "wishlist": "Wishlist",
       "compare": "Compare",
       "log_out": "Log out",
@@ -804,6 +810,16 @@
         "subtotal": "Subtotal",
         "total_duties": "Duties"
       },
+      "orders": {
+        "title": "Order history",
+        "order_number": "Order",
+        "order_number_link": "Order number {{ number }}",
+        "date": "Date",
+        "payment_status": "Payment status",
+        "fulfillment_status": "Fulfillment status",
+        "total": "Total",
+        "none": "You haven't placed any orders yet."
+      },
       "addresses": {
         "title1": "Your address",
         "title2": "Your addresses",
@@ -848,6 +864,7 @@
       }
     },
     "extend_item": {
+      "quick_view": "Quick view",
       "wishlist": {
         "add": "Add wishlist",
         "delete": "Remove from wishlist",
